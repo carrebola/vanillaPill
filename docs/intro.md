@@ -24,6 +24,8 @@ Trabajaremos con un repositorio git que sincronizaremos con github. Emplearemos 
 - Crearemos un proyecto html/javascript con bootstrap utilizando vite y crearemos una spa básica con formularios y tablas
 - Crearemos un repositorio y una rama de desarrollo y lo sincronizaremos con GitHub.
 - Crearemos un sistema de despliegue continuo basado en GitHub mediante gh-pages.
+
+## Probando la api de Supabase
 - Programaremos la lógica para realizar la conexión con la base de datos y  mostrar los datos de la tabla perfiles
 - Gestión de Supabase a través de la api de javascript
 - Aprenderemos a gestionar el registro de usuarios (users):
