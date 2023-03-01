@@ -30,7 +30,6 @@ Trabajaremos con un repositorio git que sincronizaremos con github. Emplearemos 
 - Gestión de Supabase a través de la api de javascript
 - Aprenderemos a gestionar el registro de usuarios (users):
 - Invitaremos a un usuario que será administrador
-- Crearemos un formulario (nombre, email, contraseña) para el registro basado en email y contraseña con verificación a través del mail
 - Crearemos la lógica para poder registrar usuarios en la tabla users
 - Crearemos la lógica para insertar datos de usuario en la tabla perfiles
 ## Funciones Supabase
