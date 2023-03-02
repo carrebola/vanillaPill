@@ -54,17 +54,12 @@
         <category label="docusaurus" term="docusaurus"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://carrebola.github.io/vanillaPill/blog/first-blog-post</id>
-        <link href="https://carrebola.github.io/vanillaPill/blog/first-blog-post"/>
+        <title type="html"><![CDATA[RECURSOS]]></title>
+        <id>https://carrebola.github.io/vanillaPill/blog/RECURSOS</id>
+        <link href="https://carrebola.github.io/vanillaPill/blog/RECURSOS"/>
         <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Gao Wei</name>
-            <uri>https://github.com/wgao19</uri>
-        </author>
-        <category label="hola" term="hola"/>
-        <category label="docusaurus" term="docusaurus"/>
+        <summary type="html"><![CDATA[- Descargar imagenes de avatar:]]></summary>
+        <content type="html"><![CDATA[<ul><li>Descargar imagenes de avatar:
+<a href="https://www.svgrepo.com/svg/170303/avatar" target="_blank" rel="noopener noreferrer">Imagen avatar</a></li></ul>]]></content>
     </entry>
 </feed>

@@ -39,14 +39,13 @@
             <category>docusaurus</category>
         </item>
         <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://carrebola.github.io/vanillaPill/blog/first-blog-post</link>
-            <guid>https://carrebola.github.io/vanillaPill/blog/first-blog-post</guid>
+            <title><![CDATA[RECURSOS]]></title>
+            <link>https://carrebola.github.io/vanillaPill/blog/RECURSOS</link>
+            <guid>https://carrebola.github.io/vanillaPill/blog/RECURSOS</guid>
             <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>hola</category>
-            <category>docusaurus</category>
+            <description><![CDATA[- Descargar imagenes de avatar:]]></description>
+            <content:encoded><![CDATA[<ul><li>Descargar imagenes de avatar:
+<a href="https://www.svgrepo.com/svg/170303/avatar" target="_blank" rel="noopener noreferrer">Imagen avatar</a></li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
