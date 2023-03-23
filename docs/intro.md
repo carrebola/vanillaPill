@@ -44,7 +44,7 @@ Trabajaremos con un repositorio git que sincronizaremos con github. Emplearemos 
 ### Historia 6: Supabase. Gestión de permisos. Pruebas III (API DOCS)
 - Aprenderemos a gestionar los permisos de lectura y escritura de las tablas dependiendo del rol de cada usuario.
 - Craremos y testearemos las politicas de permisos definidas.
-### Historia 6. Supabase. Storage para la Gestión de archivos. Pruebas IV (APIU DOCS)
+### Historia 6b. Supabase. Storage para la Gestión de archivos. Pruebas IV (APIU DOCS)
 - Crearemos un sistema de archivos para poder subir y administrar imágenes de los diferentes proyectos
 ### Historia 7. Supabase. Funciones en tiempo real (Edge Functions) Pruebas V (API DOCS)
 - Aprenderemos a trabajar con el sistema de eventos de Supabase que nos permitirá ver cómo se actualizan los comentarios en tiempo real, sin necesidad de actualizar la página
