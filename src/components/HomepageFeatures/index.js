@@ -6,32 +6,29 @@ const FeatureList = [
   
   
   {
-    title: 'Powered by React',
+    title: 'HTML',
     Svg: require('@site/static/img/HTML5_logo_and_wordmark.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        ...
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'CSS',
     Svg: require('@site/static/img/CSS3_logo_and_wordmark.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        ...
       </>
     ),
   },
   {
-    title: 'Easy to Use',
+    title: 'JS',
     Svg: require('@site/static/img/Unofficial_JavaScript_logo_2.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        ...
       </>
     ),
   },
