@@ -1,5 +1,14 @@
 ---
-sidebar_position: 1
+id: intro
+title: Introducción al proyecto
+tags:
+  - Introducción
+  - Fases de desarrollo
+  - Javascript
+  - Html
+  - Css
+  - Bootstrap
+position: 0
 ---
 
 # Definición del proyecto
