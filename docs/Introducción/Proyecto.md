@@ -66,16 +66,13 @@ En SSG, el contenido de una página web se genera de antemano en archivos HTML e
   
 </Tabs>
 
-:::info
-
-Tienes más información sobre las [ diferentes arquitecturas aquí](http://fpllefia.com).
-
-
+:::info ARQUITECTURAS
+Aquí Tienes más información sobre las [ diferentes arquitecturas](#).
 :::
-### Renderizado en el lado del cliente (CSR)
+### Nosotros aplicaremos renderizado en el lado del cliente (CSR)
 En nuestro caso **nos basaremos en CSR**, es decir, renderizamos todo el código html en el navegador. El cliente solo se encargará de responder a las peticiones devolviendo los datos solicitados (en formato json). De esta manera podemos dividir la implementación del proyecto en **FRONTEND** y *BACKEND*, separando cada funcionalidad y desarrollándola de manera independiente.
 
-### FrontEnd. Diseño de la interfície
+### Para la creación del FrontEnd y el Diseño de la interfície
 En primer lugar crearemos los **bocetos** de nuestra aplicación que, más tarde, evolucionarán hacia el **Wireframe** y finalmente al **Mockup** (diseño con colores y tipografías definitivas). Para el diseño de este último y para implementación de la guía de estilos utilizaremos la herramienta [**FIGMA**](http://www.fpllefia.com).
 
 Para el **Frontend** crearemos una [**SPA**](#), es decir, una página única que actualizará las diferentes secciones en función de la funcionalidad deseada. 
@@ -83,17 +80,19 @@ Para el **Frontend** crearemos una [**SPA**](#), es decir, una página única qu
 En el diseño de la SPA emplearemos **html5**, **css3** y el framework [**Bootstrap 5**](https://getbootstrap.com/). Utilizaremos una plantilla [**Bootswatch**](https://bootswatch.com/) que adaptaremos a nuestro diseño mediante [**SASS**](#).
 Toda la lógica de programación la crearemos con VanillaJS , es decir, con Javascript puro (ES6, sin usar frameworks)
 
-BackEnd. Supabase
+### Usaremos SUPABASE como servicio de Backend
 En el lado del backend utilizaremos Supabase como servicio backend. 
-Este servicio nos permite almacenar la información en bases de datos relacionales en un entorno basado en postgreSQL.
-Nos ofrece un sistema de autenticación basado en proveedores como google, github, etc, 
-Nos ofrece un sistema de control de accesos según roles a través de las políticas de permisos, 
-Nos ofrece un storage de almacenamiento de archivos (para las imágenes) en los buckets que nos permite configurar.
-Finalmente, nos ofrece una API en javascript para las peticiones más frecuentes que atacan a las tablas de la bd (crud) así como un sistema de funciones personalizadas (con sus correspondiente api en js) para hacer consultas específicas (por ejemplo, consultas multitabla)
+Este servicio nos permite almacenar la información en **bases de datos relacionales** en un entorno basado en **postgreSQL**.
+Nos ofrece un sistema de **autenticación** basado en proveedores como google, github, etc.
+Nos ofrece un sistema de control de accesos según roles a través de las **políticas de permisos**.
+Nos ofrece un **storage** de almacenamiento de archivos (para las imágenes) en los buckets que nos permite configurar.
+Finalmente, nos ofrece una **API en javascript** para las peticiones más frecuentes que atacan a las tablas de la bd ([CRUD](#)) así como un sistema de **funciones personalizadas** (con sus correspondiente api en js) para hacer consultas específicas (por ejemplo, consultas multitabla)
 
-Entorno de desarrollo
-En el entorno de desarrollo tendremos a VSCode trabajando sobre Nodejs y su gestor de paquetes npm. Configuraremos el IDE con los plugins necesarios para facilitar un buen flujo de trabajo.
-Formatearemos el código siguiendo el estándar 'Standard' mediante herramientas de verificación de código como 'Eslint'.
-Trabajaremos con un repositorio Git que sincronizaremos con una cuenta de Github. Emplearemos el flujo de trabajo ‘Flujo de rama de funcionalidad’. Es decir, crearemos ramas específicas para cada funcionalidad que integraremos en la rama principal una vez testadas las funcionalidades. Así, nuestro repositorio reflejará todo el proceso de trabajo, las diferentes versiones, etc.
-Despliegue de aplicaciones
-Desplegaremos el proyecto en github pages (en la fase de pruebas) y utilizaremos el servicio  RailWay para el despliegue en producción.
+### Nuestro entorno de desarrollo... VSCODE
+En el entorno de desarrollo tendremos a **VSCode** trabajando sobre [**Nodejs**](#) y su gestor de paquetes **npm**. Configuraremos el IDE con los **plugins** necesarios para facilitar un buen flujo de trabajo.
+Formatearemos el código siguiendo el estándar '**Standard**' mediante herramientas de verificación de código como '**Eslint**'.
+Trabajaremos con un repositorio **Git** que sincronizaremos con una cuenta de **Github**. Emplearemos el flujo de trabajo ‘**Flujo de rama de funcionalidad**’. Es decir, crearemos ramas específicas para cada funcionalidad que integraremos en la rama principal una vez testadas las funcionalidades. Así, nuestro repositorio reflejará todo el proceso de trabajo, las diferentes versiones, etc.
+### Y para el despliegue de nuestras aplicaciones
+Desplegaremos el proyecto en **github pages** (en la fase de pruebas) y utilizaremos el servicio  **RailWay** para el despliegue en producción.
+
+PONER AQUÍ IMAGENES DE LAS TECNOLOGÍAS Y COMPLETAR LAS ETIQUETAS!!!
