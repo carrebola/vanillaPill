@@ -16,8 +16,31 @@ El método de trabajo que se utiliza en dicha empresa consiste en **proponer a c
 Hasta la fecha, para el proceso de publicación de proyectos, comentarios y valoración utilizaban algunas herramientas ofimáticas, tipo hoja de cálculo de google. Actualmente pretenden crear una aplicación web tipo intranet para llevar a cabo este propósito.
 
 Como alumno en prácticas, **tu trabajo consiste en crear una aplicación web que permitirá a los desarrolladores de Vanilla Games, publicar sus propuestas de minijuegos**, de manera que el resto de compañeros podrá hacer comentarios y emitir una valoración de cada proyecto publicado en esta plataforma.
+## Requisitos del proyecto y casos de uso general
+Los **casos de uso** son una técnica de modelado utilizada en el desarrollo de software para describir las interacciones entre un sistema y sus usuarios. En términos simples, los casos de uso describen cómo los usuarios interactúan con un sistema y qué resultados esperan obtener de él.
 
-## Requisitos del proyecto
+:::info
+<details>
+  <summary>Los casos de uso son útiles para ... 
+</summary>
+  <div>
+  comprender los requisitos del sistema y cómo se debe diseñar y desarrollar el software para satisfacer las necesidades de los usuarios. También son útiles para comunicar los requisitos del sistema entre los miembros del equipo de desarrollo, los stakeholders y los usuarios finales.
+
+  Además, los casos de uso pueden ser utilizados para:
+
+  - Identificar los requisitos funcionales y no funcionales del sistema.
+  - Ayudar a definir el alcance del proyecto.
+  - Facilitar la planificación y estimación de tiempo y recursos necesarios para el desarrollo del sistema.
+  - Facilitar la identificación y resolución de problemas antes de que se implemente el sistema.
+  - Ayudar a definir las pruebas necesarias para verificar que el sistema cumpla con los requisitos de los usuarios.
+
+En general, los casos de uso son una herramienta esencial para comprender y especificar los requisitos de un sistema, y para garantizar que el software desarrollado satisfaga las necesidades de los usuarios finales.
+  </div>
+</details>
+
+:::
+
+### Casos de uso general
 Esta aplicación web debe permitir a un usuario **registrarse** (con su nombre, apellidos, email y contraseña) y posteriormente **iniciar** y **cerrar sesión**.
 Un usuario  registrado debe poder **ver un listado de proyectos** publicados por los desarrolladores.  También podrá **editar su perfil** y **subir una imagen** de tipo avatar.
 
@@ -27,7 +50,17 @@ Por otro lado, el perfil desarrollador debería poder **realizar comentarios** d
 
 Finalmente, habrá un administrador que podrá **adminstrar el perfil** de cada uno de los usuarios registrados en la plataforma (editar, borrar, etc) así como modificar el rol de cada uno de estos. También tendrá **control total sobre los comentarios y valoraciones**.
 
-## Fases de desarrollo. Versiones
+## Fases de desarrollo. 
+Necesitamos organizarnos un poco. Vamos a planificar como vamos a llevar a cabo las diferentes fases para cumplir con nuestros objetivos:
+1. **Definición del proyecto y requisitos básicos**: En primer lugar debemos tener muy claro que espera de la aplicación por lo que anotaremos cada funcionalidad teniendo en cuanta los diferentes actores (roles de acceso).
+2. **Definición de las versiones**: Una vez conocemos los requisitos del proyecto dividiremos el trabajo en versiones que irán ampliando sus funcionalidades.
+3. **Planificación del proyecto**: Basandonos en la metodología Agile devidiremos todo el proceso en diferentes tareas para cada versión que: agruparemos, temporizaremos y representaremos mediante diagramas.
+4. **Fase de desarrollo**: Una vez tenemos el trabajo planificado comenzaremos a desarrollar cada tarea, revisando y actualizando en cada momento la planificación. Al finalizar cada versión, una vez testeada y desplegada en producción, pasaremos a siguiente versión.
+
+
+
+
+## Versiones
 Vamos a dividir el desarrollo del proyecto en diferentes versiones a partir de las funcionalidades que podrá realizar:
 - VERSIÓN 1.0: Implementación de la publicación de proyectos
 - VERSIÓN 2.0: Implementación de los comentarios de los proyectos

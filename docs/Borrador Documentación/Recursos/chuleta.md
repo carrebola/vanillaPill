@@ -142,4 +142,17 @@ Podemos poner notas al pie de página [^1]
 
 </div>
 
+## Diagramas de flujo
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+
+
+
 [^1]:  Esto es una nota al pie de página

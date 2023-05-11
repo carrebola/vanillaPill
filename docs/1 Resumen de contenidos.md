@@ -6,8 +6,8 @@ tags:
 
 position: 1
 ---
-# Índice de contenidos
 # Introducción
+## Introducción
 - Antecedentes
 - Objetivos generales
 - Cómo está organizada la documentación
@@ -16,7 +16,7 @@ position: 1
 
 ## El proyecto 'Vanilla Games'
 - Escenario del proyecto
-- Requisitos del proyecto
+- Requisitos del proyecto y casos de uso general
 - Fases de desarrollo. Versiones
 - Arquitectura y tecnologías
   - ¿Qué arquitectura vamos a utilizar en nuestro proyecto?
@@ -26,25 +26,20 @@ position: 1
 - Despliegue de nuestra aplicación.
 
 
+## Stack tecnológico
+  - Resumen de tecnologías y herramientas empleadas
 
 ## Metodologías Agile
   - ¿Qué son las metodología Agile?
   - Terminología: Historias, tareas, sprints, backlogs, diagramas de Gantt, etc.
 
-## Planificación del proyecto
-  - Backlog de producto.
-    - Definición de historias de usuario.
-    - Definición de tareas para cada historia.
-  - Planificación de sprints:
-    - Backlog de sprint.
-    - Objetivos del sprint y criterios de aceptación para las historias de usuario.
-  - Temporización y secuencia
-    - Estimación temporal de las historias y tareas
-    - Secuenciación de las historias
-    - Asignación de recursos y personal responsable para cada historia/tarea
-    - Diagrama de Gantt
-  - Seguimiento del progreso del proyecto
+# Versión 1.0 
 
+## Requesitos y planificación
+- Definición de los casos de uso generales
+- Planificación del proyecto
+
+## Casos de uso especificos y diagramas de flujo
 ## FRONTEND: Diseño de la interfaz de usuario
   - Consideraciones del DCU (Diseño centrado en el usuario)
   - Modelado de usuarios

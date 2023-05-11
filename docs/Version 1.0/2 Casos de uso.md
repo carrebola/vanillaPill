@@ -8,6 +8,7 @@ position: 20
 ---
 
 
+
 ### Actor: Usuario 'Anónimo'
 1. Puede **Ver la página principal** y a la información general *Recursos*, *A cerca de *, etc.
 2. Puede registrarse
