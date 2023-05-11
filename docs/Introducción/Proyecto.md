@@ -1,5 +1,5 @@
 ---
-title: Proyecto
+title: El proyecto Vanilla Games
 sidebar_position: 20
 tags:
   - Agile
@@ -42,6 +42,7 @@ A la hora de decidir la arquitectura a implementar en el desarrollo de nuestro p
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+:::info ARQUITECTURAS
 <Tabs>
   <TabItem value="Server-side rendering (SSR)" label="Server-side rendering (SSR)" default>
     <h3>Server-side rendering (SSR): </h3>
@@ -66,32 +67,55 @@ En SSG, el contenido de una página web se genera de antemano en archivos HTML e
   
 </Tabs>
 
-:::info ARQUITECTURAS
+
 Aquí Tienes más información sobre las [ diferentes arquitecturas](#).
 :::
-### Nosotros aplicaremos renderizado en el lado del cliente (CSR)
-En nuestro caso **nos basaremos en CSR**, es decir, renderizamos todo el código html en el navegador. El cliente solo se encargará de responder a las peticiones devolviendo los datos solicitados (en formato json). De esta manera podemos dividir la implementación del proyecto en **FRONTEND** y *BACKEND*, separando cada funcionalidad y desarrollándola de manera independiente.
+### ¿Que arquitectura vamos a utilizar en nuestro proyecto?
+En nuestro caso **nos basaremos en CSR**, es decir, renderizamos todo el código html en el navegador. El cliente solo se encargará de responder a las peticiones devolviendo los datos solicitados (en formato json). De esta manera podemos dividir la implementación del proyecto en **FRONTEND** y **BACKEND**, separando cada funcionalidad y desarrollándola de manera independiente.
 
-### Para la creación del FrontEnd y el Diseño de la interfície
-En primer lugar crearemos los **bocetos** de nuestra aplicación que, más tarde, evolucionarán hacia el **Wireframe** y finalmente al **Mockup** (diseño con colores y tipografías definitivas). Para el diseño de este último y para implementación de la guía de estilos utilizaremos la herramienta [**FIGMA**](http://www.fpllefia.com).
+### ¿Como diseñaremos nuestro FrontEnd ?
+#### Diseño de la interficie
+En primer lugar, **para el diseño de la interficie**, crearemos los **bocetos** de nuestra aplicación (con papel y lapiz, como se ha hecho siempre).
 
-Para el **Frontend** crearemos una [**SPA**](#), es decir, una página única que actualizará las diferentes secciones en función de la funcionalidad deseada. 
+Más tarde, éstos evolucionarán hacia el **Wireframe** (Diseño de alambres carente de estilo) que finalmente se convertirá en un **Mockup** (diseño con colores y tipografías definitivas). Para el diseño de este último y para implementación de la **guía de estilos** utilizaremos la herramienta [**FIGMA**](http://www.fpllefia.com).
 
-En el diseño de la SPA emplearemos **html5**, **css3** y el framework [**Bootstrap 5**](https://getbootstrap.com/). Utilizaremos una plantilla [**Bootswatch**](https://bootswatch.com/) que adaptaremos a nuestro diseño mediante [**SASS**](#).
-Toda la lógica de programación la crearemos con VanillaJS , es decir, con Javascript puro (ES6, sin usar frameworks)
+#### Maquetación del frontend
 
-### Usaremos SUPABASE como servicio de Backend
+En primer lugar crearemos los prototipos utilizando **html5**, **css3** y el framework [**Bootstrap 5**](https://getbootstrap.com/). Utilizaremos una plantilla [**Bootswatch**](https://bootswatch.com/) que adaptaremos a nuestro diseño mediante [**SASS**](#).
+
+Una vez tenemos los prototipos html creados, los integraremos en la SPA e implementaremos la lógica de programación utilizando **VanillaJS** , es decir, con Javascript puro (ES6, sin usar frameworks)
+
+> Tranquilo, **es normal que no hayas entendido nada** aún... pero ten paciencia, porque todo esto se explica en el *Módulo 9 - Diseño de interficies* y en el *Módulo 6 - Programación del lado del cliente (javascript)*.
+
+### ¿Como implementaremos las funcionalidades del BackEnd?
+#### Usaremos SUPABASE como servicio de Backend
 En el lado del backend utilizaremos Supabase como servicio backend. 
-Este servicio nos permite almacenar la información en **bases de datos relacionales** en un entorno basado en **postgreSQL**.
-Nos ofrece un sistema de **autenticación** basado en proveedores como google, github, etc.
-Nos ofrece un sistema de control de accesos según roles a través de las **políticas de permisos**.
-Nos ofrece un **storage** de almacenamiento de archivos (para las imágenes) en los buckets que nos permite configurar.
-Finalmente, nos ofrece una **API en javascript** para las peticiones más frecuentes que atacan a las tablas de la bd ([CRUD](#)) así como un sistema de **funciones personalizadas** (con sus correspondiente api en js) para hacer consultas específicas (por ejemplo, consultas multitabla)
 
-### Nuestro entorno de desarrollo... VSCODE
-En el entorno de desarrollo tendremos a **VSCode** trabajando sobre [**Nodejs**](#) y su gestor de paquetes **npm**. Configuraremos el IDE con los **plugins** necesarios para facilitar un buen flujo de trabajo.
+Este servicio nos permite almacenar la información en **bases de datos relacionales** en un entorno basado en **postgreSQL**.
+
+También nos ofrece, entre otros:: 
+- Un sistema de **autenticación** basado en proveedores como google, github, etc.
+
+- Un sistema de control de accesos según roles a través de las **políticas de permisos**.
+
+- Un **storage** de almacenamiento de archivos (para las imágenes) en los buckets que nos permite configurar.
+
+- Una **API en javascript** para las peticiones más frecuentes que atacan a las tablas de la bd ([CRUD](#)) así como un sistema de **funciones personalizadas** (con sus correspondiente api en js) para hacer consultas específicas (por ejemplo, consultas multitabla)
+
+> *Nos va a tocar desenpolvar nuestros conocimientos de **SQL y Posgree** que aprendimos en el **Módulo 4 - Base de datos**... pero tranquilo, iremos iremos refrescando la memória mientras explicamos el resto de conceptos.*
+
+
+### Nuestro entorno de desarrollo:  VSCODE
+En el entorno de desarrollo tendremos a **VSCode** trabajando sobre [**Nodejs**](#) y su gestor de paquetes **npm**. 
+
+Configuraremos el IDE con los **plugins** necesarios para facilitar un buen flujo de trabajo.
+
 Formatearemos el código siguiendo el estándar '**Standard**' mediante herramientas de verificación de código como '**Eslint**'.
-Trabajaremos con un repositorio **Git** que sincronizaremos con una cuenta de **Github**. Emplearemos el flujo de trabajo ‘**Flujo de rama de funcionalidad**’. Es decir, crearemos ramas específicas para cada funcionalidad que integraremos en la rama principal una vez testadas las funcionalidades. Así, nuestro repositorio reflejará todo el proceso de trabajo, las diferentes versiones, etc.
+
+Para el control de versiones trabajaremos con un repositorio **Git** que sincronizaremos con una cuenta de **Github**. 
+
+En el proceso de desarrollo emplearemos el flujo de trabajo ‘**Flujo de rama de funcionalidad**’. Es decir, crearemos ramas específicas para cada funcionalidad que integraremos en la rama principal una vez testadas las funcionalidades. Así, nuestro repositorio reflejará todo el proceso de trabajo, las diferentes versiones, etc.
+
 ### Y para el despliegue de nuestras aplicaciones
 Desplegaremos el proyecto en **github pages** (en la fase de pruebas) y utilizaremos el servicio  **RailWay** para el despliegue en producción.
 
