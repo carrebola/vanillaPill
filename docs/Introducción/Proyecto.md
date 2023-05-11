@@ -27,7 +27,7 @@ Por otro lado, el perfil desarrollador debería poder **realizar comentarios** d
 
 Finalmente, habrá un administrador que podrá **adminstrar el perfil** de cada uno de los usuarios registrados en la plataforma (editar, borrar, etc) así como modificar el rol de cada uno de estos. También tendrá **control total sobre los comentarios y valoraciones**.
 
-## Fases de desarrollo
+## Fases de desarrollo. Versiones
 Vamos a dividir el desarrollo del proyecto en diferentes versiones a partir de las funcionalidades que podrá realizar:
 - VERSIÓN 1.0: Implementación de la publicación de proyectos
 - VERSIÓN 2.0: Implementación de los comentarios de los proyectos
@@ -105,7 +105,7 @@ También nos ofrece, entre otros::
 > *Nos va a tocar desenpolvar nuestros conocimientos de **SQL y Posgree** que aprendimos en el **Módulo 4 - Base de datos**... pero tranquilo, iremos iremos refrescando la memória mientras explicamos el resto de conceptos.*
 
 
-### Nuestro entorno de desarrollo:  VSCODE
+## Nuestro entorno de desarrollo:  VSCODE
 En el entorno de desarrollo tendremos a **VSCode** trabajando sobre [**Nodejs**](#) y su gestor de paquetes **npm**. 
 
 Configuraremos el IDE con los **plugins** necesarios para facilitar un buen flujo de trabajo.
@@ -116,7 +116,7 @@ Para el control de versiones trabajaremos con un repositorio **Git** que sincron
 
 En el proceso de desarrollo emplearemos el flujo de trabajo ‘**Flujo de rama de funcionalidad**’. Es decir, crearemos ramas específicas para cada funcionalidad que integraremos en la rama principal una vez testadas las funcionalidades. Así, nuestro repositorio reflejará todo el proceso de trabajo, las diferentes versiones, etc.
 
-### Y para el despliegue de nuestras aplicaciones
+## Y para el despliegue de nuestras aplicaciones
 Desplegaremos el proyecto en **github pages** (en la fase de pruebas) y utilizaremos el servicio  **RailWay** para el despliegue en producción.
 
 PONER AQUÍ IMAGENES DE LAS TECNOLOGÍAS Y COMPLETAR LAS ETIQUETAS!!!

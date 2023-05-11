@@ -21,6 +21,11 @@ En esta guía pondremos en práctica una gran parte de los conocimientos adquiri
 A nivel organizativo dividiremos el proyecto en diferentes **versiones** (dependiendo del nivel de funcionalidad y dificultad), y **comenzaremos con una versión mínima viable (MVP)**, con el enfoque propio de la **Metodología Lean Startup.**
 No obstante, para el desarrollo de cada una de estas versiones trabajaremos con la **metodología Agile**.
 
+## ¿Cómo planificamos las diferentes tareas y su temporización a la hora de realizar el proyecto?
+En la metodología Agile el trabajo se divide en **‘historias’**, las cuales desglosaremos en diferentes **tareas**. Estas historias se agrupan a su vez en **‘sprints’** (que darán lugar a funcionalidades testeables que iremos valorando a lo largo de su recorrido). 
+
+Así, a lo largo de esta guía, iremos realizando cada una de las historias según una **planificación previa** (donde habremos definido el tiempo a destinar en cada historia y los plazos de inicio y finalización), y testeando y valorando el resultado obtenido al finalizar cada uno de los sprints según sus plazos de ejecución.
+
 :::info Metodologías
 <details>
   <summary>Metodologías Agile y Lean Startup</summary>
@@ -32,8 +37,7 @@ No obstante, para el desarrollo de cada una de estas versiones trabajaremos con 
   </div>
 </details>
 :::
-En la metodología Agile el trabajo se divide en **‘historias’**, las cuales desglosaremos en diferentes **tareas**. Estas historias se agrupan a su vez en **‘sprints’** (que darán lugar a funcionalidades testeables que iremos valorando a lo largo de su recorrido). 
-Así, a lo largo de esta guía, iremos realizando cada una de las historias según una **programación previa** (donde habremos definido el tiempo a destinar en cada historia y los plazos de inicio y finalización), y testeando y valorando el resultado obtenido al finalizar cada uno de los sprints según sus plazos de ejecución.
+
 
 
 
@@ -55,7 +59,7 @@ Y en ventanas como estas podrás enlazar a los apuntes y otras referencias para 
 Puedes encontrar más [información sobre los bucles aquí.](https://lenguajejs.com/javascript/introduccion/bucles/)
 :::
 
-## Entonces, ¿para que sirve todo esto?
+## Entonces, ¿para qué sirve todo esto?
 Pues todo esto sirve para **aprendas a crear un proyecto desde 0**, paso a paso, siguiendo las sesiones en clase y **con el soporte de esta documentación.**
 
 La idea es que, durante las clases, yo iré explicando y generando el código del proyecto. **Tu misión es seguirme, copiando y ejecutando cada uno de los scripts que iremos programando juntos.** Pero si en algún momento te pierdes... ¡aquí lo tienes todo!

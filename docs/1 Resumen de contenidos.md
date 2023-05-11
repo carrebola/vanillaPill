@@ -7,37 +7,29 @@ tags:
 position: 1
 ---
 # Índice de contenidos
- 
-# Introducción 
+# Introducción
+- Antecedentes
+- Objetivos generales
+- Cómo está organizada la documentación
+- Cómo planificamos las diferentes tareas y su temporización a la hora de realizar el proyecto
+- Entonces, ¿para que sirve todo esto?
 
-# Antecedentes
+## El proyecto 'Vanilla Games'
+- Escenario del proyecto
+- Requisitos del proyecto
+- Fases de desarrollo. Versiones
+- Arquitectura y tecnologías
+  - ¿Qué arquitectura vamos a utilizar en nuestro proyecto?
+  - ¿Como diseñaremos nuestro FrontEnd ?
+  - ¿Como implementaremos las funcionalidades del BackEnd?
+- Nuestro entorno de desarrollo: VSCODE
+- Despliegue de nuestra aplicación.
 
-## Objetivos
-  - Creación de una aplicación web e-learning
-  - Documentación de un proyecto real: Fases de desarrollo, stack tecnológico, diseño, programación, etc.
-  - Generación de recursos: Documentación, tutoriales, etc.
-  - Consolidación de sinergias entre módulos del ciclo formativo de DAW. 
-  
+
+
 ## Metodologías Agile
   - ¿Qué son las metodología Agile?
   - Terminología: Historias, tareas, sprints, backlogs, diagramas de Gantt, etc.
-  - Como utilizar esta documentación
-
-## Definición del proyecto. *APP para proyectos de DAW*
-  - Definición del proyecto de primer nivel: 'APP para proyectos de DAW'
-  - Escalabilidad del proyecto
-  - Propuestas de mayor nivel: 
-    - Nivel medio: Sistema de comentarios. Filtros
-    - Nivel superior: Entorno de tareas, diagramas de Gannt y sistema de puntuación de tareas basado en criterios y estrellas
-### Requerimentos
-  - Requisitos del sistema
-  - Requisitos del usuario
-    - Requisitos funcionales
-    - Requisitos no funcionales
-  - Casos de uso. Diagrama de casos de uso
-## Elección de la arquitectura de desarrollo y tecnologías
-  - Elección del tipo de aquitectura (modelo de tres capas, microservicios, etc)
-  - Elección del Stack tecnológico
 
 ## Planificación del proyecto
   - Backlog de producto.
