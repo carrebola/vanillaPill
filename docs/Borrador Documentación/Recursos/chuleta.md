@@ -2,8 +2,6 @@
 sidebar_position: 190
 ---
 
-# Historia 190. Crear documentación. Docusaurus.
-
 # MI CHULETA:
 
 ## Importar TABS
@@ -85,8 +83,31 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 :::
 
-## Imagenes
-<!-- ![Example banner](./static/../../build/img/Bootstrap_logo.svg) -->
+## Imágenes
+![Example banner](../../../static/imagenes/stack/bootstrap_logo.svg)
+
+## desde html
+<div style={{display: 'flex'}}>
+
+  <div style={{border: '1px solid', width: '200px', padding: '20px', margin: '10px', boxShadow: "10px 10px 10px #cccccc"}}>
+
+  Hola, estoy en un div al que le estamos aplicandos estilos
+
+  ![Example banner](../../../static/imagenes/stack/bootstrap_logo.svg)
+
+  </div>
+
+  <div style={{border: '1px solid', width: '200px', padding: '20px', margin: '10px', boxShadow: "10px 10px 10px #cccccc"}}>
+
+  Hola, estoy en un div al que le estamos aplicandos estilos
+
+  ![Example banner](../../../static/imagenes/stack/bootstrap_logo.svg)
+
+  </div>
+
+</div>
+
+## Información que se despliega
 
 ### detalles toggle
 <details>
@@ -102,3 +123,23 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
     </details>
   </div>
 </details>
+
+
+Podemos poner notas al pie de página [^1]
+
+## Tablas
+
+| Cabecera A          | Cabecera B          |
+| -:                  | :-:                 |
+| Campo A1            | Texto alineado en el centro   |
+| Texto alineado a la derecha   | Otro texto   |
+ 
+
+## iframes
+<div style={{textAlign: 'center'}}>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UVauEId-jJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+[^1]:  Esto es una nota al pie de página

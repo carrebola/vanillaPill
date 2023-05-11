@@ -1,12 +1,13 @@
 ---
-
+id: intro
 title: Resumen de contenidos
 tags:
   - Introducción
 
-position: 0
+position: 1
 ---
-
+# Índice de contenidos
+ 
 # Introducción 
 
 # Antecedentes
