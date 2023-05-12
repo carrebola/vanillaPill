@@ -109,4 +109,4 @@ Basandonos en estas premisas, y respondiendo a las preguntas anteriores, he crea
 
 ### Prototipos y test de usuarios
 
-Dado hemos divido nuestro proyecto en diferentes versiones, los prototipos (bocetos, wireframes y mockup) y test de usuarios los diseñaremos para cada versión, comenzando con la version 1.0 (en el siguiente apartado)
+Dado que hemos divido nuestro proyecto en diferentes versiones, los prototipos (bocetos, wireframes y mockup) y sus correspondientes tests de usuarios los diseñaremos para cada versión, comenzando con la version 1.0 (en el siguiente apartado)
