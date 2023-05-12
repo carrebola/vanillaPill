@@ -4,7 +4,7 @@ title: Resumen de contenidos
 tags:
   - Introducción
 
-position: 1
+position: 0
 ---
 # Introducción
 ## Introducción

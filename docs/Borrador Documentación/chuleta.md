@@ -84,7 +84,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 
 ## Imágenes
-![Example banner](../../../static/imagenes/stack/bootstrap_logo.svg)
+![Example banner](../../static/imagenes/stack/bootstrap_logo.svg)
 
 ## desde html
 <div style={{display: 'flex'}}>
@@ -93,7 +93,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
   Hola, estoy en un div al que le estamos aplicandos estilos
 
-  ![Example banner](../../../static/imagenes/stack/bootstrap_logo.svg)
+[Example banner](/imagenes/stack/bootstrap_logo.svg)
 
   </div>
 
@@ -101,7 +101,8 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
   Hola, estoy en un div al que le estamos aplicandos estilos
 
-  ![Example banner](../../../static/imagenes/stack/bootstrap_logo.svg)
+![Example banner](../../static/imagenes/stack/bootstrap_logo.svg)
+
 
   </div>
 
