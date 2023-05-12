@@ -113,15 +113,7 @@ Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
   Como programador quiero despleguar la aplicación en producción.
 
  
-### Temporización y secuencia:
+### Microsoft Project:
 
-Ahora que tenemos las historias definidas, vamos a crear un diagrama de secuencia para determinar que historias dependen de otras y en que historias podemos trabajar de manera simultanea por no ser dependientes.
+Ahora que tenemos las historias definidas, vamos a crear un proyecto con microsoft Project para poder temporizar y secuenciar las historias.
 
-Para ello haremos una gráfica de secuenciación aprovechando las caracteristicas de FIGMA.
-
-#### Gráfica de secuenciación
-
-#### Temporización y diagrama de Gantt
-  - Estimación temporal de las historias y tareas
-  - Asignación de recursos y personal responsable para cada historia/tarea
-  - Diagrama de Gantt
