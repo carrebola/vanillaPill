@@ -34,7 +34,7 @@ Estas serían las historias a planificar en la entrega de la versión 1 de nuest
 
 - **Historia x. Mockup y guía de estilos:**
   Como diseñador quiero dibujar los mockups y crear la guía de estilos a partir de los colores, tipografías, etc seleccionadas.
-
+#### SPRINT 2: Frontend
 - **Historia x. Entorno de desarrollo:**
   Como diseñador/programador quiero instalar y configurar las herramientas necesarias para programar la aplicación, trabajar con repositorios y crear un entorno integración continua y despliegue continuo.
 
@@ -44,7 +44,7 @@ Estas serían las historias a planificar en la entrega de la versión 1 de nuest
 - **Historia x. Validaciones de formularios:**
   Como programador quiero definir e implementar las validaciones de los formularios del proyecto
  
-#### Sprint 2: Implementación de la SPA
+#### Sprint 3: Implementación de la SPA
 - **Historia x. Creación de proyecto basado en SPA y organización de archivos para las vistas basadas en módulos js:**
   Como programador quiero configurar el sistema de carpetas para las vistas y crear los archivos a partir de componentes html basados en los prototipos.
 
@@ -71,7 +71,7 @@ Como usuario registrado quiero poder recordar los datos de sesión al loguearme 
 - **Historia x. Actualización de componentes header y menús en función del rol de usuario logueado:**
 Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
 
-#### Sprint 3: Backend
+#### Sprint 4: Backend
 
 - **Historia x. Diseño de la base de datos:**
   Como programador quiero diseñar la base de datos en base a diagrama UML (diagrama entidad-relación)
@@ -85,7 +85,7 @@ Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
 - **Historia x. Implementación de un ORM para mapping de la base de datos:**
   Como programador quiero diseñar el diagrama de clases e implementarlo en javascript para tener un mapping de la bd.
 
-#### Sprint 4: Integración del frontend y el backend
+#### Sprint 5: Integración del frontend y el backend
 
 - **Historia x. Login y registro:**
   Como usuario quiero poder registrarme e iniciar sesión.
@@ -101,7 +101,7 @@ Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
 
 - **Historia x. Gestión de usuarios:**
   Como usuario registrado 'administrador' quiero poder ver, editar y borrar los usuarios del sistema.
-#### Sprint 5: Revisión y despliegue en producción de la versión 1.0
+#### Sprint 6: Revisión y despliegue en producción de la versión 1.0
 
 - **Historia x. Test de usuarios**
   Como diseñador quiero realizar tests de usuarios a un grupo de usuarios focales.
@@ -112,8 +112,7 @@ Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
 - **Historia x. Despliegue en producción (RAILWAY)**
   Como programador quiero despleguar la aplicación en producción.
 
- 
-### Microsoft Project:
+## Herramientas para la planificación, diagramas de Gantt, pizarra Kanban, etc.
 
-Ahora que tenemos las historias definidas, vamos a crear un proyecto con microsoft Project para poder temporizar y secuenciar las historias.
+
 

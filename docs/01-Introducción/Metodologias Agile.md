@@ -1,5 +1,5 @@
 ---
-title: Metodología Agile
+title: Metodología Agile. Conceptos
 tags:
   - Agile
   - Lean Startup

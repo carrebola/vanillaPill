@@ -1,9 +1,9 @@
 ---
-title: Diseño centrado en el usuario
+title: Diseño centrado en el usuario. Fichas de usuario
 tags:
   - Agile
   - Lean Startup
-sidebar_position: 10
+sidebar_position: 20
 ---
 
 Uno de los procesos más importante en el desarrollo de una aplicación web es el **diseño de la interfaz**. Existe una metodología conocida como DCU o Diseño Centrado en el Usuario que incluye técnicas de gran ayuda para llevar a cabo este proceso con éxito.
@@ -60,7 +60,9 @@ Para crear los modelos de personas necesitamos hacernos algunas preguntas como p
 
 El objetivo es crear una serie de **fichas de modelo de persona** que nos permitan tener siempre presente a **quién va dirigida nuestra aplicación web**.
 
-Basandonos en estas premisas, y respondiendo a las preguntas anteriores, he creado estas tres fichas:
+Basandonos en estas premisas, y respondiendo a las preguntas anteriores, he creado estas tres **fichas de usuario**:
+
+## Fichas de usuario
 
 <div style={{display: 'flex', flexWrap: 'wrap'}}>
 
@@ -109,4 +111,4 @@ Basandonos en estas premisas, y respondiendo a las preguntas anteriores, he crea
 
 ### Prototipos y test de usuarios
 
-Dado que hemos divido nuestro proyecto en diferentes versiones, los prototipos (bocetos, wireframes y mockup) y sus correspondientes tests de usuarios los diseñaremos para cada versión, comenzando con la version 1.0 (en el siguiente apartado)
+Dado que hemos divido nuestro proyecto en diferentes versiones, los prototipos (bocetos, wireframes y mockup) y sus correspondientes tests de usuarios los diseñaremos para cada versión, comenzando con la version 1.0 (en la siguiente sección)

@@ -1,5 +1,5 @@
 ---
-title: Introducción
+title: De qué va esto...
 tags:
   - Agile
   - Lean Startup

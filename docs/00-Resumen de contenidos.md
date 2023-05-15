@@ -1,20 +1,22 @@
 ---
 id: intro
-title: Resumen de contenidos
+title: Index
 tags:
   - Introducción
 
 position: 0
 ---
-# Introducción
+
+# Index
 ## Introducción
+### De qué va esto...
 - Antecedentes
 - Objetivos generales
 - Cómo está organizada la documentación
 - Cómo planificamos las diferentes tareas y su temporización a la hora de realizar el proyecto
 - Entonces, ¿para que sirve todo esto?
 
-## El proyecto 'Vanilla Games'
+### El proyecto 'Vanilla Games'
 - Escenario del proyecto
 - Requisitos del proyecto y casos de uso general
 - Fases de desarrollo. Versiones
@@ -23,22 +25,36 @@ position: 0
   - ¿Como diseñaremos nuestro FrontEnd ?
   - ¿Como implementaremos las funcionalidades del BackEnd?
 - Nuestro entorno de desarrollo: VSCODE
-- Despliegue de nuestra aplicación.
+- Y para el despliegue de nuestras aplicaciones
 
 
-## Stack tecnológico
+### Stack tecnológico (PENDIENTE)
   - Resumen de tecnologías y herramientas empleadas
 
-## Metodologías Agile
-  - ¿Qué son las metodología Agile?
-  - Terminología: Historias, tareas, sprints, backlogs, diagramas de Gantt, etc.
+### Metodologías Agile. Conceptos (PENDIENTE)
+- ¿Qué son las metodología Agile?
+- Terminología: Historias, tareas, sprints, backlogs, diagramas de Gantt, etc.
+- Como Planificamos el desarrollo del proyecto
 
-# Versión 1.0 
+## Técnicas pra el diseño de la interficie
+### Benchmarking o estudio de buenas prácticas
+- Estdudio de la competencia
+### Diseño centrado en el usuario (DCU). Fichas de usuario
+- Modelado de personas
+- Fichas de usuario
 
-## Requesitos y planificación
-- Definición de los casos de uso generales
-- Planificación del proyecto
+### 
 
+
+## Versión 1.0 
+
+### Requesitos y diagrama de casos de uso
+- Casos de uso. Definición básica
+- Diagrama de casos de uso
+### Planificación del proyecto
+- Backlog de producto y de sprint.
+- Planificación, diagramas de Gantt, pizarra Kanban, etc.
+- Microsoft Project
 ## Casos de uso especificos y diagramas de flujo
 ## FRONTEND: Diseño de la interfaz de usuario
   - Consideraciones del DCU (Diseño centrado en el usuario)

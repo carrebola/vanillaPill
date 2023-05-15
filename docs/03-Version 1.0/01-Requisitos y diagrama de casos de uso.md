@@ -18,15 +18,12 @@ Vamos a definir los **casos de uso para la versión 1** de nuestro proyecto. Una
 - **Cerrar sesión**: Un usuario puede cerrar su sesión en la plataforma en cualquier momento.
 - **Editar perfil**: Un usuario registrado puede editar su perfil, actualizando su nombre, apellidos, email o contraseña.
 - **Ver proyectos**: Un usuario registrado puede ver un listado de proyectos publicados por los desarrolladores.
-- Filtrar proyectos: Un usuario registrado puede filtrar los proyectos a partir de coincidencias en un buscador por nombre o descripción.
-- **Ver detalle de proyecto**: Un usuario registrado puede ver el detalle de un proyecto en particular, incluyendo la información detallada del proyecto, la imagen, los enlaces a servidor de pruebas y repositorio de código, etc.
 - **Publicar proyecto**: Un usuario con el perfil de desarrollador puede publicar un proyecto proporcionando información como nombre, descripción, imagen representativa, enlaces a servidor de pruebas y repositorio de código, estado del proyecto, etc.
 - **Editar proyecto**: Un usuario con el perfil de desarrollador puede editar un proyecto que haya publicado previamente, actualizando la información del proyecto.
 - **Eliminar proyecto**: Un usuario con el perfil de desarrollador puede eliminar un proyecto que haya publicado previamente.
-- **Editar usuario**: Un administrador puede editar el perfil de cualquier usuario registrado en la plataforma.
+- **Ver/Editar usuarios**: Un adminsrador puede ver una tabla con todos los usuarios que hay registrados y editar la información, incluido el ROL de usuario.
 - **Eliminar usuario**: Un administrador puede eliminar cualquier usuario registrado en la plataforma.
-- **Cambiar rol de usuario**: Un administrador puede cambiar el perfil de cualquier usuario registrado en la plataforma de usuario a desarrollador o viceversa.
-- **Bloquear usuario**: Un administrador puede bloquear cualquier usuario registrado en la plataforma.
+
 
 ## Diagrama de casos de uso
 

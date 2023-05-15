@@ -3,7 +3,7 @@ title: Benchmarking o estudio de buenas prácticas
 tags:
   - Agile
   - Lean Startup
-sidebar_position: 20
+sidebar_position: 10
 ---
 
 Ahora que tenemos claro las **especificaciones** del proyecto **y a quíen va dirigido**, es hora de plantearnos cómo resolver las necesidades de los usuarios. 
