@@ -1,6 +1,6 @@
 ---
 
-title: Casos de uso especificos y diagramas de flujo
+title: Casos de uso específicos y diagramas de flujo.
 tags:
   - Casos de uso
 position: 20

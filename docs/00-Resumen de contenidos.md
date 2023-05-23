@@ -57,10 +57,8 @@ position: 0
 - Microsoft Project
 ## Casos de uso especificos y diagramas de flujo
 ## FRONTEND: Diseño de la interfaz de usuario
-  - Consideraciones del DCU (Diseño centrado en el usuario)
-  - Modelado de usuarios
   - Diseño de Prototipos
-    - Borradores y Wireframes
+    - Bocetos y Wireframes
     - Mockup y Guía de estilos
   - Analisis de la Usabilidad
     - Test de usuarios

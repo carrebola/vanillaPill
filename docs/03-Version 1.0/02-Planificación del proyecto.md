@@ -10,6 +10,7 @@ Ahora que ya tenemos una idea general de qué funcionalidades debe realizar la v
 <details>
   <summary>¿Qué es el backlog de producto?</summary>
   
+
 **El Backlog de producto** (Product Backlog en inglés) es una herramienta clave en la metodología Scrum, utilizada para gestionar el trabajo a realizar en un proyecto de software o desarrollo de producto. 
 
 El backlog de producto es **una lista ordenada de todas las funcionalidades, características, requisitos y mejoras** que deben ser desarrollados en el producto para cumplir con los objetivos del proyecto.
