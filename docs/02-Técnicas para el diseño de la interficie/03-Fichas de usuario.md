@@ -1,9 +1,9 @@
 ---
-title: Diseño centrado en el usuario. Fichas de usuario
+title: Fichas de usuario
 tags:
   - Agile
   - Lean Startup
-sidebar_position: 20
+sidebar_position: 30
 ---
 
 Uno de los procesos más importante en el desarrollo de una aplicación web es el **diseño de la interfaz**. Existe una metodología conocida como DCU o Diseño Centrado en el Usuario que incluye técnicas de gran ayuda para llevar a cabo este proceso con éxito.

@@ -73,6 +73,14 @@ Para tener la información de manera gráfica vamos a utilizar uno de los **diag
 </details>
 
 :::
+
+Vamos a crear nuestro diagrama de casos de uso.
+
+:::tip 
+Para dibujar el diagrama de casos de uso una herramienta interesante puede ser [FIGMA.](http://www.figma.com).
+
+**Figma es una herramienta de diseño de interfaces de usuario (UI) y experiencia de usuario (UX)** basada en la nube. Permite a los diseñadores crear, prototipar y colaborar en diseños interactivos de alta calidad de forma colaborativa.
+:::
 El diagrama de casos de uso para la versión 1.0 sería el siguiente:
 
-![diagrama de casos de uso V1.0](imagenes/../../../static/imagenes/v1/casosUso/diagramaCasosUsoV1.png)
+![diagrama de casos de uso V1.0](imagenes/../../../static/imagenes/v1/casosUso/diagramaCasosUso_1.png)

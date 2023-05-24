@@ -56,6 +56,20 @@ position: 0
 - Planificación, diagramas de Gantt, pizarra Kanban, etc.
 - Microsoft Project
 ## Casos de uso especificos y diagramas de flujo
+- Casos de uso específicos
+   - Registrar usuario
+   - Recuperar contraseña
+   - Iniciar sesión
+   - Cerrar sesión
+   - Ver/Editar perfil
+   - Ver proyectos
+   - Publicar proyecto
+   - Editar proyecto
+   - Eliminar proyecto
+   - Ver/Editar usuario
+   - Eliminar usuario
+- Errores
+Ejemplo con precondición y postcondición
 ## FRONTEND: Diseño de la interfaz de usuario
   - Diseño de Prototipos
     - Bocetos y Wireframes
