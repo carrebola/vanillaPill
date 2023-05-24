@@ -10,6 +10,12 @@ position: 10
 
 Vamos a definir los **casos de uso para la versión 1** de nuestro proyecto. Una primera aproximación podría ser la siguiente:
 
+:::info Recuerda que...
+ 
+ Los **casos de uso** son una herramienta esencial para comprender y especificar los requisitos de un sistema, y para garantizar que el software desarrollado satisfaga las necesidades de los usuarios finales.
+ 
+:::
+
 ## Casos de uso. Definición básica
 
 - **Registrar usuario**: Un usuario puede registrarse en la plataforma proporcionando su nombre, apellidos, email y contraseña.
@@ -83,4 +89,9 @@ Para dibujar el diagrama de casos de uso una herramienta interesante puede ser [
 :::
 El diagrama de casos de uso para la versión 1.0 sería el siguiente:
 
+### Diagrma de casos de uso para la versión 1.0
 ![diagrama de casos de uso V1.0](imagenes/../../../static/imagenes/v1/casosUso/diagramaCasosUso_1.png)
+
+Este diagrama refleja de forma resumida qué acciones se pueden llevar a cabo en nuestro aplicación dependiendo del rol del usuario. 
+
+Ahora que tenemos claro todo **lo que debe hacer la versión 1.0**, *nuestra misión ahora es **planificar el trabajo** que se nos viene encima...*

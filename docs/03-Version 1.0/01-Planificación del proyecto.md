@@ -3,7 +3,7 @@
 
 ## Planificación del proyecto
 
-Ahora que ya tenemos una idea general de qué funcionalidades debe realizar la versión 1 de nuestro proyecto, vamos a crear el **backlog de proyecto**, es decir, vamos a desglosar el trabajo en **historias**, a continuación vamos a crear el **backlog de sprint** (agrupando las historias) para finalmente poder **planificar su temporización**
+Para poder planificar nuestro proyectoc, vamos a crear el **backlog de proyecto**, es decir, vamos a desglosar el trabajo en **historias**, a continuación vamos a crear el **backlog de sprint** (agrupando las historias) para finalmente poder **planificar su temporización**
 
 
 :::info 
@@ -23,15 +23,16 @@ El backlog de producto es una **herramienta valiosa para el desarrollo ágil de 
 ### Backlog de producto y de sprint. 
 Estas serían las historias a planificar en la entrega de la versión 1 de nuestro proyecto agrupadas por sprints:
 
+#### SPRINT 0: Requerimentos de la versión 1.0
+- **Historia x. Casos de uso especificos y diagramas de flujo**
+  Como desarrollador quiero definir las especificaciones y casos de uso para la versión 1.0.
 #### SPRINT 1: Diseño de la interficie
+
 - **Historia x. Modelado de usuarios:**
   Como diseñador quiero crear modelos de usuarios focales y secundarios basandonos en el DCU (Diseño centrado en usuario)
 
-- **Historia x. Bocetos:**
-  Como diseñador quiero dibujar los bocetos de todas las posibles pantallas del proyecto.
-
-- **Historia x: Wireframes funcional:**  
-  Como diseñador quiero dibujar los wireframes con funcionalidad para poder hacer tests de usuarios.
+- **Historia x. Bocetos y wireframes:**
+  Como diseñador quiero dibujar los bocetos de todas las posibles pantallas del proyecto y testear su funcionamiento.
 
 - **Historia x. Mockup y guía de estilos:**
   Como diseñador quiero dibujar los mockups y crear la guía de estilos a partir de los colores, tipografías, etc seleccionadas.
