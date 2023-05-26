@@ -11,13 +11,11 @@ position: 10
 
 ¡Estamos listos y hemos comenzado a desarrollar la **versión 1.0** de nuestro proyecto!
 
-En el apartado anterior hemos definido qué funcionalidades debe tener.
-
-Además, hemos analizado las diferentes arquitecturas y tecnologías y hemos optado por utilizar una CSR (SPA en javascript conectada a Supabase).
+En el apartado anterior hemos definido qué funcionalidades debe tener. Además, hemos analizado las diferentes arquitecturas y tecnologías y hemos optado por utilizar una CSR (Client Side Rendering basada en una SPA programada en Javascript y conectada a Supabase como servicio backend).
 
 Por lo tanto estamos en condiciones de definir cada una de las tareas que necesitaremos realizar para llevar a cabo esta primera versión del proyecto.
 
-Para poder planificar el trabajo, vamos a crear el **backlog de proyecto**, es decir, vamos a desglosar el trabajo en **historias**, a continuación vamos a crear el **backlog de sprint** (agrupando las historias) para finalmente poder **planificar su temporización**
+Para poder planificar el trabajo, vamos a crear el '**backlog de proyecto**', es decir, vamos a desglosar el trabajo en **historias** para, a continuación,  crear el **backlog de sprint** (donde agruparemos las historias por entregas). Finalmente vamos a  **planificar su temporización**, es decir, vamos a asignar un tiempo determinado a cada historia.
 
 
 :::info 
@@ -40,10 +38,14 @@ Estas serían las historias a planificar en la entrega de la versión 1 de nuest
 #### SPRINT 0: Requerimentos de la versión 1.0
 - **Historia x. Casos de uso especificos y diagramas de flujo**
   Como desarrollador quiero definir las especificaciones y casos de uso para la versión 1.0.
+
+  *(Esta historia ya hemos comenzado a trabajarla en apartados anteriores. No obstante, es importante que quede constancia de ello para poder hacer una valoración del tiempo total invertido.)*
 #### SPRINT 1: Diseño de la interficie
 
 - **Historia x. Modelado de usuarios:**
   Como diseñador quiero crear modelos de usuarios focales y secundarios basandonos en el DCU (Diseño centrado en usuario)
+  
+  *(Este trabajo ya la hemos realizado en el apartado 'Requisitos y casos de uso')*
 
 - **Historia x. Bocetos y wireframes:**
   Como diseñador quiero dibujar los bocetos de todas las posibles pantallas del proyecto y testear su funcionamiento.
