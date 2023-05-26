@@ -1,9 +1,23 @@
+---
 
+title: Planificación del proyecto
+tags:
+  - Requisitos
+position: 10
 
+---
 
 ## Planificación del proyecto
 
-Para poder planificar nuestro proyectoc, vamos a crear el **backlog de proyecto**, es decir, vamos a desglosar el trabajo en **historias**, a continuación vamos a crear el **backlog de sprint** (agrupando las historias) para finalmente poder **planificar su temporización**
+¡Estamos listos y hemos comenzado a desarrollar la **versión 1.0** de nuestro proyecto!
+
+En el apartado anterior hemos definido qué funcionalidades debe tener.
+
+Además, hemos analizado las diferentes arquitecturas y tecnologías y hemos optado por utilizar una CSR (SPA en javascript conectada a Supabase).
+
+Por lo tanto estamos en condiciones de definir cada una de las tareas que necesitaremos realizar para llevar a cabo esta primera versión del proyecto.
+
+Para poder planificar el trabajo, vamos a crear el **backlog de proyecto**, es decir, vamos a desglosar el trabajo en **historias**, a continuación vamos a crear el **backlog de sprint** (agrupando las historias) para finalmente poder **planificar su temporización**
 
 
 :::info 

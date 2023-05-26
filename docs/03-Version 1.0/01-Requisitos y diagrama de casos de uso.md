@@ -7,8 +7,13 @@ position: 10
 
 ---
 
+En la introducción de esta documentación, en la sección *El proyecto Vanilla Games*, en concreto en el apartado *Requisitos del proyecto y casos de uso general*, hemos definido qué se espera de nuestra aplicación web, a partir de los 'Casos de uso general'.
 
-Vamos a definir los **casos de uso para la versión 1** de nuestro proyecto. Una primera aproximación podría ser la siguiente:
+También hemos dividido todo el trabajo de desarrollo en diferentes versiones, con la intención de que nuestro proyecto esté operativo desde el inicio de su implementación, de manera que conforme evolucione a posteriores versiones, aumentaremos su nivel de funcionalidad.
+
+**Por lo tanto, vamos a comenzar por la versión 1.0.**
+
+Lo primero es definir los **casos de uso para esta versión**. Una primera aproximación podría ser la siguiente:
 
 :::info Recuerda que...
  

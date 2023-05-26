@@ -23,7 +23,7 @@ Para crear los modelos de personas necesitamos hacernos algunas preguntas como p
 
 El objetivo es crear una serie de **fichas de modelo de persona** que nos permitan tener siempre presente a **quién va dirigida nuestra aplicación web**.
 
-Basandonos en estas premisas, y respondiendo a las preguntas anteriores, he creado estas tres **fichas de usuario**:
+Basandonos en estas premisas, y respondiendo a las preguntas anteriores, vamos a crear tres **fichas de usuario**:
 
 ## Fichas de usuario
 

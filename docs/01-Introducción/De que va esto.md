@@ -1,12 +1,11 @@
 ---
-title: De qué va esto...
+title: ¿De qué va esto...?
 tags:
   - Agile
   - Lean Startup
 sidebar_position: 10
 ---
 
-# Introducción
 ## Antecedentes
 A lo largo del ciclo formativo de DAW se aprenden diferentes tecnologías, herramientas y procesos para el desarrollo de aplicaciones web. Pero en ocasiones, por diferentes motivos, resulta difícil contextualizar cada uno de estos aprendizajes, por lo que corremos el riesgo de estudiar, aprobar… y olvidar.
 

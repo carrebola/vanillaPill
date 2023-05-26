@@ -9,7 +9,7 @@ position: 0
 
 # Index
 ## Introducción
-### De qué va esto...
+### ¿De qué va esto...?
 - Antecedentes
 - Objetivos generales
 - Cómo está organizada la documentación
@@ -36,7 +36,7 @@ position: 0
 - Terminología: Historias, tareas, sprints, backlogs, diagramas de Gantt, etc.
 - Como Planificamos el desarrollo del proyecto
 
-## Técnicas pra el diseño de la interficie
+## Técnicas para el diseño de la interficie
 ### Benchmarking o estudio de buenas prácticas
 - Estdudio de la competencia
 ### Diseño centrado en el usuario (DCU). Fichas de usuario
