@@ -1,6 +1,6 @@
 ---
 
-title: Diseño de la interfaz. Bocetos
+title: Hist3a - Diseño de la interfaz. Bocetos 
 tags:
   - Bocetos
 position: 

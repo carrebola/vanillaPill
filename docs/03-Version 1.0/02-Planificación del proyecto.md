@@ -1,6 +1,6 @@
 ---
 
-title: Planificación del proyecto
+title: Hist1 - PLANIFICACIÓN DEL PROYECTO 
 tags:
   - Requisitos
 position: 10
@@ -36,21 +36,20 @@ El backlog de producto es una **herramienta valiosa para el desarrollo ágil de 
 Estas serían las historias a planificar en la entrega de la versión 1 de nuestro proyecto agrupadas por sprints:
 
 #### SPRINT 0: Requerimentos de la versión 1.0
-- **Historia x. Casos de uso especificos y diagramas de flujo**
+- **Historia 0. Requisitos y diagrama de casos de uso**
+  Como desarrollador, quiero definir de manera genérica las especificaciones de la aplicación.
+- **Historia 1. Planificación**
+  Como desarrollador, quiero definir de la planificación de todo el proceso de desarrollo del proyecto.
+- **Historia 2. Casos de uso especificos y diagramas de flujo**
   Como desarrollador quiero definir las especificaciones y casos de uso para la versión 1.0.
 
   *(Esta historia ya hemos comenzado a trabajarla en apartados anteriores. No obstante, es importante que quede constancia de ello para poder hacer una valoración del tiempo total invertido.)*
 #### SPRINT 1: Diseño de la interficie
 
-- **Historia x. Modelado de usuarios:**
-  Como diseñador quiero crear modelos de usuarios focales y secundarios basandonos en el DCU (Diseño centrado en usuario)
-  
-  *(Este trabajo ya la hemos realizado en el apartado 'Requisitos y casos de uso')*
-
-- **Historia x. Bocetos y wireframes:**
+- **Historia 3. Bocetos:**
   Como diseñador quiero dibujar los bocetos de todas las posibles pantallas del proyecto y testear su funcionamiento.
 
-- **Historia x. Mockup y guía de estilos:**
+- **Historia 4. Wireframes, Mockup y guía de estilos:**
   Como diseñador quiero dibujar los mockups y crear la guía de estilos a partir de los colores, tipografías, etc seleccionadas.
 #### SPRINT 2: Frontend
 - **Historia x. Entorno de desarrollo:**
