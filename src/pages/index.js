@@ -33,7 +33,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hola desde ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Una web de recursos para el desarrollo de aplicaiones web basadas en Javascript">
       {/* {<HomepageHeader />} */}
       <main>

@@ -64,6 +64,8 @@ Para tener la información de manera gráfica vamos a utilizar uno de los **diag
 
   Estos son solo algunos ejemplos de los diagramas UML más utilizados, pero hay otros diagramas, como el diagrama de estados, el diagrama de objetos y el diagrama de comunicación, que también se utilizan para modelar diferentes aspectos de un sistema. En general, los diagramas UML proporcionan una representación visual clara y sistemática del sistema, lo que facilita la comprensión, la comunicación y el diseño del software.
  
+  📖  <a href="#">Aquí encontrarás más información sobre los diagramas UML </a>📖
+
 </details>
 
 <details>
@@ -80,6 +82,8 @@ Para tener la información de manera gráfica vamos a utilizar uno de los **diag
   Los casos de uso se utilizan para capturar los requisitos funcionales del sistema y proporcionar una visión general de cómo interactúan los diferentes actores con el sistema. También ayudan a identificar los distintos escenarios de uso y las relaciones entre ellos. 
   
   El diagrama de casos de uso es una herramienta valiosa para comunicar y comprender las funcionalidades clave del sistema entre los desarrolladores, los usuarios y otros interesados en el proyecto de software.
+
+   📖  <a href="#">Aquí encontrarás más información sobre los diagramas de casos de uso </a>📖
     
 </details>
 

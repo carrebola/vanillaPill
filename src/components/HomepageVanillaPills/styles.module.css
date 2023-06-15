@@ -1,5 +1,5 @@
 
-.home {
+.homeIntro {
   color: white;
   padding: 50px;
   margin: 50px;
@@ -9,16 +9,16 @@
   justify-content: space-between;
   align-items: center;
  }
-.titulo{
+.homeIntro .titulo{
   font-size: 5rem;
 }
-h3{
+.homeIntro h3{
   font-size: 3rem;
   font-weight: 100;
   text-align: center;
   padding: 20px;
 }
- h3, .titulo{
+ .homeIntro h3, .titulo{
   color:white;
  }
  

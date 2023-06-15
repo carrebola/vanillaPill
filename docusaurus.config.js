@@ -109,7 +109,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `<img src="https://fpllefia.com/images/logo40web-.png" alt="fpllefia" width="150px"> <br> Copyright © ${new Date().getFullYear()} FPLLEFIA - Carlos Arrebola Montávez - carrebola@fpllefia.com`,
+        copyright: `<img src="https://fpllefia.com/images/logo40web-.png" alt="fpllefia" width="250px"> <br> Copyright © ${new Date().getFullYear()} FPLLEFIA - Carlos Arrebola Montávez - carrebola@fpllefia.com`,
       },
       prism: {
         //theme: lightCodeTheme,

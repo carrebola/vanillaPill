@@ -7,7 +7,17 @@ tags:
 position: 0
 ---
 
-# Index
+# Vanilla Games
+
+<div className='subtituloIntro'>
+<p>Vanilla Games es el nombre que recibe el proyecto que vamos a desarrollar en esta documentación. Es un proyecto sencillo, en las versiones iniciales, que se irá complicando a medida que vayamos trabajando en él.</p>
+<p>No obstante, la finalidad de este trabajo no es crear la app en sí, sino documentar todo el proceso de desarrollo.</p>
+
+<p>Así, este recurso aspira a ser una guía que te acompañe en todo el proceso de desarrollo de un proyecto, desde el diseño de los prototipos, hasta el despliegue en producción.  Si la sigues, acabarás aprendiendo, no solo a programar en javascript, sino a integrar todo lo que has aprendido hasta ahora en el ciclo formativo.</p>
+<p>La aplicación la crearemos integramente con HTML, CSS y javascript (con ayuda de Bootstrap para los estilos) en el lado del cliente. En el lado del servidor utilizaremos un servicio como backend (en nuestro caso Supabase). </p>
+</div>
+
+## Resumen de contenidos
 ## Introducción
 ### ¿De qué va esto...?
 - Antecedentes
@@ -55,7 +65,7 @@ position: 0
 - Backlog de producto y de sprint.
 - Planificación, diagramas de Gantt, pizarra Kanban, etc.
 - Microsoft Project
-## Casos de uso especificos y diagramas de flujo
+### Casos de uso especificos y diagramas de flujo
 - Casos de uso específicos
    - Registrar usuario
    - Recuperar contraseña
@@ -70,14 +80,28 @@ position: 0
    - Eliminar usuario
 - Errores
 Ejemplo con precondición y postcondición
-## FRONTEND: Diseño de la interfaz de usuario
-  - Diseño de Prototipos
-    - Bocetos y Wireframes
-    - Mockup y Guía de estilos
-  - Analisis de la Usabilidad
-    - Test de usuarios
-  - Consideraciones respecto a la Accesibilidad
-## Entorno de desarrollo para FrontEnd
+### FRONTEND: Diseño de la interfaz. Bocetos
+- Diseño de Bocetos
+  - Home y menús usuarios
+  - Regitro de un usuario
+  - Iniciar sesión
+  - Editar mi perfil
+  - Listado de todos los proyectos
+  - Listado de Mis proyectos
+  - Detalle de un proyecto
+  - Nuevo proyecto / Editar un proyecto
+  - Panel administración de proyectos
+  - Panel administración de usuarios
+
+### Test de usuarios inicial
+- Primer Test de Usabilidad
+- Conclusiones y modificaciones
+- Vista de proyectos
+- Vista del Panel de administraición de usuarios.
+### Wireframe, mockup y guía de estilos
+- Y nosotros, ¿necesitamos wireframe? ¿y mockup? ¿y guía de estilos?
+
+### Entorno de desarrollo para FrontEnd
   - Herramientas de desarrollo.
   - Instalación y configuración de VSCode. Plugins
   - Repositorios
@@ -100,7 +124,6 @@ Ejemplo con precondición y postcondición
   - Concepto de SPA basado en Vanilla Javascript
   - Configuración del entorno de desarrollo
     - Creación del proyecto basado en VITE
-    - Configuración del entorno de desarrollo
       - Instalación de librerias
       - ESLINT
       - Conexión con Repositorios y servidores
