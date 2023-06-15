@@ -4,7 +4,6 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   
-  
   {
     title: 'HTML',
     Svg: require('@site/static/img/HTML5_logo_and_wordmark.svg').default,

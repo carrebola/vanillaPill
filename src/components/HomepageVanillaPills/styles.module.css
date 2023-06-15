@@ -1,0 +1,24 @@
+
+.home {
+  color: white;
+  padding: 50px;
+  margin: 50px;
+  background-color: #2e5f85;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ }
+.titulo{
+  font-size: 5rem;
+}
+h3{
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px;
+}
+ h3, .titulo{
+  color:white;
+ }
+ 

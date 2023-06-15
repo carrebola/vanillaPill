@@ -1,14 +1,14 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+//const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VANILLA Pills',
-  tagline: 'Una web sobre Javascript',
-  favicon: 'img/favicon.ico',
+  tagline: 'Una web de recursos para el desarrollo de aplicaciones web basadas en Javascript',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://carrebola.github.io',
@@ -85,31 +85,31 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Documentos',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+          // {
+          //   title: 'Documentos',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           
-          {
-            title: 'Repositorio',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/carrebola',
-              },
-            ],
-          },
+          // {
+          //   title: 'Repositorio',
+          //   items: [
+          //     {
+          //       label: 'Blog',
+          //       to: '/blog',
+          //     },
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/carrebola',
+          //     },
+          //   ],
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} FPLLEFIA - Carlos Arrebola Montávez - carrebola@fpllefia.com`,
+        copyright: `<img src="https://fpllefia.com/images/logo40web-.png" alt="fpllefia" width="150px"> <br> Copyright © ${new Date().getFullYear()} FPLLEFIA - Carlos Arrebola Montávez - carrebola@fpllefia.com`,
       },
       prism: {
         //theme: lightCodeTheme,

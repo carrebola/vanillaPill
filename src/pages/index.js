@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageVanillaPills from '@site/src/components/HomepageVanillaPills';
 
 import styles from './index.module.css';
 
@@ -26,15 +27,17 @@ function HomepageHeader() {
   );
 }
 
+
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      title={`Hola desde ${siteConfig.title}`}
+      description="Una web de recursos para el desarrollo de aplicaiones web basadas en Javascript">
+      {/* {<HomepageHeader />} */}
       <main>
-        <HomepageFeatures />
+        {<HomepageVanillaPills />}
       </main>
     </Layout>
   );
