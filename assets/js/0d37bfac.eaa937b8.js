@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7455],{2660:l=>{l.exports=JSON.parse('{"label":"Introducci\xf3n","permalink":"/vanillaPill/docs/tags/introduccion","allTagsPath":"/vanillaPill/docs/tags","count":1,"items":[{"id":"intro","title":"Index","description":"Introducci\xf3n","permalink":"/vanillaPill/docs/intro"}]}')}}]);
