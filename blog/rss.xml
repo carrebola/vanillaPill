@@ -4,20 +4,29 @@
         <title>VANILLA Pills Blog</title>
         <link>https://carrebola.github.io/vanillaPill/blog</link>
         <description>VANILLA Pills Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jun 2023 17:59:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
+            <title><![CDATA[¡Hola!]]></title>
             <link>https://carrebola.github.io/vanillaPill/blog/welcome</link>
             <guid>https://carrebola.github.io/vanillaPill/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p><p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><ul><li><code>2019-05-30-welcome.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>A blog post folder can be convenient to co-locate blog post images:</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/vanillaPill/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
+            <pubDate>Thu, 15 Jun 2023 17:59:26 GMT</pubDate>
+            <description><![CDATA[¡Hola!.]]></description>
+            <content:encoded><![CDATA[<p>¡Hola!.
+Me llamo <strong>Carlos Arrebola</strong>. Soy profe en el centro de formación profesional Llefiá, (<strong>fpllefia</strong> para los amigos).</p><p>Estudié FP (electrónica) precisamente en fpllefia, de eso ya hace muuuucho tiempo. Cuando acabé, dejé la escuela para seguir estudiando <strong>ingeniería electrónica</strong> en la UPC. No pasaron ni 4 años cuando tuve la suerte de volver a fpllefia, pero esta vez como profe 😊</p><p>Después de mucha electrónica, mis inquietudes creativas me llevaron a estudiar un <strong>grado en MULTIMEDIA en la UOC</strong>, gracias al cual acabé siendo profe de desarrollo web (frontend) en los ciclos formativos de <em>Sistemas microinformaticos y redes</em> de grado medio y, sobre todo, en el ciclo de <strong>Desarrollo de aplicaciones web (DAW) en grado superior</strong>.</p><p>Y aquí estamos, seguimos estudiando, enseñando lo que me dejan, y disfrutando del apasionante mundo de la <strong>docencia</strong> y el <strong>desarrollo web</strong>.</p><p><img loading="lazy" alt="magen" src="/vanillaPill/assets/images/yo-6cedd23ecd212e94bdd9580da6e2e9b0.png" width="288" height="288" class="img_ev3q"></p>]]></content:encoded>
             <category>facebook</category>
             <category>hello</category>
             <category>docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[Descargar imágenes vectoriales para tu avatar]]></title>
+            <link>https://carrebola.github.io/vanillaPill/blog/imagenesAvatar</link>
+            <guid>https://carrebola.github.io/vanillaPill/blog/imagenesAvatar</guid>
+            <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Aquí puedes descargar imagenes svg para tu avatar:]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aquí-puedes-descargar-imagenes-svg-para-tu-avatar">Aquí puedes descargar imagenes svg para tu avatar:<a href="#aquí-puedes-descargar-imagenes-svg-para-tu-avatar" class="hash-link" aria-label="Enlace directo al Aquí puedes descargar imagenes svg para tu avatar:" title="Enlace directo al Aquí puedes descargar imagenes svg para tu avatar:">​</a></h3><p><a href="https://www.svgrepo.com/svg/170303/avatar" target="_blank" rel="noopener noreferrer">https://www.svgrepo.com/svg/170303/avatar</a></p><p><img loading="lazy" alt="Imagen avatar" src="/vanillaPill/assets/images/avatar-a8ca52d82d0a7c9c280e4823cddbb96e.png" width="1251" height="580" class="img_ev3q"></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[MDX Blog Post]]></title>
@@ -37,15 +46,6 @@
             <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p><p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
             <category>hello</category>
             <category>docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[RECURSOS]]></title>
-            <link>https://carrebola.github.io/vanillaPill/blog/RECURSOS</link>
-            <guid>https://carrebola.github.io/vanillaPill/blog/RECURSOS</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[- Descargar imagenes de avatar:]]></description>
-            <content:encoded><![CDATA[<ul><li>Descargar imagenes de avatar:
-<a href="https://www.svgrepo.com/svg/170303/avatar" target="_blank" rel="noopener noreferrer">Imagen avatar</a></li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
