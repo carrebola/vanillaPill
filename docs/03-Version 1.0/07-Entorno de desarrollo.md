@@ -33,7 +33,7 @@ Sin duda, en le momento de escribir esta documentación, el rey de los IDs es, s
 
 Os hago un resumen de algunas aspectos que debes tener en cuenta a la hora de instalar y configurar VSCode, y te pondré información ampliada ya que es un tema muy trillado en internet:
 ### 1.1. Descarga e instala VSCode 
-[Puedes encontrar la versión oficial de vscode aquí]([Descarga](https://code.visualstudio.com/Download))
+[Puedes encontrar la versión oficial de vscode aquí
 ### 1.2. Elige el tema que más te guste. 
 Puedes tunear tu VSCode instalando diferentes temas. Para ello:
 
@@ -111,7 +111,7 @@ De momento, con esto es suficiente para comenzar a trabajar en el desarrollo de 
 
 Para el control de versiones vamos a instalar y configurar Git. Aunque seguro que a estas alturas ya sabes qué es Git, pero deja que te refresque algunas ideas importantes:
 
-:::tip 
+:::info 
 
 👉 Git es como un superpoderoso **control de versiones para tu código**. Imagina que estás escribiendo un ensayo importante y cada vez que haces cambios guardas una nueva versión en diferentes archivos, como "ensayo_v1", "ensayo_v2" y así sucesivamente. Git hace algo similar pero para tu código.
 
@@ -136,6 +136,89 @@ Vamos a instalar (si aun no está instalado) Git. Para ello:
   ```
 Sólo necesitas hacer esto una vez si especificas la opción --global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema
 
-:::tip 
+:::note 
 Tienes más información de cómo configurar Git aquí: [Configurando Git por primera vez](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez)
+
+::: 
+
+
+## 3. Repositorio en linea - Github
+
+Ahora que tenemos Git instalado en nuestro ordenador, vamos crearnos una cuenta en Github para poder sincronizar todo nuestro trabajo en la nube.
+
+:::info ¿Qué es y para que sirve Github?
+
+👉 GitHub es una especie de red social para programadores. Es un lugar en línea donde los desarrolladores pueden **compartir y trabajar en proyectos de software**.
+
+👉 Funciona como un **repositorio** donde se guarda el código de **diferentes versiones** de un proyecto. Permite la **colaboración entre programadores**, quienes pueden ver y sugerir cambios en el código.
+
+👉 Es una herramienta muy popular y útil en la comunidad de **desarrollo de software**.
+:::
+
+1. En primer lugar vamos a acceder [github.com](https://github.com/)
+2. Crea una cuenta e inicia sesión.
+3. 
+4. Ahora vamos a crear un proyecto de prueba con vscode, craremos un repositorio y lo sincronizaremos con github.
+   
+## Pruebas con vscode, git y github
+
+Vamos a ver un ejemplo de todo el proceso. La idea es instalar y configurar nuestro entorno de desarrollo para después crear una página web, guardar una versión en git, subirla a github y publicarla en github pages. Vamos a por ello:
+
+1. Instala VSCode si no la has hecho aún.
+2. Configuralo con el tema que más te guste, los iconos que decidas e instala **live server** y **prettier**.
+3. Crea una carpeta en tu ordenador con nombre `pruebas`
+7. Abre VSCode y arrastra la carpeta dentro de la ventana central.
+8. Crea un archivo con nombre index.html (algo básico, con un h1 y poco más).
+9. Muestra el resultado en el navegador utilizando **live server**.
+4. Configura prettier para que al guardar con `ctrl + S` se aplique formateado de tu código. Pruebalo.
+5. Instala Git si no lo has hecho aún.
+6. Configura tu usuario o confirma que ya está configurado.
+7. Haz clic en el icono de '**Control de fuente**' de tu vscode o pulsa `ctrl + Mayus + G`
+8. Aparecerá un mensaje que te indica que no tienes repositorio creado, y te dará la opción de crearlo desde aquí. Hazlo
+   
+   ![Creando repositorio git](/imagenes/entorno/pruebas.png)
+
+   ![Confirmar](/imagenes/entorno/confirmgit.png)
+
+9. Escribe un mensaje de inicio de repositorio (por ejemplo '*primer commit de git*') y dale a confirmar.
+10. Ahora te pedirá si quieres **publicar la rama** ('*Branch*'). Dile que sí. Al hacer clic te preguntará qué nombre quieres para el repositorio y si quieres que sea privado o público. Por defecto, el nombre del repositorio coincide con el nombre de la carpeta de tu proyecto, pero puedes cambiarlo si lo deseas. Para esta prueba haremos que nuestro repositorio sea público.
+11. Si es la primera vez que conectas tu VSCode con github te pedirá que lo sincronices. Utiliza la opción de confirmar a través de VSCode.
+12. Una vez publicado tu archivo en github podrás ver, en tu página de github (por ejemplo `carrebola.github.com`), algo así:
+
+![Github con proyecto nuevo](/imagenes/entorno/github.png)
+13. Vamos ahora a crear un archivo **readme.md** para que github muestre información del proyecto publicado en su pantalla inicial. Para ello:
+  - Crea un archivo con nombre **readme.md** en la raiz de la carpeta del proyecto.
+  - Escribe dentro un texto descriptivo del proyecto, como por ejemplo:
+    
+```
+# Configurando nuestro entorno de desarrollo
+
+1. Instalación de VSCode
+2. Configurarción de git y github
+3. Pruebas con proyecto
+
+``` 
+Si abrimos ahora github podemos ver como se muestra esta información en la portada del repositorio de github.
+
+![Prueba readme.md](/imagenes/entorno/pruebamarkdown.png)
+
+:::tip 
+
+Fíjate que el `#` equivale a un `<h1></h1>` y que la numeración se comporta como una lista ordenada `<ol></ol>`. Este tipo de lenguaje se llama **Markdown**. Si quieres saber más de este lenguaje lee [este artículo](https://desarrolloweb.com/home/markdown)
+:::
+
+14. Para terminar vamos a subir nuestro proyecto a github pages. Para ello:
+    - Haz clic en `Settings` (el icono con forma de engranaje de la parte superior)
+    - Entra en Pages (opción que encontrarás en el menú lateral izquierdo)
+    - Donde pone `Branch` selecciona la rama `main` y haz clic en `Save`.
+    - Si todo ha ido bien, la página se está publicando... Espera un minuto y refresca la página con F5
+    - Ahora puedes ver la url donde se ha publicado tu página. Haz clic en el enlace o en el botón `Visit site` y podrás ver la web publicada.
+
+![Publicación en github pages](/imagenes/entorno/githubpages.png)
+
+:::info
+**GitHub Pages** es como un servidor web estático gratuito para que los desarrolladores **muestren su trabajo al mundo**. Básicamente, puedes tomar tus proyectos de GitHub y convertirlos en páginas web públicas para que cualquiera las vea.
+:::
+
+Y hasta aquí la configuración de nuestro entorno de desarrollo, al menos la versión básica. Más adelante aprenderemos a trabajar con otras herramientas como nodejs, eslint, etc, pero de momento, con este entorno, ya **estamos preparados para crear los prototipos en html y css** de la primera versión de nuestro proyecto.
 
