@@ -160,12 +160,12 @@ Ahora que tenemos Git instalado en nuestro ordenador, vamos crearnos una cuenta 
 3. 
 4. Ahora vamos a crear un proyecto de prueba con vscode, craremos un repositorio y lo sincronizaremos con github.
    
-## Pruebas con vscode, git y github
+## Configurando entorno y desplegando página de pruebas
 
 Vamos a ver un ejemplo de todo el proceso. La idea es instalar y configurar nuestro entorno de desarrollo para después crear una página web, guardar una versión en git, subirla a github y publicarla en github pages. Vamos a por ello:
 
 1. Instala VSCode si no la has hecho aún.
-2. Configuralo con el tema que más te guste, los iconos que decidas e instala **live server** y **prettier**.
+2. Configúralo con el tema que más te guste, los iconos que decidas e instala las extensiones **live server** y **prettier**.
 3. Crea una carpeta en tu ordenador con nombre `pruebas`
 7. Abre VSCode y arrastra la carpeta dentro de la ventana central.
 8. Crea un archivo con nombre index.html (algo básico, con un h1 y poco más).
