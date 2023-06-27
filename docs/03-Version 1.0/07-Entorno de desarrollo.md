@@ -249,7 +249,7 @@ Y hasta aquí la configuración de nuestro entorno de desarrollo, al menos la ve
 Ahora que tenemos el hacha afilado, es el momento de **comenzar a escribir el primer código de nuestro proyecto.**
 Pero antes vamos a crear un proyecto nuevo en VSCode, a continuación crearemos un repositorio y lo vincularemos con github. Después crearemos una **rama** exclusiva para el diseño de los prototipos en html/css. Y ya estaremos listos para comenzar a picar código. Vamos a ello:
 
-## Creando la rama principal
+### Creando la rama principal
 1. Crea en tu carpeta de proyectos una carpeta con nombre `vanillagames10`
 2. Abre VSCode y arrástrala a la parte central de tu IDE
 
@@ -269,7 +269,7 @@ Pero antes vamos a crear un proyecto nuevo en VSCode, a continuación crearemos 
 
 ![Inicio proyecto](/imagenes/entorno/inicioproyecto.png)
 
-## Creando la rama prototipos
+### Creando la rama prototipos
 Vamos a crear una rama exclusiva para el diseño de los prototipos y a subirla a github. Sigue los siguientes pasos:
 1. Crea una rama nueva con nombre *prototipos*. Para ello haz clic en el nombre de la rama actual 'main' que verás en la parta inferior izquierda de VSCode.
 2. Selecciona `Crear rama...`
