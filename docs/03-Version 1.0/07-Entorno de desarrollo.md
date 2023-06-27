@@ -121,6 +121,7 @@ Para el control de versiones vamos a instalar y configurar Git. Aunque seguro qu
 
 👉 Además, Git hace que **compartir tu código** sea súper fácil. Puedes subir tu proyecto a un repositorio en línea (como **GitHub** o GitLab) y otras personas pueden descargarlo y contribuir. Incluso puedes colaborar con desarrolladores de todo el mundo en proyectos de código abierto.
 
+Aprender git es muy importante para un desarrollador web. Por suerte lo vas a estudiar (si no lo has hecho ya) en el ciclo de DAW. De todas formas te dejo un enlace con más información que te será muy util para entender conceptos como que es una rama, como subir ramas al repositorio, clonarlas, sincronizarlas etc: [Hello Git & GitHub](https://github.com/mouredev/hello-git)
 :::
 
 Vamos a instalar (si aun no está instalado) Git. Para ello:  
@@ -136,8 +137,14 @@ Vamos a instalar (si aun no está instalado) Git. Para ello:
   ```
 Sólo necesitas hacer esto una vez si especificas la opción --global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema
 
-:::note 
-Tienes más información de cómo configurar Git aquí: [Configurando Git por primera vez](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez)
+:::info 
+✔️ Tienes más información de cómo configurar Git aquí: 
+
+[👉Configurando Git por primera vez👈](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez)
+
+✔️ Si quieres aprender más sobre git también puedes consultar este recurso de Obdulia Montiel:
+
+[👉La guía para principiantes de Git y Github👈](https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/)
 
 ::: 
 
@@ -148,17 +155,16 @@ Ahora que tenemos Git instalado en nuestro ordenador, vamos crearnos una cuenta 
 
 :::info ¿Qué es y para que sirve Github?
 
-👉 GitHub es una especie de red social para programadores. Es un lugar en línea donde los desarrolladores pueden **compartir y trabajar en proyectos de software**.
+✔️ GitHub es una especie de red social para programadores. Es un lugar en línea donde los desarrolladores pueden **compartir y trabajar en proyectos de software**.
 
-👉 Funciona como un **repositorio** donde se guarda el código de **diferentes versiones** de un proyecto. Permite la **colaboración entre programadores**, quienes pueden ver y sugerir cambios en el código.
+✔️ Funciona como un **repositorio** donde se guarda el código de **diferentes versiones** de un proyecto. Permite la **colaboración entre programadores**, quienes pueden ver y sugerir cambios en el código.
 
-👉 Es una herramienta muy popular y útil en la comunidad de **desarrollo de software**.
+✔️ Es una herramienta muy popular y útil en la comunidad de **desarrollo de software**.
 :::
 
 1. En primer lugar vamos a acceder [github.com](https://github.com/)
 2. Crea una cuenta e inicia sesión.
-3. 
-4. Ahora vamos a crear un proyecto de prueba con vscode, craremos un repositorio y lo sincronizaremos con github.
+3. Ahora vamos a crear un proyecto de prueba con vscode, craremos un repositorio y lo sincronizaremos con github.
    
 ## Configurando entorno y desplegando página de pruebas
 
@@ -186,7 +192,16 @@ Vamos a ver un ejemplo de todo el proceso. La idea es instalar y configurar nues
 12. Una vez publicado tu archivo en github podrás ver, en tu página de github (por ejemplo `carrebola.github.com`), algo así:
 
 ![Github con proyecto nuevo](/imagenes/entorno/github.png)
-13. Vamos ahora a crear un archivo **readme.md** para que github muestre información del proyecto publicado en su pantalla inicial. Para ello:
+
+:::info ¿Cómo utilizar Git desde Visual Studio Code?
+
+Aquí te dejo un enlace a un artículo de donde nos explica como trabajar con git y github desde VSCode:
+
+ [👉¿Cómo utilizar Git desde Visual Studio Code?👈](https://programacionfacil.org/blog/como-utilizar-git-desde-visual-studio-code/)
+
+:::
+
+1.  Vamos a **documentar** de forma básica nuestro proyecto *prueba*. Para ello vamos ahora a crear un archivo **readme.md** para que github muestre información del proyecto publicado en su pantalla inicial:
   - Crea un archivo con nombre **readme.md** en la raiz de la carpeta del proyecto.
   - Escribe dentro un texto descriptivo del proyecto, como por ejemplo:
     
@@ -204,7 +219,14 @@ Si abrimos ahora github podemos ver como se muestra esta información en la port
 
 :::tip 
 
-Fíjate que el `#` equivale a un `<h1></h1>` y que la numeración se comporta como una lista ordenada `<ol></ol>`. Este tipo de lenguaje se llama **Markdown**. Si quieres saber más de este lenguaje lee [este artículo](https://desarrolloweb.com/home/markdown)
+Fíjate que el `#` equivale a un `<h1></h1>` y que la numeración se comporta como una lista ordenada `<ol></ol>`. Este tipo de lenguaje se llama **Markdown**.
+
+:::
+
+:::info Aprende Markdown
+Si quieres saber más de este sencillo y potente lenguaje aquí tienes más información:
+
+[👉 **MARKDOWN**👈](https://desarrolloweb.com/home/markdown)
 :::
 
 14. Para terminar vamos a subir nuestro proyecto a github pages. Para ello:
@@ -222,3 +244,48 @@ Fíjate que el `#` equivale a un `<h1></h1>` y que la numeración se comporta co
 
 Y hasta aquí la configuración de nuestro entorno de desarrollo, al menos la versión básica. Más adelante aprenderemos a trabajar con otras herramientas como nodejs, eslint, etc, pero de momento, con este entorno, ya **estamos preparados para crear los prototipos en html y css** de la primera versión de nuestro proyecto.
 
+## ¡¡¡ Comienza el juego !!! 
+
+Ahora que tenemos el hacha afilado, es el momento de **comenzar a escribir el primer código de nuestro proyecto.**
+Pero antes vamos a crear un proyecto nuevo en VSCode, a continuación crearemos un repositorio y lo vincularemos con github. Después crearemos una **rama** exclusiva para el diseño de los prototipos en html/css. Y ya estaremos listos para comenzar a picar código. Vamos a ello:
+
+## Creando la rama principal
+1. Crea en tu carpeta de proyectos una carpeta con nombre `vanillagames10`
+2. Abre VSCode y arrástrala a la parte central de tu IDE
+
+  :::danger
+  Asegúrate de que has arrastrado la carpeta a la **ventana central** de VSCode. Si la arrastras a la columna de la izquierda tendrás varios proyectos abiertos a la vez, y podrías tener problemas cuando trabajes con tu repositorio. Yo te recomiendo que cada ventana de VSCode contenga tan solo un proyecto único.
+  :::
+3. Crea un **repositorio** para el proyecto.
+4. Crea el primer **commit** con el mensaje '*Commit principal*'
+5. Publica la rama con el mensaje '*Rama principal*'
+6. Publica el repositorio como **privado**
+7. Ahora tienes un **proyecto** con una única **rama**, cuyo nombre por defecto es **main**. Vamos a crear un archivo readme.md para esta rama. Escribe en él el título '*Vanilla Games*' junto a un párrafo con la descripción del proyecto: '*Vanilla Games es el nombre que recibe el proyecto que vamos a desarrollar en esta documentación. Es un proyecto sencillo, en las versiones iniciales, que se irá complicando a medida que vayamos trabajando en él.*'.
+8. Crea un segundo commit con el texto '*Creamos archivo readme.md para rama principal*'. A continuación sincroniza los cambios con github.
+9. Abre ahora la página de github y comprueba que:
+   1.  El proyecto se ha creado y subido con éxito en la rama **main**.
+   2.  Se muestra la información del archivo **readme.md** en la página principal.
+   3.  Se muestra el mensaje del **commit** que has hecho.
+
+![Inicio proyecto](/imagenes/entorno/inicioproyecto.png)
+
+## Creando la rama prototipos
+Vamos a crear una rama exclusiva para el diseño de los prototipos y a subirla a github. Sigue los siguientes pasos:
+1. Crea una rama nueva con nombre *prototipos*. Para ello haz clic en el nombre de la rama actual 'main' que verás en la parta inferior izquierda de VSCode.
+2. Selecciona `Crear rama...`
+3. Vamos a ponerle el nombre '*prototipos*'
+4. Fijate que ahora en la parte inferior izquierda aparece el nombre de la rama actual en la que estás trabajando.
+5. Crea una carpeta en la raiz con nombre `prototipos`.
+6. Ahora vamos a crear el archivo `home.html` (de momento pon un h1 con el título y poco más)
+
+   ![Prueba prototipo home](/imagenes/entorno/protos1.png)
+
+7. Y hacemos un **commit** con el texto '*Prueba prototipo home*'. Te pedirá si quieres publicar la rama, dile que sí y haz **push** (sincronziar con github).
+8. Fíjate que ahora en github tienes las dos ramas, la rama `main`y la rama `prototipos`. En la rama main solo tienes el archivo `readme.md` pero en la rama `prototipos` ahora ya tienes la carpeta `prototipos`con el archivo `home.html`. 
+   Es decir, ahora tienes un repositorio de tu proyecto pero con diferentes ramas que, por el momento, serán completamente independientes.
+
+ ![Rama prototipos](/imagenes/entorno/ramaprototipos.png)
+
+ 8. Ya para acabar, puede ser interesante crear un archivo `readme.md` dentro de la carpeta `prototipos`. Hazlo y sube los cambios a github
+
+   ![Readme prototipos](/imagenes/entorno/readmeprototipos.png)
