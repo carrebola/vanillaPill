@@ -1,8 +1,10 @@
 ---
 title: Fichas de usuario
 tags:
-  - Agile
-  - Lean Startup
+  - Fichas de usuario 
+  - Modelado de personas
+  - Usuario focal
+  - Target
 sidebar_position: 30
 ---
 

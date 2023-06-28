@@ -113,15 +113,17 @@ Para el control de versiones vamos a instalar y configurar Git. Aunque seguro qu
 
 :::info 
 
-👉 Git es como un superpoderoso **control de versiones para tu código**. Imagina que estás escribiendo un ensayo importante y cada vez que haces cambios guardas una nueva versión en diferentes archivos, como "ensayo_v1", "ensayo_v2" y así sucesivamente. Git hace algo similar pero para tu código.
+✔ Git es como un superpoderoso **control de versiones para tu código**. Imagina que estás escribiendo un ensayo importante y cada vez que haces cambios guardas una nueva versión en diferentes archivos, como "ensayo_v1", "ensayo_v2" y así sucesivamente. Git hace algo similar pero para tu código.
 
-👉 Con Git, puedes **guardar diferentes versiones de tu proyecto a medida que avanzas**. Esto significa que si cometes un error o quieres volver a una versión anterior, ¡es pan comido! Git te permite viajar en el tiempo y regresar a cualquier punto en la historia de tu proyecto.
+✔ Con Git, puedes **guardar diferentes versiones de tu proyecto a medida que avanzas**. Esto significa que si cometes un error o quieres volver a una versión anterior, ¡es pan comido! Git te permite viajar en el tiempo y regresar a cualquier punto en la historia de tu proyecto.
 
-👉 Pero eso no es todo. Git también es **excelente para trabajar en equipo**. Puedes colaborar con otros programadores sin pisar los pies de nadie. Cada persona puede trabajar en su propia versión del proyecto y luego combinar los cambios de todos de manera ordenada.
+✔ Pero eso no es todo. Git también es **excelente para trabajar en equipo**. Puedes colaborar con otros programadores sin pisar los pies de nadie. Cada persona puede trabajar en su propia versión del proyecto y luego combinar los cambios de todos de manera ordenada.
 
-👉 Además, Git hace que **compartir tu código** sea súper fácil. Puedes subir tu proyecto a un repositorio en línea (como **GitHub** o GitLab) y otras personas pueden descargarlo y contribuir. Incluso puedes colaborar con desarrolladores de todo el mundo en proyectos de código abierto.
+✔ Además, Git hace que **compartir tu código** sea súper fácil. Puedes subir tu proyecto a un repositorio en línea (como **GitHub** o GitLab) y otras personas pueden descargarlo y contribuir. Incluso puedes colaborar con desarrolladores de todo el mundo en proyectos de código abierto.
 
-Aprender git es muy importante para un desarrollador web. Por suerte lo vas a estudiar (si no lo has hecho ya) en el ciclo de DAW. De todas formas te dejo un enlace con más información que te será muy util para entender conceptos como que es una rama, como subir ramas al repositorio, clonarlas, sincronizarlas etc: [Hello Git & GitHub](https://github.com/mouredev/hello-git)
+Aprender git es muy importante para un desarrollador web. Por suerte lo vas a estudiar (si no lo has hecho ya) en el ciclo de DAW. De todas formas te dejo un enlace con más información que te será muy util para entender conceptos como que es una rama, como subir ramas al repositorio, clonarlas, sincronizarlas etc: 
+
+[👉Hello Git & GitHub👈](https://github.com/mouredev/hello-git)
 :::
 
 Vamos a instalar (si aun no está instalado) Git. Para ello:  

@@ -1,13 +1,12 @@
 ---
 
-title: Hist 2 - Casos de uso específicos y diagramas de flujo.
+title: Hist2 - Casos de uso específicos y diagramas de flujo.
 tags:
   - Casos de uso
 position: 20
 
 ---
 
-# Casos de uso especificos y diagramas de flujo.
 En el primer apartado 'Requisitos y diagrama de casos de uso' para esta versión 1.0, hemos definido de manera general los **casos de uso** que se contemplan para cada actor y los hemos reflejado en un **diagrama de casos de uso**. 
 
 Es el momento de ser más concretos y detenernos a reflexionar en cada uno de los procesos que se realizarán para cada tarea, incluyendo los posibles errores cometidos por el usuario o el propio sistema.

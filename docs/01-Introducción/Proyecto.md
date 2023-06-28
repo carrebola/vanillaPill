@@ -2,8 +2,50 @@
 title: El proyecto Vanilla Games
 sidebar_position: 20
 tags:
-  - Agile
-  - Lean Startup
+- VanillaJS
+- Javascript
+- Frameworks
+- Intranet
+- Fases de desarrollo
+- Diseño de interfaz
+- Benchmarking
+- Prototipos
+- Mockup
+- Guía de estilos
+- Usabilidad
+- Programación frontend
+- Maquetación
+- Validación de cliente
+- Programación backend
+- Bases de datos
+- Consultas SQL
+- Funciones Postgres
+- ORM
+- Análisis de usabilidad
+- Testing
+- Despliegue en producción
+- Arquitectura de la información
+- Server-side rendering
+- Client-side rendering
+- Static site generation
+- Incremental static regeneration
+- CSR
+- SSR
+- Frontend
+- Backend
+- Supabase
+- API
+- SQL
+- PostgreSQL
+- Entorno de desarrollo
+- Visual Studio Code
+- Node.js
+- Npm
+- Plugins
+- Repositorio Git
+- Control de versiones
+- Despliegue en GitHub Pages
+- Despliegue en RailWay
 ---
 # El proyecto Vanilla Games
 ## Escenario del proyecto

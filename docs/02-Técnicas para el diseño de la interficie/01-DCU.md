@@ -1,8 +1,25 @@
 ---
 title: DCU. Diseño centrado en el Usuario
 tags:
-  - Agile
-  - Lean Startup
+  - DCU 
+  - Diseño Centrado en el Usuario 
+  - Modelado de personas 
+  - Arquitectura de la información
+  - Mapa de sitio
+  - Bocetos 
+  - Wireframes 
+  - Mockups 
+  - Pruebas de usuario 
+  - Identidad de la marca
+  - Benchmarking 
+  - Paleta de colores
+  - Frontend 
+  - Prototipos de bajo nivel 
+  - Maquetación 
+  - Interacción 
+  - Guía de estilos 
+  - HTML
+  - CSS
 sidebar_position: 10
 ---
 

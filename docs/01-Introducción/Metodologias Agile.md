@@ -1,8 +1,24 @@
 ---
 title: Metodología Agile. Conceptos
 tags:
-  - Agile
-  - Lean Startup
+  - Metodología Agile 
+  - Historias
+  - Tareas
+  - Sprints
+  - Backlogs
+  - Diagramas de Gantt
+  - Backlog de producto
+  - Historias de usuario
+  - Planificación de sprints
+  - Backlog de sprint
+  - Objetivos del sprint
+  - Criterios de aceptación
+  - Temporización
+  - Estimación temporal
+  - Secuenciación
+  - Asignación de recursos
+  - Personal responsable
+  - Seguimiento del progreso
 sidebar_position: 40
 ---
 
