@@ -24,10 +24,12 @@ Comenzamos a maquetar la página **home**. De manera resumida debemos seguir los
    3. Vinculamos la librería de iconos de boostrap
    4. Vinculamos el js de bootstrap.
 2. Creamos la estructura de la web dentro del body con las etiquetas header, main y footer
-2. Copiamos el componente menú de la documentación de boostrap (**navbar**) y lo modificamos para que se ajuste a nuestro prototipo. Lo usamos tanto en el header como en el footer.
+2. Copiamos el componente menú de la documentación de bootstrap (**navbar**) y lo modificamos para que se ajuste a nuestro prototipo. Lo usamos tanto en el header como en el footer.
 3. Creamos, en el main, un h1 y una imagen.
 
 Aquí puedes ver el código utilizado:
+
+
 
 ```html title="home.html"
 
@@ -156,6 +158,5 @@ Aquí puedes ver el código utilizado:
 		></script>
 	</body>
 </html>
-
 
 ```
