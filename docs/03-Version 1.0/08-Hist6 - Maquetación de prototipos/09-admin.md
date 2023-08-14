@@ -23,6 +23,18 @@ Para maquetar la página `adminProyectos.html` podemos partir de la página `Pro
 
 Para maquetar la página `adminUsuarios.html` podemos partir de la página `adminProyectos.html` insertando en las celdas de la tabla los inputs necesarios. 
 
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página xxx:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
+
 Aquí puedes ver el código utilizado en ambas páginas:
 
 ```html title="adminProyectos.html"

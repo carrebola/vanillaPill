@@ -9,7 +9,7 @@ position:
 
 ---
 
-“Dame seis horas para cortar un árbol y pasaré las primeras cuatro afilando el hacha.” – Abraham Lincoln
+*“Dame seis horas para cortar un árbol y pasaré las primeras cuatro afilando el hacha.” – Abraham Lincoln*
 
 Si queremos ser eficientes en la creación de aplicaciones web, lo mejor es empezar por configurar bien nuestro entorno de desarrollo.
 Para ello vamos a instalar/configurar las siguientes herramientas:
@@ -85,7 +85,7 @@ Para instalar los iconos el proceso es el mismo:
 ### 1.4. Extensiones
 
 Con las extensiones puedes aumentar la potencia y mejorar tu flujo de trabajo. 
-
+#### Prettier
 Una de las extensiones que te recomiendo sí o sí es '**Prettier**'. Esta extensión se va a encargar de formatear tu código HTML y CSS port tí, respetando las identaciones.
 El proceso para instalar esta extensión es muy simple, solo tienes que buscar la extensión en el buscador y darle a instalar.
 
@@ -96,7 +96,7 @@ Aquí tienes un artículo donde se explica como instalar y configurar Prettier p
 <a href={"https://geekflare.com/es/auto-format-in-vs-code/"}>Cómo formatear automáticamente en VS Code para ahorrar tiempo y esfuerzo</a>
 
 :::
-
+#### Live Server
 Otra extensión imprescindible para nosotros es **Live Server**. Mediante esta extensión podremos tener un servidor virtual que mostrará el resultado de nuestro trabajo en un navegador, con la ventaja de que la vista se irá actualizando conforme vamos modificando el código.
 
 Existen infinidad de extensiones para VSCode

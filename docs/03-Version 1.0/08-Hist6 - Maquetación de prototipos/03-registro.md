@@ -22,7 +22,19 @@ Para maquetar la página `registro.html` podemos partir de la página `home.html
 De manera resumida debemos seguir los siguientes pasos:
 1. Modificamos la página home eliminando el botón *registro* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
 2. Cremos un div con una anchura máxima usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
-   
+
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página xxx:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
+
 Aquí puedes ver el código utilizado:
 
 ```html title="registro.html"

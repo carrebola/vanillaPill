@@ -39,6 +39,18 @@ De manera resumida debemos seguir los siguientes pasos:
 4. Creamos un div con una tabla con las columnas y filas correspondientes
 5. Creamos un div con las tarjetas **card** correspondientes
 6. Creamos las versiones *responsive* para la vista de tarjetas.
+
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página xxx:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
    
 Aquí puedes ver el código utilizado:
 

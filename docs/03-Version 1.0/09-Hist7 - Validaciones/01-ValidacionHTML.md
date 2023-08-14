@@ -31,6 +31,12 @@ En HTML5, podemos realizar validaciones en formularios utilizando atributos y el
 <input type="number" name="edad" min="18" max="99">
 ```
 
+- Atributo **minlength y maxlength**: Para campos numéricos, puedes utilizar los atributos min y max para establecer rangos válidos.
+
+```html
+<input type="password" name="pass" minlength="6" maxlength="99">
+```
+
 - Atributo **email**: Puedes usar el atributo type="email" en un campo de entrada para asegurarte de que la entrada sea un formato de correo electrónico válido.
 
 ```html
@@ -70,6 +76,18 @@ Vamos a definir las validaciones para cada formulario y a continuación modifica
   - La contraseña debe ser de 6 dígitos o más
 
 El código de este formulario sería algo así:
+
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Agrega reglas de validación html5 a los formularios de la página registro.html:
+  
+		Agrega los atributos required, minlength, etc a los inputs del formulario
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
 
 ```html title="formulario registro"
 <!-- Formulario de registro -->
@@ -450,3 +468,4 @@ La respuesta del navegador cuando intentamos enviar un formulario con campos que
 ![Validación según Chrome](../../../static/imagenes/v1/validaciones/validacionChrome.png)
 
 Para evitar este problema podemos utilizar el **sistema de validación que nos ofrece Bootstrap.** Este sistema de validación implica **utilizar algo de javascript**, tal y como veremos en la siguiente tarea.
+

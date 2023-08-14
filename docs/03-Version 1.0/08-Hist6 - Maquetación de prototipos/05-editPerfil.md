@@ -30,7 +30,19 @@ De manera resumida debemos seguir los siguientes pasos:
 3. En el componente navbar del header
    1. Añadimos el **menú ROL** con el item PROYECTOS
    2. Añadimos el **menú USUARIO** con el item **Editar perfil**(entre otros). Este item será una copia del botón que permite abrir el modal.
-   
+
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página xxx:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
+
 Aquí puedes ver el código utilizado:
 
 ```html title="editPerfil.html"

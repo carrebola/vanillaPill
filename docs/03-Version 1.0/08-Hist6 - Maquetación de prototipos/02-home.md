@@ -15,11 +15,25 @@ sidebar_position: 2
 
 ![](../../../static/imagenes/v1/prototipos/home/home_movil.png)
 
+## Entorno de desarrollo
+Vamos a comenzar a maquetar los prototipos para nuestro proyecto.
+
+En primer lugar abre el VSCode y arrastra tu carpeta del proyecto. Si no recuerdo mal, se llamaba `vanillagaames10`
+
+Ahora deberías ver en la parte inferior izquierda de vscode el **nombre de la rama en la que estás situado**. Deberías estar en la rama `prototipos`, si no es así, puedes cambiar de rama haciendo clic con el botón derecho sobre el nombre de la rama.
+
+:::danger ¡Cuidado!
+Un error muy habitual es olvidarnos de cambiar de rama cuando comenzamos a trabajar. Ten cuidado ya que esto se puede convertir en un problema grave de organización, y que ¡¡¡generar muchos dolores de cabeza 🥴!!!
+:::
+
+Si todo es correcto deberías ver en la columna izquierda la carpeta prototipos con un archivo `home.html` y un archivo `readme.md`.
+
+Abre el archivo `home.html` y comencemos a trabajar...
 ## Procedimiento
 
 Comenzamos a maquetar la página **home**. De manera resumida debemos seguir los siguientes pasos:
 1. Creamos plantilla html
-   1. Modificamos idioma y title
+   1. Modificamos `lang` y `title`
    2. Vinculamos la libreria css para bootstrap y bootswatch
    3. Vinculamos la librería de iconos de boostrap
    4. Vinculamos el js de bootstrap.
@@ -27,8 +41,20 @@ Comenzamos a maquetar la página **home**. De manera resumida debemos seguir los
 2. Copiamos el componente menú de la documentación de bootstrap (**navbar**) y lo modificamos para que se ajuste a nuestro prototipo. Lo usamos tanto en el header como en el footer.
 3. Creamos, en el main, un h1 y una imagen.
 
-Aquí puedes ver el código utilizado:
 
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página HOME:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página home.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
+
+Aquí puedes ver el código utilizado:
 
 
 ```html title="home.html"

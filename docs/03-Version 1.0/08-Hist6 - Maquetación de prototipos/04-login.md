@@ -23,7 +23,19 @@ De manera resumida debemos seguir los siguientes pasos:
 1. Modificamos la página home eliminando el botón *login* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
 2. Creamos un div con una anchura máxima de 400px usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
 3. Finalmente añadimos un enlace para actualizar la contraseña y un botón para registrarte si no lo estás.
-   
+
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página xxx:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
+
 Aquí puedes ver el código utilizado:
 
 ```html title="registro.html"

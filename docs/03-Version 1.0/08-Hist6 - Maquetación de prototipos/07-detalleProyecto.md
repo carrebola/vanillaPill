@@ -26,6 +26,18 @@ De manera resumida debemos seguir los siguientes pasos:
 4. Insertamos el texto en la columna derecha
 5. Haremos que el ancho de las columnas varíe según la versión escritorio o móvil.
 6. Insertaremos un botón en la parte inferior derecha con posicionamiento absoluto 
+
+:::warning ¡NO TE OLVIDES DEL COMMIT!
+Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
+
+	Crea la estructura básica de la página xxx:
+  
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+
+Algunos consejos para escribir tus commits:
+
+👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+:::
    
 Aquí puedes ver el código utilizado:
 
