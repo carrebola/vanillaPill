@@ -122,6 +122,6 @@ No te olvides del commit 😉
 ```
 Aquí puedes ver como se mostraría un error de validación usando este método:
 
-![](../../../static/imagenes/v1/validaciones/validacionChromeError.png)
+![](/imagenes/v1/validaciones/validacionChromeError.png)
 
 Ahora solo nos faltaría aplicar este mísmo método a todos los formularios de nuestros prototipos html 😅. ¡Adelante!

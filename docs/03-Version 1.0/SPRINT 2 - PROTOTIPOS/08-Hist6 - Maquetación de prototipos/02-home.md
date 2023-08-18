@@ -1,34 +1,53 @@
 ---
-title: Registro
+title: Home
 tags:
   - Bootstrap 5
   - html
   - css
-sidebar_position: 3
+sidebar_position: 2
 ---
-## *REGISTRO Versíón escritorio* 
+## *HOME Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/registro/registro.png)
+![](/imagenes/v1/prototipos/home/home.png)
 
-## *REGISTRO Versíón móvil* 
+## *HOME Versíón móvil* 
 
 
-![](../../../static/imagenes/v1/prototipos/registro/registro_movil.png)
+![](/imagenes/v1/prototipos/home/home_movil.png)
 
+## Entorno de desarrollo
+Vamos a comenzar a maquetar los prototipos para nuestro proyecto.
+
+En primer lugar abre el VSCode y arrastra tu carpeta del proyecto. Si no recuerdo mal, se llamaba `vanillagaames10`
+
+Ahora deberías ver en la parte inferior izquierda de vscode el **nombre de la rama en la que estás situado**. Deberías estar en la rama `prototipos`, si no es así, puedes cambiar de rama haciendo clic con el botón derecho sobre el nombre de la rama.
+
+:::danger ¡Cuidado!
+Un error muy habitual es olvidarnos de cambiar de rama cuando comenzamos a trabajar. Ten cuidado ya que esto se puede convertir en un problema grave de organización, y que ¡¡¡generar muchos dolores de cabeza 🥴!!!
+:::
+
+Si todo es correcto deberías ver en la columna izquierda la carpeta prototipos con un archivo `home.html` y un archivo `readme.md`.
+
+Abre el archivo `home.html` y comencemos a trabajar...
 ## Procedimiento
 
-Para maquetar la página `registro.html` podemos partir de la página `home.html` haciendo una copia y modificando la etiqueta `main`. 
+Comenzamos a maquetar la página **home**. De manera resumida debemos seguir los siguientes pasos:
+1. Creamos plantilla html
+   1. Modificamos `lang` y `title`
+   2. Vinculamos la libreria css para bootstrap y bootswatch
+   3. Vinculamos la librería de iconos de boostrap
+   4. Vinculamos el js de bootstrap.
+2. Creamos la estructura de la web dentro del body con las etiquetas header, main y footer
+2. Copiamos el componente menú de la documentación de bootstrap (**navbar**) y lo modificamos para que se ajuste a nuestro prototipo. Lo usamos tanto en el header como en el footer.
+3. Creamos, en el main, un h1 y una imagen.
 
-De manera resumida debemos seguir los siguientes pasos:
-1. Modificamos la página home eliminando el botón *registro* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
-2. Cremos un div con una anchura máxima usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
 
 :::warning ¡NO TE OLVIDES DEL COMMIT!
 Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
 
-	Crea la estructura básica de la página xxx:
+	Crea la estructura básica de la página HOME:
   
-		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
+		Agrega el esqueleto HTML y los estilos iniciales para la página home.html
 
 Algunos consejos para escribir tus commits:
 
@@ -37,7 +56,8 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado:
 
-```html title="registro.html"
+
+```html title="home.html"
 
 <!DOCTYPE html>
 <html lang="es">
@@ -53,21 +73,22 @@ Aquí puedes ver el código utilizado:
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-
+		<!-- Bootswatch CSS -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/yeti/bootstrap.min.css"
 		/>
-
+		<!-- Bootstrap icons -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 		/>
+		<!-- Mis estilos personales  -->
 		<link rel="stylesheet" href="styles.css" />
 
-		<link rel="stylesheet" href="styles.css" />
-		<title>Registro</title>
+		<title>Vanilla Games</title>
 	</head>
+	
 	<body class="pt-5" style="overflow-x: hidden; padding-bottom: 100px">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -113,6 +134,12 @@ Aquí puedes ver el código utilizado:
 									<i class="bi bi-box-arrow-in-right"></i>
 								</button>
 							</li>
+							<li class="nav-item">
+								<button class="ms-2 btn btn-outline-light">
+									Regístrate
+									<i class="bi bi-box-arrow-in-right"></i>
+								</button>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -120,26 +147,20 @@ Aquí puedes ver el código utilizado:
 		</header>
 		<main>
 			<div class="container">
-				<h1 class="mt-5 text-center">Registro</h1>
+				<h1 class="mt-5 text-center fw-bold" style="font-size: 100px;">Vanilla Games</h1>
 				<div class="m-5 mx-auto" style="max-width: 400px">
-					<form action="" class="form border shadow-sm p-3">
-						<label for="nombre" class="form-label">Nombre:</label>
-						<input id="nombre" type="text" class="form-control" />
-						<label for="apellidos" class="form-label">Apellidos:</label>
-						<input id="apellidos" type="text" class="form-control" />
-						<label for="email" class="form-label">Email:</label>
-						<input id="email" type="text" class="form-control" />
-						<label for="pass" class="form-label mt-3">Contraseña:</label>
-						<input id="pass" type="password" class="form-control" />
-						<a class="btn btn-primary w-100 mt-3" href="#">Enviar</a>
-					</form>
+					<img
+							src="./images/logo.svg"
+							alt="fpllefia"
+							class="img-fluid"
+						/>
 				</div>
 			</div>
 		</main>
 		<footer class="">
 			<nav class="navbar bg-secondary fixed-bottom small">
 				<div class="container">
-					<a class="navbar-brand" href="http://www.fpllefia.com">
+					<a class="navbar-brand fs-6" href="http://www.fpllefia.com">
 						<img
 							src="./images/logo.svg"
 							alt="fpllefia"
@@ -149,8 +170,8 @@ Aquí puedes ver el código utilizado:
 						/>
 						FPLlefià
 					</a>
-					<span class="navbar-text">@Texto de header</span>
-					<a href="#" class="nav-link">Vínculo header</a>
+					<span class="navbar-text">DAW - Asignatura de proyectos</span>
+					<a href="#" class="nav-link">carrebola GITHUB</a>
 				</div>
 			</nav>
 		</footer>
@@ -163,7 +184,5 @@ Aquí puedes ver el código utilizado:
 		></script>
 	</body>
 </html>
-
-
 
 ```

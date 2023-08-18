@@ -8,11 +8,11 @@ sidebar_position: 5
 ---
 ## *EDITAR PERFIL (MENÚ)* 
 
-![](../../../static/imagenes/v1/prototipos/editarPerfil/menu.png)
+![](/imagenes/v1/prototipos/editarPerfil/menu.png)
 
 ## *EDITAR PERFIL (Ventana MODAL)* 
 
-![](../../../static/imagenes/v1/prototipos/editarPerfil/edit.png)
+![](/imagenes/v1/prototipos/editarPerfil/edit.png)
 
 
 ## Procedimiento

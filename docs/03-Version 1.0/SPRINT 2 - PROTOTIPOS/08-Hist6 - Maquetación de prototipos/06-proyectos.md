@@ -8,23 +8,23 @@ sidebar_position: 6
 ---
 ## *PROYECTOS Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/proyectos.png)
+![](/imagenes/v1/prototipos/proyectos/proyectos.png)
 
 ## *MIS PROYECTOS Versíón escritorio con tabla* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/misproyectos.png)
+![](/imagenes/v1/prototipos/proyectos/misproyectos.png)
 
 ## *MIS PROYECTOS Versíón adaptable I con tarjetas* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/misproyectos_responsive1.png)
+![](/imagenes/v1/prototipos/proyectos/misproyectos_responsive1.png)
 
 ## *MIS PROYECTOS Versíón adaptable II con tarjetas* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/misproyectos_responsive2.png)
+![](/imagenes/v1/prototipos/proyectos/misproyectos_responsive2.png)
 
 ## *PROYECTOS Versíón móvil* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/proyectos_movil.png)
+![](/imagenes/v1/prototipos/proyectos/proyectos_movil.png)
 
 
 

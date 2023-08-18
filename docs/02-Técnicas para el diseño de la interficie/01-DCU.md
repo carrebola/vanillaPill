@@ -1,5 +1,5 @@
 ---
-title: DCU. Diseño centrado en el Usuario
+title: Diseño centrado en el Usuario (DCU). Técnicas
 tags:
   - DCU 
   - Diseño Centrado en el Usuario 
@@ -22,7 +22,9 @@ tags:
   - CSS
 sidebar_position: 10
 ---
-
+## ¿Qué es el Diseño centrado en el Usuario (DCU)?
+- Modelado de personas
+- Fichas de usuario
 Uno de los procesos más importante en el desarrollo de una aplicación web es el **diseño de la interfaz**. Existe una metodología conocida como DCU o Diseño Centrado en el Usuario que incluye técnicas de gran ayuda para llevar a cabo este proceso con éxito.
 
 :::info DCU
@@ -30,7 +32,7 @@ El Diseño Centrado en Usuario (**DCU**) es una metodología que se enfoca en di
 :::
 
 Entre estas técnicas destacan el **Modelado de personas**, el **Diseño de prototipos** (bocetos, wireframes y mockups) y los **Tests de usuarios**.
-
+## Algunos conceptos: Fichas de usuario, bocetos, wireframes, mockups, test de usuarios, guía de estilos, benchmarking... 
 :::info Técnicas del DCU (UDC)
 <details>
   <summary>¿Qué es el modelado de personas?</summary>

@@ -465,7 +465,7 @@ Estas serían todas las validaciones utilizando las caracteristicas de html5.
 La respuesta del navegador cuando intentamos enviar un formulario con campos que no cumplen su condición establecida **difiere dependiendo del navegador**. 
 
 *Ejemplo de visualización de un formulario que no valida utilizando Google Chrome*
-![Validación según Chrome](../../../static/imagenes/v1/validaciones/validacionChrome.png)
+![Validación según Chrome](/imagenes/v1/validaciones/validacionChrome.png)
 
 Para evitar este problema podemos utilizar el **sistema de validación que nos ofrece Bootstrap.** Este sistema de validación implica **utilizar algo de javascript**, tal y como veremos en la siguiente tarea.
 

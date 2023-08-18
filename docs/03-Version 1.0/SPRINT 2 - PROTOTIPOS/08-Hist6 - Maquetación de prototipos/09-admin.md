@@ -9,11 +9,11 @@ sidebar_position: 9
 
 ## *ADMIN (Proyectos) Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/admin/adminProyectos.png)
+![](/imagenes/v1/prototipos/admin/adminProyectos.png)
 
 ## *ADMIN (Usuarios) Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/admin/adminUsuarios.png)
+![](/imagenes/v1/prototipos/admin/adminUsuarios.png)
 
 
 

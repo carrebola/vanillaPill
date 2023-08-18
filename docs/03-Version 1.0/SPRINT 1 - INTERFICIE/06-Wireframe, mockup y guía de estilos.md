@@ -92,7 +92,7 @@ Puedes ver el aspecto del tema que vamos a utilizar en el siguiente enlace: [htt
 
 :::
 
-![Bootswatch](../../static/imagenes/v1/bootswatch.png)
+![Bootswatch](/imagenes/v1/bootswatch.png)
 
 :::info ¿Qué es Bootswatch?
 

@@ -103,7 +103,7 @@ Existen infinidad de extensiones para VSCode
 Aquí puedes ver un ejemplo de mi entorno. Utilizo el tema **Night Owl** y los iconos de **VSCode Icons**.
 Fijate que el código html está formateado con **Prettier**
 
-![Tema VSCode e Iconos](imagenes/../../../static/imagenes/entorno/entornovscode.png)
+![Tema VSCode e Iconos](/imagenes/entorno/entornovscode.png)
 
 De momento, con esto es suficiente para comenzar a trabajar en el desarrollo de los prototipos html y css. Más adelante acabaremos de configurar nuestro entorno para trabajar con NodeJS y otras herramientas que nos ayudarán a programar de forma más eficiente.
 

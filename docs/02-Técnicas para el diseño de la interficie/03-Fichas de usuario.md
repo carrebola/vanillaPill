@@ -74,7 +74,7 @@ Basandonos en estas premisas, y respondiendo a las preguntas anteriores, vamos a
 *En nuestro proyecto, el perfil de los usuarios focales es muy evidente y selectivo, por lo que la creación de las fichas de usuario no es tan importante como podrían serlo en otro tipo de proyectos más complejos.*
 :::
 
-### Prototipos y test de usuarios
+## Prototipos y test de usuarios
 
 Dado que hemos divido nuestro proyecto en diferentes versiones, los prototipos (bocetos, wireframes y mockup) y sus correspondientes tests de usuarios **los diseñaremos para cada versión**, comenzando con la version 1.0.
 

@@ -51,7 +51,7 @@ Estas serían las historias a planificar en la entrega de la versión 1 de nuest
 
 - **Historia 4. Wireframes, Mockup y guía de estilos:**
   Como diseñador quiero dibujar los mockups y crear la guía de estilos a partir de los colores, tipografías, etc seleccionadas.
-#### SPRINT 2: Frontend
+#### SPRINT 2: Prototipos
 - **Historia x. Entorno de desarrollo:**
   Como diseñador/programador quiero instalar y configurar las herramientas necesarias para programar la aplicación, trabajar con repositorios y crear un entorno integración continua y despliegue continuo.
 
@@ -62,6 +62,9 @@ Estas serían las historias a planificar en la entrega de la versión 1 de nuest
   Como programador quiero definir e implementar las validaciones de los formularios del proyecto
  
 #### Sprint 3: Implementación de la SPA
+
+- **Historia x. Entorno de desarrollo basado en NodeJS:**
+  Como programador quiero instalar y configurar todas las herramientas necesarias (NodeJS, Vite, etc.) para el desarrollo de una app tipo SPA basada en Javascript .
 - **Historia x. Creación de proyecto basado en SPA y organización de archivos para las vistas basadas en módulos js:**
   Como programador quiero configurar el sistema de carpetas para las vistas y crear los archivos a partir de componentes html basados en los prototipos.
 

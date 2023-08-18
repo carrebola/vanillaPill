@@ -21,7 +21,7 @@ Lo primero es definir los **casos de uso para esta versión**. Una primera aprox
  
 :::
 
-## Casos de uso. Definición básica
+## Casos de uso para la V1.0 - Definición básica
 
 - **Registrar usuario**: Un usuario puede registrarse en la plataforma proporcionando su nombre, apellidos, email y contraseña.
 - **Recuperar contraseña**: Un usuario registrado puede solicitar la recuperación de su contraseña en caso de que la haya olvidado. Para ello, se le enviará un correo electrónico con las instrucciones para restablecer su contraseña.
@@ -99,7 +99,7 @@ Para dibujar el diagrama de casos de uso una herramienta interesante puede ser [
 El diagrama de casos de uso para la versión 1.0 sería el siguiente:
 
 ### Diagrma de casos de uso para la versión 1.0
-![diagrama de casos de uso V1.0](imagenes/../../../static/imagenes/v1/casosUso/diagramaCasosUso_1.png)
+![diagrama de casos de uso V1.0](/imagenes/v1/casosUso/diagramaCasosUso_1.png)
 
 Este diagrama refleja de forma resumida qué acciones se pueden llevar a cabo en nuestro aplicación dependiendo del rol del usuario. 
 

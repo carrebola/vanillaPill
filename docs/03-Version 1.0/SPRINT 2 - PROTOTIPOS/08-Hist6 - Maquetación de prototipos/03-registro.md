@@ -1,28 +1,27 @@
 ---
-title: Login
+title: Registro
 tags:
   - Bootstrap 5
   - html
   - css
-sidebar_position: 4
+sidebar_position: 3
 ---
-## *LOGIN Versíón escritorio* 
+## *REGISTRO Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/login/login.png)
+![](/imagenes/v1/prototipos/registro/registro.png)
 
-## *LOGIN Versíón móvil* 
+## *REGISTRO Versíón móvil* 
 
 
-![](../../../static/imagenes/v1/prototipos/login/login_movil.png)
+![](/imagenes/v1/prototipos/registro/registro_movil.png)
 
 ## Procedimiento
 
-Para maquetar la página `login.html` podemos partir de la página `registro.html` haciendo una copia y modificando la etiqueta `main`. 
+Para maquetar la página `registro.html` podemos partir de la página `home.html` haciendo una copia y modificando la etiqueta `main`. 
 
 De manera resumida debemos seguir los siguientes pasos:
-1. Modificamos la página home eliminando el botón *login* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
-2. Creamos un div con una anchura máxima de 400px usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
-3. Finalmente añadimos un enlace para actualizar la contraseña y un botón para registrarte si no lo estás.
+1. Modificamos la página home eliminando el botón *registro* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
+2. Cremos un div con una anchura máxima usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
 
 :::warning ¡NO TE OLVIDES DEL COMMIT!
 Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
@@ -67,7 +66,7 @@ Aquí puedes ver el código utilizado:
 		<link rel="stylesheet" href="styles.css" />
 
 		<link rel="stylesheet" href="styles.css" />
-		<title>Login</title>
+		<title>Registro</title>
 	</head>
 	<body class="pt-5" style="overflow-x: hidden; padding-bottom: 100px">
 		<header>
@@ -109,8 +108,8 @@ Aquí puedes ver el código utilizado:
 						</ul>
 						<ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
 							<li class="nav-item">
-								<button class="ms-2 btn btn-outline-light">
-									Regístrate
+								<button class="ms-2 btn btn-success">
+									Iniciar sesión
 									<i class="bi bi-box-arrow-in-right"></i>
 								</button>
 							</li>
@@ -121,31 +120,19 @@ Aquí puedes ver el código utilizado:
 		</header>
 		<main>
 			<div class="container">
-				<h1 class="mt-5 text-center">Inicia sesión</h1>
+				<h1 class="mt-5 text-center">Registro</h1>
 				<div class="m-5 mx-auto" style="max-width: 400px">
 					<form action="" class="form border shadow-sm p-3">
+						<label for="nombre" class="form-label">Nombre:</label>
+						<input id="nombre" type="text" class="form-control" />
+						<label for="apellidos" class="form-label">Apellidos:</label>
+						<input id="apellidos" type="text" class="form-control" />
 						<label for="email" class="form-label">Email:</label>
-						<input type="text" class="form-control" />
+						<input id="email" type="text" class="form-control" />
 						<label for="pass" class="form-label mt-3">Contraseña:</label>
 						<input id="pass" type="password" class="form-control" />
-						<div class="form-check mt-3">
-							<input
-								class="form-check-input"
-								type="checkbox"
-								value=""
-								id="flexCheckChecked"
-								checked
-							/>
-							<label class="form-check-label" for="flexCheckChecked">
-								Recordar sesión
-							</label>
-						</div>
-						<a class="d-block text-end" href="#">¿Has olvidado tu contraseña?</a>
-						<a class="btn btn-primary w-100 mt-3" href="#">Iniciar sesión</a>
+						<a class="btn btn-primary w-100 mt-3" href="#">Enviar</a>
 					</form>
-					<a class="d-block mt-5 btn btn-secondary mx-auto" href="#"
-						>¿Eres nuevo? Regístrate</a
-					>
 				</div>
 			</div>
 		</main>
@@ -176,6 +163,7 @@ Aquí puedes ver el código utilizado:
 		></script>
 	</body>
 </html>
+
 
 
 ```

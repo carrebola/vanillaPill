@@ -8,19 +8,19 @@ sidebar_position: 8
 ---
 ## *NUEVO PROYECTO Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/nuevoProyecto.png)
+![](/imagenes/v1/prototipos/proyectos/nuevoProyecto.png)
 
 ## *EDITAR PROYECTO Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/editProyecto.png)
+![](/imagenes/v1/prototipos/proyectos/editProyecto.png)
 
 ## *NUEVO PROYECTO Versíón móvil* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/nuevoProyecto_movil.png)
+![](/imagenes/v1/prototipos/proyectos/nuevoProyecto_movil.png)
 
 ## *EDITAR PROYECTO Versíón móvil* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/editProyecto_movil.png)
+![](/imagenes/v1/prototipos/proyectos/editProyecto_movil.png)
 
 ## Procedimiento
 

@@ -1,5 +1,5 @@
 ---
-title: El proyecto Vanilla Games
+title: Definiendo el proyecto 'Vanilla Games'
 sidebar_position: 20
 tags:
 - VanillaJS
@@ -47,7 +47,6 @@ tags:
 - Despliegue en GitHub Pages
 - Despliegue en RailWay
 ---
-# El proyecto Vanilla Games
 ## Escenario del proyecto
 **Vanilla Games S.L**. es una empresa de desarrollo de **minijuegos para navegadores web**, creados con vanillaJS, es decir, desarrollados exclusivamente con **Javascript** como lenguaje de programación (sin frameworks)
 

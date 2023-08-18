@@ -8,50 +8,52 @@ position: 0
 ---
 
 # Vanilla Games
-
+--- 
 <div className='subtituloIntro'>
-<p>Vanilla Games es el nombre que recibe el proyecto que vamos a desarrollar en esta documentación. Es un proyecto sencillo, en las versiones iniciales, que se irá complicando a medida que vayamos trabajando en él.</p>
-<p>No obstante, la finalidad de este trabajo no es crear la app en sí, sino documentar todo el proceso de desarrollo.</p>
+<p>✔ <strong>Vanilla Games</strong> es el nombre que recibe <strpmg>el proyecto que vamos a desarrollar</strpmg> en esta documentación. Es un proyecto sencillo, en las versiones iniciales, que se irá complicando a medida que vayamos trabajando en él.</p>
+<p>✔ No obstante, la finalidad de este trabajo no es crear la app en sí, sino <strong>documentar todo el proceso de desarrollo</strong>.</p>
 
-<p>Así, este recurso aspira a ser una guía que te acompañe en todo el proceso de desarrollo de un proyecto, desde el diseño de los prototipos, hasta el despliegue en producción.  Si la sigues, acabarás aprendiendo, no solo a programar en javascript, sino a integrar todo lo que has aprendido hasta ahora en el ciclo formativo.</p>
-<p>La aplicación la crearemos integramente con HTML, CSS y javascript (con ayuda de Bootstrap para los estilos) en el lado del cliente. En el lado del servidor utilizaremos un servicio como backend (en nuestro caso Supabase). </p>
+<p>✔  Así, este recurso aspira a ser una <strong>guía</strong> que te acompañe en todo el proceso de desarrollo de un proyecto, desde el diseño de los prototipos, hasta el despliegue en producción.  Si la sigues, acabarás aprendiendo, no solo a programar en javascript, sino a integrar todo lo que has aprendido hasta ahora en el ciclo formativo.</p>
+<p>Espero que te resulte de gran ayuda... </p>
 </div>
 
-## Resumen de contenidos
-## Introducción
-### ¿De qué va esto...?
-- Antecedentes
-- Objetivos generales
-- Cómo está organizada la documentación
-- Cómo planificamos las diferentes tareas y su temporización a la hora de realizar el proyecto
-- Entonces, ¿para que sirve todo esto?
 
-### El proyecto 'Vanilla Games'
+---
+## Introducción
+### [¿De qué va esto...?]
+- [Antecedentes]
+- [Objetivos generales]
+- ¿Cómo está organizada la documentación?
+- ¿Cómo planificamos las diferentes tareas y su temporización a la hora de realizar el proyecto?
+- Entonces, ¿para qué sirve todo esto?
+
+### [Definiendo el proyecto 'Vanilla Games']
 - Escenario del proyecto
 - Requisitos del proyecto y casos de uso general
 - Fases de desarrollo. Versiones
 - Arquitectura y tecnologías
   - ¿Qué arquitectura vamos a utilizar en nuestro proyecto?
-  - ¿Como diseñaremos nuestro FrontEnd ?
-  - ¿Como implementaremos las funcionalidades del BackEnd?
+  - ¿Cómo diseñaremos nuestro FrontEnd ?
+  - ¿Cómo implementaremos las funcionalidades del BackEnd?
 - Nuestro entorno de desarrollo: VSCODE
 - Y para el despliegue de nuestras aplicaciones
 
 
-### Stack tecnológico (PENDIENTE)
+### [Stack tecnológico (PENDIENTE)]
   - Resumen de tecnologías y herramientas empleadas
 
-### Metodologías Agile. Conceptos (PENDIENTE)
-- ¿Qué son las metodología Agile?
+### [Un poco de ayuda para organizar el trabajo: Metodologías Agile.(PENDIENTE)]
+- ¿Qué son las metodologías Agile?
 - Terminología: Historias, tareas, sprints, backlogs, diagramas de Gantt, etc.
-- Como Planificamos el desarrollo del proyecto
+- ¿Cómo Planificamos el desarrollo de nuestro proyecto?
 
 ## Técnicas para el diseño de la interficie
-### Benchmarking o estudio de buenas prácticas
-- Estdudio de la competencia
-### Diseño centrado en el usuario (DCU). Fichas de usuario
+### [¿Qué es el Diseño centrado en el Usuario (DCU)?]
 - Modelado de personas
 - Fichas de usuario
+### Benchmarking o estudio de buenas prácticas
+- Estudio de la competencia
+
 
 ### 
 

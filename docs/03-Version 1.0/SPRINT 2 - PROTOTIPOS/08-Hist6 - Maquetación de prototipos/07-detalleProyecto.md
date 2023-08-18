@@ -8,11 +8,11 @@ sidebar_position: 7
 ---
 ## *DETALLE DEL PROYECTO Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/detalleProyecto.png)
+![](/imagenes/v1/prototipos/proyectos/detalleProyecto.png)
 
 ## *DETALLE DEL PROYECTO Versíón móvil* 
 
-![](../../../static/imagenes/v1/prototipos/proyectos/detalleProyecto_movil.png)
+![](/imagenes/v1/prototipos/proyectos/detalleProyecto_movil.png)
 
 
 ## Procedimiento

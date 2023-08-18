@@ -1,53 +1,35 @@
 ---
-title: Home
+title: Login
 tags:
   - Bootstrap 5
   - html
   - css
-sidebar_position: 2
+sidebar_position: 4
 ---
-## *HOME Versíón escritorio* 
+## *LOGIN Versíón escritorio* 
 
-![](../../../static/imagenes/v1/prototipos/home/home.png)
+![](/imagenes/v1/prototipos/login/login.png)
 
-## *HOME Versíón móvil* 
+## *LOGIN Versíón móvil* 
 
 
-![](../../../static/imagenes/v1/prototipos/home/home_movil.png)
+![](/imagenes/v1/prototipos/login/login_movil.png)
 
-## Entorno de desarrollo
-Vamos a comenzar a maquetar los prototipos para nuestro proyecto.
-
-En primer lugar abre el VSCode y arrastra tu carpeta del proyecto. Si no recuerdo mal, se llamaba `vanillagaames10`
-
-Ahora deberías ver en la parte inferior izquierda de vscode el **nombre de la rama en la que estás situado**. Deberías estar en la rama `prototipos`, si no es así, puedes cambiar de rama haciendo clic con el botón derecho sobre el nombre de la rama.
-
-:::danger ¡Cuidado!
-Un error muy habitual es olvidarnos de cambiar de rama cuando comenzamos a trabajar. Ten cuidado ya que esto se puede convertir en un problema grave de organización, y que ¡¡¡generar muchos dolores de cabeza 🥴!!!
-:::
-
-Si todo es correcto deberías ver en la columna izquierda la carpeta prototipos con un archivo `home.html` y un archivo `readme.md`.
-
-Abre el archivo `home.html` y comencemos a trabajar...
 ## Procedimiento
 
-Comenzamos a maquetar la página **home**. De manera resumida debemos seguir los siguientes pasos:
-1. Creamos plantilla html
-   1. Modificamos `lang` y `title`
-   2. Vinculamos la libreria css para bootstrap y bootswatch
-   3. Vinculamos la librería de iconos de boostrap
-   4. Vinculamos el js de bootstrap.
-2. Creamos la estructura de la web dentro del body con las etiquetas header, main y footer
-2. Copiamos el componente menú de la documentación de bootstrap (**navbar**) y lo modificamos para que se ajuste a nuestro prototipo. Lo usamos tanto en el header como en el footer.
-3. Creamos, en el main, un h1 y una imagen.
+Para maquetar la página `login.html` podemos partir de la página `registro.html` haciendo una copia y modificando la etiqueta `main`. 
 
+De manera resumida debemos seguir los siguientes pasos:
+1. Modificamos la página home eliminando el botón *login* del menú y el contenido de la etiqueta `main` excepto el h1 que modificaremos.
+2. Creamos un div con una anchura máxima de 400px usando el atributo `style` y dentro creamos un formulario con los campos correspondientes.
+3. Finalmente añadimos un enlace para actualizar la contraseña y un botón para registrarte si no lo estás.
 
 :::warning ¡NO TE OLVIDES DEL COMMIT!
 Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los cambios en Git y subirlos a github añadiendo cada vez un commit apropiado. Podrías empezar con algo así: 
 
-	Crea la estructura básica de la página HOME:
+	Crea la estructura básica de la página xxx:
   
-		Agrega el esqueleto HTML y los estilos iniciales para la página home.html
+		Agrega el esqueleto HTML y los estilos iniciales para la página xxx.html
 
 Algunos consejos para escribir tus commits:
 
@@ -56,8 +38,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado:
 
-
-```html title="home.html"
+```html title="registro.html"
 
 <!DOCTYPE html>
 <html lang="es">
@@ -73,22 +54,21 @@ Aquí puedes ver el código utilizado:
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<!-- Bootswatch CSS -->
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/yeti/bootstrap.min.css"
 		/>
-		<!-- Bootstrap icons -->
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 		/>
-		<!-- Mis estilos personales  -->
 		<link rel="stylesheet" href="styles.css" />
 
-		<title>Vanilla Games</title>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Login</title>
 	</head>
-	
 	<body class="pt-5" style="overflow-x: hidden; padding-bottom: 100px">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -129,12 +109,6 @@ Aquí puedes ver el código utilizado:
 						</ul>
 						<ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
 							<li class="nav-item">
-								<button class="ms-2 btn btn-success">
-									Iniciar sesión
-									<i class="bi bi-box-arrow-in-right"></i>
-								</button>
-							</li>
-							<li class="nav-item">
 								<button class="ms-2 btn btn-outline-light">
 									Regístrate
 									<i class="bi bi-box-arrow-in-right"></i>
@@ -147,20 +121,38 @@ Aquí puedes ver el código utilizado:
 		</header>
 		<main>
 			<div class="container">
-				<h1 class="mt-5 text-center fw-bold" style="font-size: 100px;">Vanilla Games</h1>
+				<h1 class="mt-5 text-center">Inicia sesión</h1>
 				<div class="m-5 mx-auto" style="max-width: 400px">
-					<img
-							src="./images/logo.svg"
-							alt="fpllefia"
-							class="img-fluid"
-						/>
+					<form action="" class="form border shadow-sm p-3">
+						<label for="email" class="form-label">Email:</label>
+						<input type="text" class="form-control" />
+						<label for="pass" class="form-label mt-3">Contraseña:</label>
+						<input id="pass" type="password" class="form-control" />
+						<div class="form-check mt-3">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value=""
+								id="flexCheckChecked"
+								checked
+							/>
+							<label class="form-check-label" for="flexCheckChecked">
+								Recordar sesión
+							</label>
+						</div>
+						<a class="d-block text-end" href="#">¿Has olvidado tu contraseña?</a>
+						<a class="btn btn-primary w-100 mt-3" href="#">Iniciar sesión</a>
+					</form>
+					<a class="d-block mt-5 btn btn-secondary mx-auto" href="#"
+						>¿Eres nuevo? Regístrate</a
+					>
 				</div>
 			</div>
 		</main>
 		<footer class="">
 			<nav class="navbar bg-secondary fixed-bottom small">
 				<div class="container">
-					<a class="navbar-brand fs-6" href="http://www.fpllefia.com">
+					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
 							src="./images/logo.svg"
 							alt="fpllefia"
@@ -170,8 +162,8 @@ Aquí puedes ver el código utilizado:
 						/>
 						FPLlefià
 					</a>
-					<span class="navbar-text">DAW - Asignatura de proyectos</span>
-					<a href="#" class="nav-link">carrebola GITHUB</a>
+					<span class="navbar-text">@Texto de header</span>
+					<a href="#" class="nav-link">Vínculo header</a>
 				</div>
 			</nav>
 		</footer>
@@ -184,5 +176,6 @@ Aquí puedes ver el código utilizado:
 		></script>
 	</body>
 </html>
+
 
 ```

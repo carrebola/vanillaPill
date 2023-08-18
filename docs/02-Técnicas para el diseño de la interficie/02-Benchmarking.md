@@ -8,7 +8,7 @@ sidebar_position: 20
 
 Ahora que tenemos claro las **especificaciones** del proyecto **y a quíen va dirigido**, es hora de plantearnos cómo resolver las necesidades de los usuarios. 
 
-Un buena forma de comenzar es fijarnos en **cómo lo hacen otras aplicaciones web**, adaptando las mejores soluciones...
+Un buena forma de comenzar es fijarnos en **cómo lo hacen otras aplicaciones web**, para acabar adoptando las mejores soluciones...
 
 > Sí, vale, **nos vamos a copiar, ¡¿qué pasa?!**  😒
 
