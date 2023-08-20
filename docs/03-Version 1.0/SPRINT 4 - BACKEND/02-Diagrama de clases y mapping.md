@@ -1,5 +1,11 @@
 ---
-Title: A cerca del Diagrama de clases y el Mapping de la bd
+
+title: A cerca del Diagrama de clases y el Mapping
+tags:
+  - diagrama de clases
+  - ORM
+position: 
+
 ---
 
 Ya hemos decidido las **entidades** que necesitamos en la construcción de nuestra base de datos y como se relacionan.

@@ -122,6 +122,15 @@ select * from proyectos
 
 ¡Genial! Todo según los previsto 😎
 
+**Resumiendo**: 
+- Nos hemos registrado en Supabase con una cuenta gratuita (que nos permite tener dos proyectos)
+- Hemos creado las tablas necesarias para nuestro proyecto
+- Hemos registrado algunos usuarios de prueba
+- Hemos insertado datos de prueba en las tablas
+- Hemos probado algunas consultas.
+
+Es el momento de aprender a comunicar una aplicación de javascript con nuestro servicio de backend... ¿Preparados?
+
 
 
 
