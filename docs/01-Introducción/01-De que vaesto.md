@@ -1,5 +1,5 @@
 ---
-title: ¿De qué va esto...?
+title: ¿De qué va esto ...?
 tags:
   - Agile
   - Lean Startup
