@@ -53,7 +53,15 @@ Hay muchas maneras de registrar usuarios, pero ahora la más fácil para nosotro
 
 Podemos crear algunos usuarios más para poder hacer pruebas. Estos son los que he creado yo. Tu puedes hacer lo mismo:
 
+:::note Nota
+Te recomiendo que antes te crees algunas cuentas de correo para poder trabajar con ellas
+:::
+
 ![Nuevos usuarios](/imagenes/v1/bd/users.png).
+
+:::danger No te olvides de confirmar a tus usuarios
+Cuando registramos un usuario en un proyecto de supabase, por defecto, supabase envia un email de confirmación. Si quieres que estos usuarios más adelante tengan permiso para acceder a las tablas deberías responder a todos estos mails.
+:::
 
 ## Añadimos datos a la tabla perfiles
 
