@@ -478,7 +478,9 @@ Para poder publicar en GitHub Pages nuestro repositorio debe ser público. Si no
 
 ¡Y ya puedes visitar la página en el servidor!
 
-
+:::danger Commit!
+No te olvides de subir al repositorio lo que llevamos hecho con un commit apropiado
+:::
 
 
     
