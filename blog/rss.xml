@@ -4,10 +4,32 @@
         <title>VANILLA Pills Blog</title>
         <link>https://carrebola.github.io/vanillaPill/blog</link>
         <description>VANILLA Pills Blog</description>
-        <lastBuildDate>Sun, 20 Aug 2023 17:18:31 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Aug 2023 10:21:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
+        <item>
+            <title><![CDATA[ESLint con plantillas literales]]></title>
+            <link>https://carrebola.github.io/vanillaPill/blog/ESLint con plantillas literales</link>
+            <guid>https://carrebola.github.io/vanillaPill/blog/ESLint con plantillas literales</guid>
+            <pubDate>Tue, 22 Aug 2023 10:21:08 GMT</pubDate>
+            <description><![CDATA[Para que ESLint reconozca y comprenda la sintaxis de HTML dentro de tus archivos JavaScript, especialmente en plantillas literales, puedes utilizar el plugin eslint-plugin-html. Este plugin agrega soporte para resaltar y analizar el código HTML dentro de tus plantillas literales. Aquí tienes los pasos para configurarlo:]]></description>
+            <content:encoded><![CDATA[<p>Para que ESLint reconozca y comprenda la sintaxis de HTML dentro de tus archivos JavaScript, especialmente en plantillas literales, puedes utilizar el plugin eslint-plugin-html. Este plugin agrega soporte para resaltar y analizar el código HTML dentro de tus plantillas literales. Aquí tienes los pasos para configurarlo:</p><p>Instalar el plugin:</p><p>Abre una terminal en la carpeta raíz de tu proyecto y ejecuta el siguiente comando para instalar el plugin eslint-plugin-html:</p><p>css
+Copy code
+npm install eslint-plugin-html --save-dev
+Configurar ESLint:</p><p>En tu archivo de configuración de ESLint (por lo general, .eslintrc.js o similar), agrega 'plugin:html/recommended' a la propiedad extends y agrega 'html' a la propiedad plugins. También puedes personalizar las reglas según tus necesidades. Aquí hay un ejemplo de configuración:</p><p>javascript
+Copy code
+module.exports = {
+// Otras configuraciones...</p><p>  extends: <!-- -->['plugin:html/recommended']<!-- -->,</p><p>  plugins: <!-- -->['html']<!-- -->,</p><p>  // Otras reglas...</p><p>  rules: {
+// Otras reglas...
+}
+};
+Utilizar plantillas literales con html como etiqueta:</p><p>Una vez configurado el plugin, puedes utilizar la etiqueta html en tus plantillas literales sin que ESLint muestre errores. Aquí tienes un ejemplo:</p><p>javascript
+Copy code
+const template = html`</p><h1>Home</h1><p>Welcome to my website!</p>`;<p>Ejecutar ESLint:</p><p>Ahora puedes ejecutar ESLint normalmente en tu proyecto para que analice y verifique la sintaxis de HTML en tus plantillas literales. Ejecuta el siguiente comando en la terminal:</p><p>Copy code
+npx eslint .
+Asegúrate de que estás en la carpeta raíz de tu proyecto cuando ejecutes este comando.</p><p>Con la configuración y el plugin adecuados, ESLint debería ser capaz de reconocer y analizar el código HTML dentro de tus plantillas literales sin mostrar errores. Recuerda ajustar las reglas de ESLint según tus preferencias y necesidades.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Autenticación con Google]]></title>
             <link>https://carrebola.github.io/vanillaPill/blog/Auth con Google</link>
