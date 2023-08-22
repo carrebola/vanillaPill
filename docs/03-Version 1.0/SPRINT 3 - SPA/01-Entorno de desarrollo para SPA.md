@@ -45,7 +45,7 @@ Tal y como ya explicamos en su día, nuestra **SPA** es también una **CSR**, es
 :::info
 Recuerda que podemos crear nuestra app como una CSR (Client Side rendering) o una SSR (Server Side Rendering). Las clásicas páginas php serían de tipo SSR.
 
-Si quieres hacer memoria, en esta sección lo estuvimos viendo ya hace unos días: [link](link)
+Si quieres hacer memoria, en esta sección lo estuvimos viendo ya hace unos días: [link](#)
 :::
 
 ## Hablemos de NodeJS
@@ -219,7 +219,24 @@ Documentación y proyectos personales: Muchos desarrolladores utilizan GitHub Pa
 
 </div>
 
-Para el diseño de los prototipos html nos hemos ayudado de Prettier para ayudarnos a dar formato al codigo html y css, pero para javascript tenemos una herramienta mucho más potente llamada **Linter**. Nosotros usaremos el linter que más exito ha tenido en la programación con javascript: **ESLint**.
+Para el diseño de los prototipos html nos hemos ayudado de **Prettier**, un plugin de VSCode que nos ayuda a dar formato al codigo html y css, pero para javascript tenemos una herramienta mucho más potente llamada **EsLint**.
+
+A la hora de escribir nuestro código es importante mantener las formas, utilizando estructuras correctas y manteniendo ciertas pautas. Por ejemplo: 
+- ¿Debo poner punto y coma al final de cada linea? 
+- ¿Puedo declarar variables y luego no usarlas? 
+- ¿Puedo dejar espacios entra lineas de código? 
+- ¿Cuantos espacios debo poner al tabular?
+
+Una vez tengo claras todas estas reglas, puedo utilizar un **Linter** para que se encargue de vigilar que las estoy cumpliendo que nuestro código es **consistente**. 
+
+Con esto vamos a evitar malas prácticas escribiendo el código y podremos detectar errores de sintaxis antes de ejecutar nuestros scripts.
+
+**Existen algunos estandar**s a la hora de escribir código que tienen sus propias reglas. Por ejemplo:
+- Airbnb
+- StandardJS
+- Google
+- XO
+Nosotros nos basaremos en el estandard **StandardJS**.
 
 
 :::info ¿Qué es un linter?
@@ -251,6 +268,12 @@ Los linters se pueden configurar para funcionar con diferentes lenguajes de prog
 </details>
 
 :::
+
+## ESlint como linter predeterminado
+En nuestro caso usaremos una libreria llamada **ESLint** como linter para que vigile el código de nuestros proyectos, que configuraremos para que se ajuste al StandardJS.
+
+Nosotros usaremos el linter que más exito ha tenido en la programación con javascript: **ESLint**.
+
 
 
 Vale, ahora ya nos suena qué es cada cosa y para que sirve, es hora de actualizar nuestro entorno de trabajo. Después crearemos nuestro proyecto basado en **NodeJs** con la herramienta **Vite** e instalaremos las **dependencias** necesarias con **npm**, como puede ser **ESLint**, para mejorar nuestro flujo de trabajo en el desarrollo de nuestra **SPA**.

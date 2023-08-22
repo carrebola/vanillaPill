@@ -13,7 +13,8 @@ Como desarrollador quiero crear una infraestructura básica para la creación de
 4. Modificaremos el **scaffolding** (las carpetas y archivos) de nuestro proyecto con algunos 'componentes' básicos.
 5. Crearemos el archivo **vite.config** y verificamos que todo funciona de forma correcta
 6. Instalaremos Bootstrap y Bootswach
-7. Crearemos un sistema de despliegue continuo basado en GitHub Pages utilizando la dependencia **gh-pages**.
+7. Instalaremos ESLint
+8. Crearemos un sistema de despliegue continuo basado en GitHub Pages utilizando la dependencia **gh-pages**.
 
 ### 1. Instalando Node.js
 
@@ -154,7 +155,7 @@ Hagamos lo siguiente:
         package-lock.json  
 ```
 
-- Modificamos index.html para que solo tenga las etiquetas header, main y footer y enlazamos el archivo main.js
+- Modificamos `index.html` para que solo tenga las etiquetas header, main y footer y enlazamos el archivo main.js
 ```html title="index.html"
         <!DOCTYPE html>
         <html lang="es">
@@ -184,17 +185,17 @@ Hagamos lo siguiente:
             template: `header`
         }
 ```
-- En main.js importamos los componentes header y footer y los inyectamos en sus etiquetas correspondients. También cargamos la vista home.js en la etiqueta main
-```js title="home.js"
+- En `**main.js**` importamos los componentes header y footer y los inyectamos en sus etiquetas correspondients. También cargamos la vista `home.js` en la etiqueta main
+```js title="main.js"
 import { header } from './componentes/header'
 import { footer } from './componentes/footer'
 
-//Importamos la vista por defecto (que será home)
-async function cargarVista(){
-  const componenteHome = await import('./vistas/homeVista')
-  const homeVista = componenteHome.default
-  //Inyectamos la vista home
-  document.querySelector('main').innerHTML = homeVista.template
+// Importamos la vista por defecto (que será home)
+async function cargarVista () {
+  const componente = await import('./vistas/homeVista')
+  const vista = componente.default
+  // Inyectamos la vista home
+  document.querySelector('main').innerHTML = vista.template
 }
 cargarVista()
 
@@ -350,14 +351,14 @@ export default {
 @import "~bootswatch/dist/yeti/bootswatch";
 
 ```
-- Finalmente añadimos la libreria bootstrap en el archivo main.js
+- Finalmente importamos los estilos de scss
 
 ```js title="main.js"
 // Import our custom CSS
 import './scss/styles.scss'
 
 // Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+// import * as bootstrap from 'bootstrap'
 ```
 
 - Ejecutamos nuestro proyecto para verificar que todo está ok mediante `npm run dev`. Deberíamos ver nuestra aplicación con las clases de **bootstrap** aplicandose y los estilos de **Bootswatch yeti**
@@ -426,8 +427,38 @@ Vamos a crear la versión de distribución de nuestra app. Esto creará una carp
 
 - Prueba a abrir con live server el archivo index.html de la carpeta dist. Debería verse la aplicación funcionando correctamente.
 
+## 7. Instalando ESLint
 
-## 7. Desplegando la aplicación en un servidor de pruebas (GitHub Pages)
+- Para utilizar en nuestro proyecto ESLint, en primer lugar instalaremos en **VSCode** el pluging **ESLint de Microsoft**.
+  
+  ![Eslint plugin](/imagenes/v1/spa/eslintplugin.png)
+
+
+
+
+
+
+- Ahora instalamos **Eslint con la configuración standard**  
+  ```npm init @eslint/config -- --config semistandard
+  ```
+  Esto nos instalará ESLint con la configuración Standard. Puedes comprobar que se ha creado un archivo de configuración con nombre `.eslintrc.cjs`
+
+- Finalmente vamos a configurar VSCode para que al grabar (pulsando ctrl + s) ESLint haga su trabajo, reparando, si puede, algunos errores de sintaxis y avisando (con una línea subrayada roja) cuando puede haber un posible error en el código. 
+  
+  
+- Para ello:
+  - Abre la paleta de comandos con `ctrl + shift + P` y escribe `settings json`
+  - Selecciona las preferencias de usuario: `Preferences: Open User Settings (JSON)`
+  - Asegurate de que tienes las siguiente linea en el archivo json
+    ```
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    }
+    ```
+
+  Ahora, si abres un archivo y pulsas `ctrl + S` verás como actua ESLint.
+
+## 8. Desplegando la aplicación en un servidor de pruebas (GitHub Pages)
 Vamos a montarnos un sistema para poder hacer despliegue continuo. Así cada vez que actualicemos nuesta app, subiremos los cambios al repositorio y la publicaremos en el servidor de GitHub Pages.
 
 - Creamos un repositorio de git para el proyecto y lo sincronizamos con github (para ello utilizamos las herramientas de vscode)
