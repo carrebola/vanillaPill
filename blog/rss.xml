@@ -4,7 +4,7 @@
         <title>VANILLA Pills Blog</title>
         <link>https://carrebola.github.io/vanillaPill/blog</link>
         <description>VANILLA Pills Blog</description>
-        <lastBuildDate>Tue, 22 Aug 2023 10:21:08 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Aug 2023 14:32:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[ESLint con plantillas literales]]></title>
             <link>https://carrebola.github.io/vanillaPill/blog/ESLint con plantillas literales</link>
             <guid>https://carrebola.github.io/vanillaPill/blog/ESLint con plantillas literales</guid>
-            <pubDate>Tue, 22 Aug 2023 10:21:08 GMT</pubDate>
+            <pubDate>Tue, 22 Aug 2023 14:32:34 GMT</pubDate>
             <description><![CDATA[Para que ESLint reconozca y comprenda la sintaxis de HTML dentro de tus archivos JavaScript, especialmente en plantillas literales, puedes utilizar el plugin eslint-plugin-html. Este plugin agrega soporte para resaltar y analizar el código HTML dentro de tus plantillas literales. Aquí tienes los pasos para configurarlo:]]></description>
             <content:encoded><![CDATA[<p>Para que ESLint reconozca y comprenda la sintaxis de HTML dentro de tus archivos JavaScript, especialmente en plantillas literales, puedes utilizar el plugin eslint-plugin-html. Este plugin agrega soporte para resaltar y analizar el código HTML dentro de tus plantillas literales. Aquí tienes los pasos para configurarlo:</p><p>Instalar el plugin:</p><p>Abre una terminal en la carpeta raíz de tu proyecto y ejecuta el siguiente comando para instalar el plugin eslint-plugin-html:</p><p>css
 Copy code
