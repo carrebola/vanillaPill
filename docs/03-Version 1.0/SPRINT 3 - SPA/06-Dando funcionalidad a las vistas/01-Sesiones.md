@@ -1,5 +1,5 @@
 ---
-title: Dando funcionalidad a las vistas
+title: Gestión de sesiones (login y logout)
 ---
 
 Ahora ya tenemos nuestra app funcionando visualmente. El enrutador se encarga de mostrar las vistas como si de páginas independientes se tratase.
@@ -13,8 +13,10 @@ Para esta parte del trabajo vamos a crear la rama 'logica para vistas'
 :::
 
 
-## Registro de usuarios
-¿Qué tal si comenzamos con un objeto que contenga los datos de diferentes usuarios registrados? Podría ser algo así:
+## Datos para simular el acceso a la base de datos
+¿Qué tal si comenzamos con un objeto que contenga los datos de diferentes usuarios registrados? Para concretar el nombre de las propiedades deberíamos basarnos en el diagrama de clases que hemos creado cuando llevabamos el traje de backend.
+
+Digamos que, tras consultar con nuestro yo backend, hemos decidido que puede ser algo así:
 ```javascript
 perfiles = [
   {
@@ -42,7 +44,7 @@ export const perfiles = [
     user_id: '8e9b7c4f-10de-4a10-a36e-87f49657d1c1',
     nombre: 'Paco',
     apellidos: 'Martínez Soria',
-    avatar: 'paco_avatar.jpg',
+    avatar: 'https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/02/28/16460502314689.jpg',
     estado: 'Activo',
     rol: 'registrado',
     email: 'paco@example.com',
@@ -54,7 +56,7 @@ export const perfiles = [
     user_id: '36f66b5e-aa59-4f96-b6a8-3c890d6a452c',
     nombre: 'Carmen',
     apellidos: 'Maura',
-    avatar: 'carmen_avatar.jpg',
+    avatar: 'https://s.libertaddigital.com/2020/09/15/1920/1080/fit/carmen-maura-roman.jpg',
     estado: 'Inactivo',
     rol: 'desarrollador',
     email: 'carmen@example.com',
@@ -66,7 +68,7 @@ export const perfiles = [
     user_id: 'a3df05b0-91e7-4f68-a067-841fcf5de9f0',
     nombre: 'Antonio',
     apellidos: 'Resines',
-    avatar: 'antonio_avatar.jpg',
+    avatar: 'https://estaticos-cdn.elperiodico.com/clip/056573ce-f784-49d0-9746-0e154380598b_alta-libre-aspect-ratio_default_0.jpg',
     estado: 'Activo',
     rol: 'desarrollador',
     email: 'antonio@example.com',
@@ -78,7 +80,7 @@ export const perfiles = [
     user_id: 'd67e3b1c-875f-437f-bd2a-9ff50b72083d',
     nombre: 'Maribel',
     apellidos: 'Verdú',
-    avatar: 'maribel_avatar.jpg',
+    avatar: 'https://es.web.img3.acsta.net/pictures/23/06/13/09/44/5805084.jpg',
     estado: 'Inactivo',
     rol: 'desarrollador',
     email: 'maribel@example.com',
@@ -90,14 +92,13 @@ export const perfiles = [
     user_id: '2419d5e3-46a6-45d6-98a2-b02c8ac5d3fe',
     nombre: 'Javier',
     apellidos: 'Bardem',
-    avatar: 'javier_avatar.jpg',
+    avatar: '',
     estado: 'Activo',
     rol: 'admin',
     email: 'javier@example.com',
     contraseña: '123456'
   }
 ]
-
 
 ```
 
@@ -174,7 +175,7 @@ function enviarDatos (formulario) {
 Podríamos indicar de manera independiente que el usuario no existe, o que sí existe pero la contraseña no corresponde, pero eso daría pístas a un usuario que intente hackear el inicio de sesión
 :::
 
-Ahora solo falta registrar los datos del usuario en el localstorage. Usaremos nuestro objeto `ls` por lo que no olvides cargar la libreria `funciones.js` 
+Ahora solo falta registrar los datos del usuario en el localstorage (esta vez con algunos datos extra como el user_id). Usaremos nuestro objeto `ls` por lo que no olvides cargar la libreria `funciones.js` 
 
 ```javascript	title="función enviarDatos de loginVista.js"
 function enviarDatos (formulario) {
@@ -189,7 +190,9 @@ function enviarDatos (formulario) {
     // Construimos la información para guardar en el localstorage
     const usuario = {
       email: perfiles[indexUser].email,
-      rol: perfiles[indexUser].rol
+      rol: perfiles[indexUser].rol, 
+      avatar: perfiles[indexUser].avatar,
+      user_id: perfiles[indexUser].user_id
     }
     // Usamos nuestra función ls para registrar usuario en localstorage
     ls.setUsuario(usuario)
@@ -207,8 +210,12 @@ Para asegurarnos que se inyectan correctamente tanto el email como el rol en el 
 ```javascript
 // Y actualizamos los datos de menu de usuario si es que se está mostrando
   try {
+    // email y rol
     document.querySelector('#emailUserMenu').innerHTML = ls.getUsuario().email
     document.querySelector('#rolUserMenu').innerHTML = ls.getUsuario().rol
+    // para la imagen de avatar (avatar.png si el campo está vacío)
+    const imagen = ls.getUsuario().avatar === '' ? '/assets/images/avatar.svg' : ls.getUsuario().avatar
+    document.querySelector('#avatarMenu').setAttribute('src', imagen)
   } catch (error) {
     console.log('El usuario no está registrado y no tiene menú de usuario');
   }
