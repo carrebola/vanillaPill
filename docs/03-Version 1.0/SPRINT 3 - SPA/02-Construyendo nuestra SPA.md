@@ -354,11 +354,12 @@ export default {
 - Finalmente importamos los estilos de scss
 
 ```js title="main.js"
+// Import all of Bootstrap's JS
+import 'bootstrap'
+
 // Import our custom CSS
 import './scss/styles.scss'
 
-// Import all of Bootstrap's JS
-// import * as bootstrap from 'bootstrap'
 ```
 
 - Ejecutamos nuestro proyecto para verificar que todo está ok mediante `npm run dev`. Deberíamos ver nuestra aplicación con las clases de **bootstrap** aplicandose y los estilos de **Bootswatch yeti**

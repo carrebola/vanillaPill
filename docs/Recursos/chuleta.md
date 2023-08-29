@@ -4,6 +4,11 @@ sidebar_position: 190
 
 # MI CHULETA:
 
+## Para ocultar secciones: 
+
+<div style={{display: "none"}}>
+...
+</div>
 ## Importar TABS
 
 import Tabs from '@theme/Tabs';
