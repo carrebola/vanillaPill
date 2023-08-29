@@ -81,14 +81,15 @@ Nuestro sistema de navegación se basará en la siguiente metodología:
   // Capturamos los eventos click sobre el body
   document.body.addEventListener('click', (event)=>{...})
   ```
-3. Obtendremos el elemento sobre el que se ha hecho click y comprobaremos que se trata de una etiqueta `<a>` 
+3. Obtendremos el elemento sobre el que se ha hecho click y comprobaremos que se trata de una etiqueta `<a>` con la clase '**router-link**'
     ```js 
-    // Capturamos el elemento sobre el que se ha hecho click
-    const link = event.target
-      // Comprobamos si es una etiqueta <a></a>
-      if (link.tagName === 'A') {
-        // Si es así, detenemos el evento de navegación
+    document.body.addEventListener('click', event => {
+      // Evitamos que se cargue la página
+      const link = event.target
+      if (link.classList.contains('router-link')) {
+        console.log('router-link')
         event.preventDefault()
+        ...
     ```
 4. Extraeremos el contenido del atributo **href** (el cual contendrá el nombre de la vista a cargar)
   ```js
@@ -113,22 +114,26 @@ El método **observadorRutas()** quedaría así:
 
 ```js title="enrutador.js"
 observadorRutas: () => {
-    // Capturamos los eventos click sobre el body
-    document.body.addEventListener('click', (event) => {
-    // Capturamos el elemento sobre el que se ha hecho click
+    document.body.addEventListener('click', event => {
+      // Evitamos que se cargue la página
       const link = event.target
-      // Comprobamos si es una etiqueta <a></a>
-      if (link.tagName === 'A') {
-        // Si es así, detenemos el evento de navegación
+      if (link.classList.contains('router-link')) {
+        console.log('router-link')
         event.preventDefault()
+        // Obtenemos la ruta del enlace sin el .html
         const href = link.getAttribute('href')
+        // Añadimos la nueva ruta al historial
+
+        // (El método pushState() permite agregar un nuevo estado a la pila del historial del navegador. Esto significa que una nueva entrada de historial se agrega a la pila y la URL del navegador se actualiza sin recargar la página.)
         window.history.pushState({ path: href }, '', href)
+        // y ejecutamos el router de nuevo para que detecte los cambios con el evento popstate
+        enrutador.router()
       }
     })
 
-    // Capturamos eventos pushState (cambios en la url del navegador)
+    // Detectamos cuando alguien navega por el historial con los botones avanzar y retroceder del navegador.
     window.addEventListener('popstate', (e) => {
-      // Llamamos a router para que cargue la vista
+      console.log('evento popstate - Te estás moviendo por el historial')
       enrutador.router()
     })
   }
@@ -147,13 +152,15 @@ Esta función se dispara cada vez que se produce un cambio en la url del navegad
 Dentro del método **router()** se obtiene el **hash** de la ruta modificada mediante `window.location.hash`. 
 Después, se utiliza este hash resultante para obtener la vista correspondiente del objeto rutas.
 
+:::note Nota
+También hemos contemplado la posibilidad de pasar un parámetro en la ruta. PEro esto ya lo veremos más adelante
+:::
+
 Con esta lógica podemos detectar: 
 - cuando se navega por el historial o 
 - cuando se introduce directamente una url en la barra de navegación para poder cargar la vista correspondiente
 
-
-
-```js
+```javascript
     // Capturamos el hash # que ha cambiado en la url
     const pathCompleto = window.location.hash
     // Separamos la ruta del posible parametro que reciba
@@ -314,7 +321,7 @@ Si modificamos la barra de navegación de nuestra aplicación escribiendo, por e
 
 También podemos hacer clic sobre la flecha atras de la barra de navegación. Podremos comprobar que volvemos a la vista #/home.
 
-Finalmente, para verificar que los enlaces funcionan vamos a modificar el atritubo `href` de los enlaces del componente header para ver si la navegación funciona correctamente.
+Finalmente, para verificar que los enlaces funcionan vamos a modificar el **atributo `href`** de los enlaces del componente header y a vamos a añadirles la **clase 'router-link'** para ver si la navegación funciona correctamente.
 
 :::note Nota
 Hemos cambido los botones de inicio de sesión y registrate por etiquetas `<a></a>` para facilitar el comportamiento de carga de vistas.
@@ -327,7 +334,7 @@ Hemos cambido los botones de inicio de sesión y registrate por etiquetas `<a></
     alt=""
     width="30"
     height="24"
-    class="d-inline-block align-text-top"
+    class="d-inline-block align-text-top router-link"
   />
   Vanilla Games</a
 >
@@ -337,30 +344,30 @@ Hemos cambido los botones de inicio de sesión y registrate por etiquetas `<a></
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#/home">Home</a>
+      <a class="nav-link active router-link" aria-current="page" href="#/home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="#">TOP5 Proyectos</a>
+      <a class="nav-link router-link" aria-current="page" href="#">TOP5 Proyectos</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="#">A cerca de</a>
+      <a class="nav-link router-link" aria-current="page" href="#">A cerca de</a>
     </li>
   </ul>
   <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
     <li class="nav-item">
-      <a class="ms-2 btn btn-success" href="#/login">
+      <a class="ms-2 btn btn-success router-link" href="#/login">
         Iniciar sesión
         <i class="bi bi-box-arrow-in-right"></i>
       </a>
     </li>
     <li class="nav-item">
-      <a class="ms-2 btn btn-outline-light" href="#/registro">
+      <a class="ms-2 btn btn-outline-light router-link" href="#/registro">
         Regístrate
         <i class="bi bi-box-arrow-in-right"></i>
       </a>
     </li>
   </ul>
 ```
-
+Es el momento de probar todos nuestros enlaces... ¿Funcionan?
 
 
