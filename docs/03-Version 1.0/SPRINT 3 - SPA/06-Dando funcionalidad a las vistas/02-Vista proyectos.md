@@ -99,19 +99,24 @@ export const proyectos = [
 ]
 
 ```
-### Generando la tabla proyectos desde script de la vista
+### Generando los datos desde script de la vista
 
-Vamos ahora a la vista `proyectos.js` inyectamos en el `<tbody id="tbodyProyectos"></tbody>` de la tabla el resultado de recorrer el array anterior generando un `<tr></tr>` por cada fila de datos:
+Vamos ahora a la vista `proyectos.js`. Necesitamos crear un par de funciones, pintaTabla() y pintaTarjetas(). Estas funciones se encargarán de inyectar en la vista el resultado de recorrer el array anterior generando una fila `<tr></tr>` o `card` por cada proyecto. 
 
+De momento vamos a hacer que, en ambas vistas, se muestren los botones de editar y borrar proyecto. Estos enlaces tendrán una clase (botonEditar y botonBorrar) para poder detectar su pulsación, y además, utilizando dataset, le añadiremos el id del proyecto. De esta manera, cuando hagamos clic en el botón podremos extraer el id y llamar a la función de edición o borrardo de ese proyecto.
+
+Más adelante, haremos que se estos botones se muestren u oculten, dependiendo de si el rol del usuario logueado es desarrollador o registrado, y de si el proyecto es de su creación:
+
+Esta sería la función pintaTabla()
+#### Función pintaTabla()
 ```javascript title="script de proyectos.js"
-script: () => {
-    console.log('Vista proyectos cargada')
-
-    let tbodyProyectos = ''
-    // Para cada proyecto del array 'proyectos'
-    proyectos.forEach(proyecto => {
+// Función para pintar tabla a partir de array
+    const pintaTabla = (proyectos) => {
+      let tbodyProyectos = ''
+      // Para cada proyecto del array 'proyectos'
+      proyectos.forEach(proyecto => {
       // sumamos un tr con los datos del proyecto
-      tbodyProyectos += `
+        tbodyProyectos += `
       <tr>
         <td>
           <div class="containerImagen">
@@ -128,82 +133,103 @@ script: () => {
         <td>${proyecto.nombre_usuario} ${proyecto.apellidos_usuario}</td>
         <td>${proyecto.created_at}</td>
         <td>${proyecto.estado}</td>
+        <td>
+          <a
+          data-user_id = ${proyecto.user_id}
+          class="d-none d-sm-inline btn btn-sm btn-outline-primary bi bi-pencil"
+          ></a>
+        </td>
+        <td>
+          <a
+            data-user_id = ${proyecto.user_id}
+            class="d-none d-sm-inline btn btn-sm btn-outline-danger bi bi-trash3"
+          ></a>
+        </td>
       </tr>
             
       `
-    })
-
-    // inyectamos el resultado en tbody
-    document.querySelector('#tbodyProyectos').innerHTML = tbodyProyectos
-  }
+      })
+      // inyectamos el resultado en el tbody
+      document.querySelector('#tbodyProyectos').innerHTML = tbodyProyectos
+    }
+    
+    // Ejecutamos la función
+    pintaTabla(proyectos)
   ```
 ¡Mira que chulo!
 
 ![tabla proyectos](/imagenes/v1/spa/tabla.png)
 
-### Generando la vista de tarjetas
+#### Función pintaTarjetas()
 Para las tarjetas haremos lo mismo:
 
-  ```javascript 
+```javascript 
+// Función para pintar tarjetas
+const pintaTarjetas = (proyectos) => {
   let tarjetasProyectos = ''
-    // Para cada proyecto del array 'proyectos'
-    proyectos.forEach(proyecto => {
-      // sumamos un tr con los datos del proyecto
-      tarjetasProyectos += // html
-      `
-      <!-- tarjeta  -->
-      <div class="col-12 col-lg-6">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div
-              class="col-4"
-              style="
-                background-image: url(${proyecto.imagen || '/assets/images/imagenVacia.png'});
-                background-position: center;
-                background-size: cover;
-              "
-            ></div>
-            <div class="col-8">
-              <div class="card-body">
-                <h5 class="card-title">${proyecto.nombre}</h5>
-                <p class="card-text">
-                  ${proyecto.descripcion}
-                </p>
-                <p class="small m-0 text-end text-italic">Autor: ${proyecto.nombre_usuario} ${proyecto.apellidos_usuario}</p>
-                <p class="small text-end text-italic">Fecha: ${proyecto.created_at}</p>
+  // Para cada proyecto del array 'proyectos'
+  proyectos.forEach(proyecto => {
+  // sumamos un tr con los datos del proyecto
+    tarjetasProyectos += // html
+  `
+  <!-- tarjeta  -->
+  <div class="col-12 col-lg-6">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div
+          class="col-4"
+          style="
+            background-image: url(${proyecto.imagen || '/assets/images/imagenVacia.png'});
+            background-position: center;
+            background-size: cover;
+          "
+        ></div>
+        <div class="col-8">
+          <div class="card-body">
+            <h5 class="card-title">${proyecto.nombre}</h5>
+            <p class="card-text">
+              ${proyecto.descripcion}
+            </p>
+            <p class="small m-0 text-end text-italic">Autor: ${proyecto.nombre_usuario} ${proyecto.apellidos_usuario}</p>
+            <p class="small text-end text-italic">Fecha: ${proyecto.created_at}</p>
 
-                <a class="btn btn-sm btn-outline-primary" href="${proyecto.enlace}"><i class="bi bi-link"></i></a>
-                <a class="btn btn-sm btn-outline-primary" href="${proyecto.repositorio}"><i class="bi bi-folder-symlink"></i></a>
-                <a class="btn btn-sm btn-success" href="#">${proyecto.estado}</a>
-                <a
-                  data-user_id = ${proyecto.user_id}
-                  class="d-none d-sm-inline btn btn-sm btn-outline-primary bi bi-pencil"
-                ></a>
-                <a
-                  data-user_id = ${proyecto.user_id}
-                  class="d-none d-sm-inline btn btn-sm btn-outline-danger bi bi-trash3"
-                ></a>
-              </div>
-            </div>
+            <a class="btn btn-sm btn-outline-primary" href="${proyecto.enlace}"><i class="bi bi-link"></i></a>
+            <a class="btn btn-sm btn-outline-primary" href="${proyecto.repositorio}"><i class="bi bi-folder-symlink"></i></a>
+            <a class="btn btn-sm btn-success" href="#">${proyecto.estado}</a>
+            <a
+              data-user_id = ${proyecto.user_id}
+              class="d-none d-sm-inline btn btn-sm btn-outline-primary bi bi-pencil"
+            ></a>
+            <a
+              data-user_id = ${proyecto.user_id}
+              class="d-none d-sm-inline btn btn-sm btn-outline-danger bi bi-trash3"
+            ></a>
           </div>
         </div>
-      </div>  
-      `
-    })
+      </div>
+    </div>
+  </div>  
+  `
+  })
+  // inyectamos el resultado en tbody
+  document.querySelector('#tabTarjetas').innerHTML = tarjetasProyectos
+}
+
+pintaTarjetas(proyectos)  
 ```
 
 Y quedará así... ¡¡¡Esto va cogiendo forma!!! 😄
 
 ![tabla proyectos](/imagenes/v1/spa/tarjetas.png)
 
-### Botones para nuevo proyecto y modificar vista
+#### Botón para nuevo proyecto
 
 Para el botón de nuevo proyecto es muy fácil. Sustituye el botón por una etiqueta 'a' que apunte a la vista `proyectoNuevo.js`
 
 ```html
 <a href="#/proyectoNuevo" class="btn btn-primary w-100">Subir proyecto</a>
 ```
-
+#### Botones para permutar entre vista tabla y vista tarjetas
 Para los botones de las vistas tabla/tarjetas añadimos una clase para identificarlos
 
 :::note Nota
@@ -266,7 +292,7 @@ Y cambiamos la visualización de cada uno en función de que botón hemos pulsad
 
   ## Implementando el buscador
 
-VAms a programar un código que cree un buscador que se encargará de verificar cada campo de cada proyecto en el array en busca del texto ingresado en el input de búsqueda. Los proyectos que coinciden con el texto de búsqueda en al menos uno de sus campos se filtran y se almacenan en un nuevo array.
+Vamos a programar un código que cree un buscador que se encargará de verificar cada campo de cada proyecto en el array en busca del texto ingresado en el input de búsqueda. Los proyectos que coinciden con el texto de búsqueda en al menos uno de sus campos se filtran y se almacenan en un nuevo array.
 
 ```javascript
 // Filtro para buscador
@@ -326,5 +352,26 @@ Observa como va mostrando el array con tantos elementos como coincidencias encue
 
 ![filtro](/imagenes/v1/spa/filtro.png)
 
+#### Gestión de las pestañas 'Todos los proyectos' / 'Mis proyectos'
+
+Para gestionar que pestaña debe abrirse necesitamos una variable global `misProyectos` que por defecto será false, es decir, la vista por defecto será de 'Todos los proyectos'.
+
+El código para gestionar la visualización de las pestañas podría ser algo así: 
+
+```javascript
+
+```
+
+Ahora vamos a insertar, dentro de las funciones que pintan la tabla y las tarjetas, un filtro que, si tenemos la variable 'misProyectos' como true, filtre todos los proyectos por su user_id. Es decir, que cree un nuevo array donde solo se muestren los proyectos donde el user_id del proyecto coincide con el user_id del usuario logueado.
+
+```javascript
+
+```
+
+Para acabar solo nos falta detectar cuando pulsamos los botones de editar y borrar para extraer el id del proyecto que llevan grabado en el dataset y actuar en consecuencia, abriendo la vista de editar (a la que enviaremos el id como parámetro) o borrando el proyecto de la base de datos (esto, de momento, lo simularemos con una console.log)
+
+```javascript
+
+```
 
 
