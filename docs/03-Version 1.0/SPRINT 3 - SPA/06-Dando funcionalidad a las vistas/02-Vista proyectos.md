@@ -352,7 +352,7 @@ Observa como va mostrando el array con tantos elementos como coincidencias encue
 
 ![filtro](/imagenes/v1/spa/filtro.png)
 
-#### Gestión de las pestañas 'Todos los proyectos' / 'Mis proyectos'
+### Gestión de las pestañas 'Todos los proyectos' / 'Mis proyectos'
 
 Para gestionar que pestaña debe abrirse necesitamos una variable global `misProyectos` que por defecto será false, es decir, la vista por defecto será de 'Todos los proyectos'.
 
@@ -368,10 +368,20 @@ Ahora vamos a insertar, dentro de las funciones que pintan la tabla y las tarjet
 
 ```
 
-Para acabar solo nos falta detectar cuando pulsamos los botones de editar y borrar para extraer el id del proyecto que llevan grabado en el dataset y actuar en consecuencia, abriendo la vista de editar (a la que enviaremos el id como parámetro) o borrando el proyecto de la base de datos (esto, de momento, lo simularemos con una console.log)
+Ya queda menos! Ahora tenemos que detectar cuando pulsamos los botones de editar y borrar para extraer el id del proyecto que llevan grabado en el dataset y actuar en consecuencia, abriendo la vista de editar (a la que enviaremos el id como parámetro) o borrando el proyecto de la base de datos (esto, de momento, lo simularemos con una console.log)
 
 ```javascript
 
+```
+Y ya para acabar necesitamos que, al pulsar en la imagen o en algún lugar del tr nos lleve a la página proyectoDetalle enviando el id correspondiente
+
+```javascript
+document.querySelector('table').addEventListener('click', (event) => {
+  if (event.target.classList.contains('verDetalle')) {
+    const id = event.target.dataset.id
+    window.location = `#/proyectoDetalle/${id}`
+  }
+})
 ```
 
 Este sería el código completo:
