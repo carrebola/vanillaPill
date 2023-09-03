@@ -550,7 +550,9 @@ Y finalmente, hacemos `npm run build` para actualizar nuestra carpeta `dist`con 
 Si todo está ok, en el navegador deberíamos ver nuestra app funcionando correctamente...
 
 
-Y aquí acabamos este pedazo de sprint en el que nos hemos tenido que emplear a fondo con javascript.
+Y aquí acabamos este pedazo de sprint en el que nos hemos tenido que emplear a fondo con javascript. ¡¡¡Fíjate todo el trabajo que llevamos hecho!!!
+
+![gitgraph](/imagenes/v1/spa/gitgraph2.png)
 
 En el próximo sprint nos va a tocar **reunirnos con nuestro yo-backend** y ver en que punto estamos para, juntos, programar la lógica correspondiente a la **capa de abstracción** en la que tendremos las **clases que nos permitirán conectarnos con la base de datos de supabase**.
 
