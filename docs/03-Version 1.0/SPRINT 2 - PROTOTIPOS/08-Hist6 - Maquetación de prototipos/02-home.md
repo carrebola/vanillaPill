@@ -95,7 +95,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -150,7 +150,7 @@ Aquí puedes ver el código utilizado:
 				<h1 class="mt-5 text-center fw-bold" style="font-size: 100px;">Vanilla Games</h1>
 				<div class="m-5 mx-auto" style="max-width: 400px">
 					<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							class="img-fluid"
 						/>
@@ -162,7 +162,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand fs-6" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"

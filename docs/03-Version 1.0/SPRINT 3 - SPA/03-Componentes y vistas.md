@@ -54,7 +54,7 @@ Por ejemplo, el código del header del prototipo html `home.html` es el siguient
     <div class="container">
       <a class="navbar-brand" href="#"
         ><img
-          src="./images/logo.svg"
+          src=".images/logo.svg"
           alt=""
           width="30"
           height="24"
@@ -123,7 +123,7 @@ export const header = {
   <div class="container">
     <a class="navbar-brand" href="#"
       ><img
-        src="./images/logo.svg"
+        src=".images/logo.svg"
         alt=""
         width="30"
         height="24"
@@ -192,7 +192,7 @@ export const footer = {
   <div class="container">
     <a class="navbar-brand" href="http://www.fpllefia.com">
       <img
-        src="./images/logo.svg"
+        src=".images/logo.svg"
         alt="fpllefia"
         width="30"
         height="24"
@@ -221,7 +221,7 @@ export default {
     Vanilla Games
   </h1>
   <div class="m-5 mx-auto" style="max-width: 400px">
-    <img src="./images/logo.svg" alt="fpllefia" class="img-fluid" />
+    <img src=".images/logo.svg" alt="fpllefia" class="img-fluid" />
   </div>
 </div>
   `
@@ -265,7 +265,7 @@ Para ello vamos a crear las carpetas necesarias dentro de src: `src/assets/image
 
 Lo siguiente es indicar a vite **donde van a estar todas los archivos publicos** (la carpeta public). Esto lo haremos añadiendo la siguienete línea a la configuración de vite:
 
-```javascript title="vite.config.js" {3}
+```javascript title="vite.config.js" {4}
 
   ...
   
@@ -276,7 +276,7 @@ Lo siguiente es indicar a vite **donde van a estar todas los archivos publicos**
   }
 ```
 
-Ahora vamos a modificar las urls de los templates. Donde antes teníamos `src="./images/nombreimagen.png"` ahora debemos poner: `src="/images/logo.svg"`
+Ahora vamos a modificar las urls de los templates. Donde antes teníamos `src=".images/logo.png"` ahora debemos poner: `src="images/logo.svg"`
 
 
 

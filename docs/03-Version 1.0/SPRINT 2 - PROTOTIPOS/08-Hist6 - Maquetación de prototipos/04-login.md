@@ -75,7 +75,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -154,7 +154,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"

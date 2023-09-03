@@ -87,7 +87,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -125,7 +125,7 @@ Aquí puedes ver el código utilizado:
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<img src="./images/avatar.svg" alt="" width="25">
+									<img src=".images/avatar.svg" alt="" width="25">
 								</a>
 								<ul class="dropdown-menu me-0" style="left: -100px; width: 100px;">
 									<li class="text-light text-center p-2">
@@ -156,7 +156,7 @@ Aquí puedes ver el código utilizado:
 				
 				<div class="row mt-2">
 					<div class="col-12 col-md-4 mb-3">
-						<img src="./images/juego.jpg" alt="" class="img-fluid">
+						<img src=".images/juego.jpg" alt="" class="img-fluid">
 					</div>
 					<div class="col-12 col-md-8">
 						<p>
@@ -188,7 +188,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"

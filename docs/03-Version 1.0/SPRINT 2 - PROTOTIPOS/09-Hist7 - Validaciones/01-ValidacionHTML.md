@@ -189,7 +189,7 @@ Algunos consejos para escribir tus commits:
                 <div
                   class="imagen mx-auto mb-1 rounded-circle"
                   style="
-                    background-image: url(./images/avatar.svg);
+                    background-image: url(.images/avatar.svg);
                     width: 200px;
                     height: 200px;
                     background-size: cover;
@@ -291,7 +291,7 @@ Algunos consejos para escribir tus commits:
 <form action="" class="">
   <div class="row mt-2">
     <div class="col-12 col-md-4 pt-2 mb-3">
-      <img src="./images/juego.jpg" alt="" class="img-fluid" />
+      <img src=".images/juego.jpg" alt="" class="img-fluid" />
       <label class="form-label mt-2" for="urlImagen"
         ><strong>URL imagen: </strong></label
       >
@@ -388,7 +388,7 @@ Algunos consejos para escribir tus commits:
       <div
         class="rounded-circle d-flex align-items-end justify-content-end"
         style="
-          background-image: url(./images/avatar.svg);
+          background-image: url(.images/avatar.svg);
           width: 50px;
           height: 50px;
           background-size: cover;

@@ -95,7 +95,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -139,7 +139,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									<img src="./images/avatar.svg" alt="" width="25" />
+									<img src=".images/avatar.svg" alt="" width="25" />
 								</a>
 								<ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
 									<li class="text-light text-center p-2">
@@ -169,7 +169,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 
 				<div class="row mt-2">
 					<div class="col-12 col-md-4 pt-2 mb-3">
-						<img src="./images/juego.jpg" alt="" class="img-fluid" />
+						<img src=".images/juego.jpg" alt="" class="img-fluid" />
 					</div>
 					<div class="col-12 col-md-8">
 						<form action="" class="form">
@@ -205,7 +205,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 				<div class="container">
 					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"
@@ -276,7 +276,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -320,7 +320,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									<img src="./images/avatar.svg" alt="" width="25" />
+									<img src=".images/avatar.svg" alt="" width="25" />
 								</a>
 								<ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
 									<li class="text-light text-center p-2">
@@ -350,7 +350,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 				<form action="" class="">
 					<div class="row mt-2">
 						<div class="col-12 col-md-4 pt-2 mb-3">
-							<img src="./images/juego.jpg" alt="" class="img-fluid" />
+							<img src=".images/juego.jpg" alt="" class="img-fluid" />
 							<label class="form-label mt-2" for="urlImagen"
 								><strong>URL imagen: </strong></label
 							>
@@ -435,7 +435,7 @@ Aquí puedes ver el código utilizado en ambas páginas:
 				<div class="container">
 					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"

@@ -100,7 +100,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -144,7 +144,7 @@ Aquí puedes ver el código utilizado:
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									<img src="./images/avatar.svg" alt="" width="25" />
+									<img src=".images/avatar.svg" alt="" width="25" />
 								</a>
 								<ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
 									<li class="text-light text-center p-2">
@@ -244,7 +244,7 @@ Aquí puedes ver el código utilizado:
 							<tr>
 								<td>
 									<div class="containerImagen">
-										<img width="200px" src="./images/juego.jpg" alt="" />
+										<img width="200px" src=".images/juego.jpg" alt="" />
 									</div>
 								</td>
 								<td>Proyecto ejemplo 1</td>
@@ -258,7 +258,7 @@ Aquí puedes ver el código utilizado:
 							<tr>
 								<td>
 									<div class="containerImagen">
-										<img width="200px" src="./images/juego.jpg" alt="" />
+										<img width="200px" src=".images/juego.jpg" alt="" />
 									</div>
 								</td>
 								<td>Proyecto ejemplo 1</td>
@@ -272,7 +272,7 @@ Aquí puedes ver el código utilizado:
 							<tr>
 								<td>
 									<div class="containerImagen">
-										<img width="200px" src="./images/juego.jpg" alt="" />
+										<img width="200px" src=".images/juego.jpg" alt="" />
 									</div>
 								</td>
 								<td>Proyecto ejemplo 1</td>
@@ -295,7 +295,7 @@ Aquí puedes ver el código utilizado:
 									<div
 										class="col-4"
 										style="
-											background-image: url(./images/juego.jpg);
+											background-image: url(.images/juego.jpg);
 											background-position: center;
 											background-size: cover;
 										"
@@ -331,7 +331,7 @@ Aquí puedes ver el código utilizado:
 									<div
 										class="col-4"
 										style="
-											background-image: url(./images/juego.jpg);
+											background-image: url(.images/juego.jpg);
 											background-position: center;
 											background-size: cover;
 										"
@@ -367,7 +367,7 @@ Aquí puedes ver el código utilizado:
 									<div
 										class="col-4"
 										style="
-											background-image: url(./images/juego.jpg);
+											background-image: url(.images/juego.jpg);
 											background-position: center;
 											background-size: cover;
 										"
@@ -403,7 +403,7 @@ Aquí puedes ver el código utilizado:
 									<div
 										class="col-4"
 										style="
-											background-image: url(./images/juego.jpg);
+											background-image: url(.images/juego.jpg);
 											background-position: center;
 											background-size: cover;
 										"
@@ -439,7 +439,7 @@ Aquí puedes ver el código utilizado:
 									<div
 										class="col-4"
 										style="
-											background-image: url(./images/juego.jpg);
+											background-image: url(.images/juego.jpg);
 											background-position: center;
 											background-size: cover;
 										"
@@ -475,7 +475,7 @@ Aquí puedes ver el código utilizado:
 									<div
 										class="col-4"
 										style="
-											background-image: url(./images/juego.jpg);
+											background-image: url(.images/juego.jpg);
 											background-position: center;
 											background-size: cover;
 										"
@@ -513,7 +513,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"

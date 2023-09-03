@@ -192,7 +192,7 @@ Así que lo primero que vamos a hacer es desmontar nuestro *template* del compon
   <div class="container">
     <a class="navbar-brand" href="#/home"
       ><img
-        src="/images/logo.svg"
+        src="images/logo.svg"
         alt=""
         width="30"
         height="24"
@@ -413,7 +413,7 @@ const menuUsuario = {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <img src="/images/avatar.svg" alt="" width="25" />
+        <img src="images/avatar.svg" alt="" width="25" />
       </a>
       <ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
         <li class="text-light text-end p-2 small">
@@ -572,7 +572,7 @@ const menuUsuario = {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <img src="/images/avatar.svg" alt="" width="25" />
+        <img src="images/avatar.svg" alt="" width="25" />
       </a>
       <ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
         <li class="text-light text-end p-2 small">
@@ -600,7 +600,7 @@ const menuUsuario = {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <img src="/images/avatar.svg" alt="" width="25" />
+        <img src="images/avatar.svg" alt="" width="25" />
       </a>
       <ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
         <li class="text-light text-center p-2">
@@ -629,7 +629,7 @@ const menuUsuario = {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <img src="/images/avatar.svg" alt="" width="25" />
+        <img src="images/avatar.svg" alt="" width="25" />
       </a>
       <ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
         <li class="text-light text-center p-2">
@@ -664,7 +664,7 @@ export const header = {
   <div class="container">
     <a class="navbar-brand router-link" href="#/home"
       ><img
-        src="/images/logo.svg"
+        src="images/logo.svg"
         alt=""
         width="30"
         height="24"
@@ -783,7 +783,7 @@ export const editarPerfil = {
                   <div
                     class="imagen mx-auto mb-1 rounded-circle"
                     style="
-                      background-image: url(./images/avatar.svg);
+                      background-image: url(.images/avatar.svg);
                       width: 200px;
                       height: 200px;
                       background-size: cover;

@@ -82,7 +82,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt=""
 							width="30"
 							height="24"
@@ -128,7 +128,7 @@ Aquí puedes ver el código utilizado:
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
 								>
-									<img src="./images/avatar.svg" alt="" width="25" />
+									<img src=".images/avatar.svg" alt="" width="25" />
 								</a>
 								<!-- Menú usuario -->
 								<ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
@@ -188,7 +188,7 @@ Aquí puedes ver el código utilizado:
 											<div
 												class="imagen mx-auto mb-1 rounded-circle"
 												style="
-													background-image: url(./images/avatar.svg);
+													background-image: url(.images/avatar.svg);
 													width: 200px;
 													height: 200px;
 													background-size: cover;
@@ -258,7 +258,7 @@ Aquí puedes ver el código utilizado:
 				<div class="container">
 					<a class="navbar-brand" href="http://www.fpllefia.com">
 						<img
-							src="./images/logo.svg"
+							src=".images/logo.svg"
 							alt="fpllefia"
 							width="30"
 							height="24"
