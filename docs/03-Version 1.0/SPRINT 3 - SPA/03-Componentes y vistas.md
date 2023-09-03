@@ -263,7 +263,22 @@ Para ello vamos a crear las carpetas necesarias dentro de src: `src/assets/image
 
 ![images](/imagenes/v1/spa/images.png)
 
-Ahora vamos a modificar las urls de los templates. Donde antes teníamos `src="./images/nombreimagen.png"` ahora debemos poner: `src="/assets/images/logo.svg"`
+Lo siguiente es indicar a vite **donde van a estar todas los archivos publicos** (la carpeta public). Esto lo haremos añadiendo la siguienete línea a la configuración de vite:
+
+```javascript title="vite.config.js" {3}
+
+  ...
+  
+  publicDir: 'assets',
+  server: {
+    /* port: 8080, */ // Podemos definir el puerto de salida
+    hot: true
+  }
+```
+
+Ahora vamos a modificar las urls de los templates. Donde antes teníamos `src="./images/nombreimagen.png"` ahora debemos poner: `src="/images/logo.svg"`
+
+
 
 :::note Fíjate que
 Fíjate que para vite, cuando una ruta comienza por `/` significa que comienza por la carpeta raiz definida en vite.config.js, que en nuestro caso es `src`

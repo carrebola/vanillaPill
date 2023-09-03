@@ -325,7 +325,7 @@ Hemos cambido los botones de inicio de sesión y registrate por etiquetas `<a></
 ```js title="enlace botón home"
 <a class="navbar-brand" href="#/home"
   ><img
-    src="/assets/images/logo.svg"
+    src="/images/logo.svg"
     alt=""
     width="30"
     height="24"
