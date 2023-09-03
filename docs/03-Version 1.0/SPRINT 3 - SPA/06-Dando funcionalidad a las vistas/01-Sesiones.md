@@ -16,7 +16,7 @@ Para esta parte del trabajo vamos a crear la rama 'logica para vistas'
 ## Datos para simular el acceso a la base de datos
 ¿Qué tal si comenzamos con un objeto que contenga los datos de diferentes usuarios registrados? Para concretar el nombre de las propiedades deberíamos basarnos en el diagrama de clases que hemos creado cuando llevabamos el traje de backend.
 
-Digamos que, tras consultar con nuestro yo backend, hemos decidido que puede ser algo así:
+Digamos que, tras consultar con nuestro **'yo-programador' encargado del backend**, hemos decidido que puede ser algo así:
 ```javascript
 perfiles = [
   {
@@ -34,7 +34,9 @@ perfiles = [
 ]
 
 ```
-Con un poquito de inteligencia artificial tenemos un array de datos inventados:
+Con un poquito de inteligencia artificial, tenemos un array de datos inventados que podemos guardar en un archivo js. 
+
+Crea una carpeta `bd`en la raiz y crea dentro el archivo `datosPrueba.js` con el siguiente código:
 
 ```javascript
 export const perfiles = [
@@ -106,9 +108,9 @@ export const perfiles = [
 ## Implementando el Login a través de localstorage
 Comencemos por la vista login.
 
-Vamos a crear la lógica para que cuando un usuario inicie sesió la información se guarde en el localstorage. 
+Vamos a crear la lógica para que cuando un usuario **inicie sesión** la información del usuario se guarde en el **localstorage**. 
 
-Creamos una función enviarDatos(formulario) que recibe el formulario, en caso de que valide, y extraemos los valores de los campos para, de momento, sacarlos por consola
+Creamos una función `enviarDatos(formulario)` que recibe el formulario, (en caso de que éste valide) y extraemos los valores de los campos para, de momento, sacarlos por consola
 
 ```javascript title="login.js"
 import { perfiles } from '../bd/datosPrueba'
@@ -130,12 +132,13 @@ export default {
       event.stopPropagation()
       // Comprobamos si el formulario no valida
       if (!formulario.checkValidity()) {
+        // Y añadimos la clase 'was-validate' para que se muestren los mensajes
+      formulario.classList.add('was-validated')
         console.log('No valida')
       } else {
         enviarDatos(formulario)
       }
-      // Y añadimos la clase 'was-validate' para que se muestren los mensajes
-      formulario.classList.add('was-validated')
+      
     })
 
     function enviarDatos (formulario) {
@@ -161,7 +164,7 @@ function enviarDatos (formulario) {
   const pass = formulario.password.value
 
   // buscamos el indice del email en el array perfiles
-  const indexUser = perfiles.findIndex((user) => user.email === email) // 1
+  const indexUser = perfiles.findIndex((user) => user.email === email)
   // Si existe y la contraseña corresponde
   if (perfiles[indexUser].contraseña === pass) {
     console.log('¡login correcto!')
@@ -171,43 +174,56 @@ function enviarDatos (formulario) {
 }
 
 ```
+
+Ahora solo falta registrar los datos del usuario en el localstorage (esta vez con algunos datos extra como el user_id). Usaremos nuestro objeto `ls` por lo que no olvides cargar la libreria `funciones.js` 
+
+```javascript	title="función enviarDatos() de loginVista.js"
+// Función para enviar datos a la bd
+    function enviarDatos (formulario) {
+      const email = formulario.email.value
+      const pass = formulario.password.value
+
+      // buscamos el indice del email en el array perfiles
+      const indexUser = perfiles.findIndex((user) => user.email === email) // 1
+      // Si encuentra un usuario
+      if (indexUser > 0) {
+        // Si la contraseña es correcta
+        if (perfiles[indexUser].contraseña === pass) {
+          console.log('¡login correcto!')
+          const usuario = {
+            nombre: perfiles[indexUser].nombre,
+            apellidos: perfiles[indexUser].apellidos,
+            email: perfiles[indexUser].email,
+            rol: perfiles[indexUser].rol,
+            avatar: perfiles[indexUser].avatar,
+            user_id: perfiles[indexUser].user_id
+          }
+          // Guardamos datos de usaurio en localstorage
+          ls.setUsuario(usuario)
+          // Cargamos página home
+          window.location = '#/proyectos'
+          // Actualizamos el header para que se muestren los menús que corresponden al rol
+          header.script()
+        } else {
+          // console.log('La contraseña no corresponde')
+          alert('El usuario no existe o la contraseña no es correcta')
+        }
+      } else {
+        // console.log('El usuario no existe')
+        alert('El usuario no existe o la contraseña no es correcta')
+      }
+    }
+```
 :::tip
 Podríamos indicar de manera independiente que el usuario no existe, o que sí existe pero la contraseña no corresponde, pero eso daría pístas a un usuario que intente hackear el inicio de sesión
 :::
 
-Ahora solo falta registrar los datos del usuario en el localstorage (esta vez con algunos datos extra como el user_id). Usaremos nuestro objeto `ls` por lo que no olvides cargar la libreria `funciones.js` 
+Para asegurarnos que, en nuestro **menú de usuario**, se inyectan correctamente tanto el **email** como el *rol*, vamos a añadir unas líneas al final del header.js
 
-```javascript	title="función enviarDatos de loginVista.js"
-function enviarDatos (formulario) {
-  const email = formulario.email.value
-  const pass = formulario.password.value
+```javascript title="header.js"
 
-  // buscamos el indice del email en el array perfiles
-  const indexUser = perfiles.findIndex((user) => user.email === email) // 1
+... 
 
-  if (perfiles[indexUser].contraseña === pass) {
-    console.log('¡login correcto!')
-    // Construimos la información para guardar en el localstorage
-    const usuario = {
-      email: perfiles[indexUser].email,
-      rol: perfiles[indexUser].rol, 
-      avatar: perfiles[indexUser].avatar,
-      user_id: perfiles[indexUser].user_id
-    }
-    // Usamos nuestra función ls para registrar usuario en localstorage
-    ls.setUsuario(usuario)
-    // Y enviamos a la página proyectos, esta vez con el header correspondiente al rol
-    window.location = '#/proyectos'
-    header.script()
-  } else {
-    console.log('El usuario no existe o la contraseña no corresponde')
-  }
-}
-```
-
-Para asegurarnos que se inyectan correctamente tanto el email como el rol en el menú de usuario vamos a añadir unas líneas en el header.js
-
-```javascript
 // Y actualizamos los datos de menu de usuario si es que se está mostrando
   try {
     // email y rol
@@ -231,23 +247,30 @@ Desde el script de `header.js` detectamos cuando el usuario hace clic en el item
 
 ...
 
-//Detectamos si alguien hace click sobre el header
-document.querySelector('header').addEventListener('click', (e) => {
-  // Y comprobamos si el elemento sobre el que se ha hecho clic es el item 'cerrar sesión' mirando su clase
-  if (e.target.classList.contains('cerrarSesion')) {
-    e.preventDefault()
-    // Borramos el localstorage
-    ls.setUsuario('')
-    // Cargamos la pagina proyectos
-    window.locate = '#/home'
-    // Y actualizamos el header para actualizar los menús 
-    header.script()
-  }
-})
+// Cerrar sesión
+    // Capturamos clic sobre el item de cerrar sesión
+    document.querySelector('header').addEventListener('click', (e) => {
+      if (e.target.classList.contains('cerrarSesion')) {
+        e.preventDefault()
+        // Borramos el localstorage
+        ls.setUsuario('')
+        // Cargamos la pagina home
+        window.location = '#/home'
+        header.script()
+      }
+    })
 ```
-:::note No olvides actualizar...
-Falta añadir la clase **cerrarSesion** a todos los items del menú. También debes recordar importar el objeto **ls**.
-:::
+
+Falta añadir la clase **cerrarSesion** a todos los items del menú. 
+
+```html title="menus.js"
+<li><a class="dropdown-item cerrarSesion" href="#">Cerrar sesión</a></li>
+```
+
+También debes recordar importar el objeto **ls**.
+```javascript title="menu.js"
+import { ls } from './funciones'
+```
 
 Con todas las actualizaciones el `header.js`quedaría así:
 
@@ -309,6 +332,8 @@ export const header = {
     console.log('Header cargado')
     // Cargamos la ventana modal para editar perfil
     document.querySelector('#modal').innerHTML = editarPerfil.template
+    // Y ejecutamos su lógica
+    editarPerfil.script()
     const rolUsuario = ls.getUsuario().rol
     switch (rolUsuario) {
       case 'registrado':
@@ -339,10 +364,14 @@ export const header = {
 
     // Y actualizamos los datos de menu de usuario si es que se está mostrando
     try {
+      // email y rol
       document.querySelector('#emailUserMenu').innerHTML = ls.getUsuario().email
       document.querySelector('#rolUserMenu').innerHTML = ls.getUsuario().rol
+      // para la imagen de avatar (avatar.png si el campo está vacío)
+      const imagen = ls.getUsuario().avatar === '' ? '/assets/images/avatar.svg' : ls.getUsuario().avatar
+      document.querySelector('#avatarMenu').setAttribute('src', imagen)
     } catch (error) {
-      console.log('El usuario no está registrado y no tiene menú de usuario');
+      console.log('El usuario no está registrado y no tiene menú de usuario')
     }
 
     // Cerrar sesión
@@ -353,12 +382,11 @@ export const header = {
         // Borramos el localstorage
         ls.setUsuario('')
         // Cargamos la pagina home
-        window.locate = '#/home'
+        window.location = '#/home'
         header.script()
       }
     })
   }
 }
-
 
 ```

@@ -1,10 +1,10 @@
 ---
-title: Componentes de menú
+title: Subcomponentes de header (Menús y editar perfil)
 ---
 
 ## Versión 2.0 de header
 
-Para mejorar nuestro header vamos a dividir el componente header.js  en tres componentes, el **header.js** que contendrá el html que no cambia nunca, y tres componentes más: **menuSuperior.js**, **menuEspecifico** y **menuUsuario.js** que inyectaremos en header.
+Para mejorar nuestro header vamos a dividir el componente header.js  en tres componentes, el componente padre: **header.js** que contendrá el html que no cambia nunca, y tres subcomponentes más: **menuSuperior.js**, **menuEspecifico** y **menuUsuario.js** que inyectaremos dentro del componente padre header.
 
 Estos componentes contendrán el código correspondiente a los menús, que será diferente, dependiendo del **rol del usuario** que esté logueado.
 
@@ -236,16 +236,16 @@ Así que lo primero que vamos a hacer es desmontar nuestro *template* del compon
   </div>
 </nav>
 ```
-Ahora vamos a definir que ménus (y que items) van a tener cada menú en función del rol del usuario logueado. Para ello debemos recuperar el diagrama de casos de uso para la versión 1:
+Ahora toca definir qué ménus (y qué items) van a incluir cada menú. en función del rol del usuario logueado. Para ello debemos recuperar el diagrama de casos de uso para la versión 1:
 
 ![diagrama casos de uso](/imagenes/v1/casosUso/diagramaCasosUso_1.png)
 
-Los **menús que debemos definir** serían algo así:
+Según nuestro diagrama, tenemos que los **menús que debemos definir** serían algo así:
 
 **Menú común** (para todos los usuarios):
 - home
-- TOP 5 Proyectos
-- A cerca de
+- TOP 5 Proyectos (Esta vista aún no la hemos creado)
+- A cerca de (Esta vista aún no la hemos creado)
   
 **Menús rol y usuario** en función del rol
 - Rol: anónimo (no registrado o logueado )
@@ -285,7 +285,7 @@ Los **menús que debemos definir** serían algo así:
     - Perfil: Muestra datos del perfil con opción de editar
     - Cerrar sesión
 
-Para construir el código de cada menú usaremos un objeto para cada menú con tantas propiedades como roles tengamos.
+Para construir el código de cada menú usaremos un objeto para el menú rol y un objeto para el menú usuario. Estos objetos tendrán tantas propiedades como roles tengamos. 
 
 Vamos a ello. Creamos el archivo `menus.js` dentro de la carpeta `componentes` con los dos menús y como propiedad los roles correspondientes, y los exportamos:
 
@@ -316,7 +316,7 @@ export { menuRol, menuUsuario }
 Ahora vamos a contruir el html para cada menú. 
 
 :::note Nota 
-Fíjate que muchos son prácticamente idénticos, aunque, para las versiones posteriores de la app seguramente irán ampliándose.
+Fíjate que muchos son prácticamente idénticos, aunque, para las versiones posteriores de la app, seguramente estas opciones se verán modificadas e irán ampliándose.
 :::
 
 El primer menú que vamos a crear es el que corresponde a un usuario anónimo. Sería algo así:
@@ -441,7 +441,7 @@ export { menuRol, menuUsuario }
 
 De momento ya tenemos los menús para dos roles. Vamos a programar la lógica para que dependiendo del rol, se cargue uno u otro menú.
 
-Esto lo haremos desde el componente `header.js`. Para ello utilizaremos un switch/case.
+Esto lo haremos desde el componente `header.js`. La manera más visual es, seguramente, utilizando una estructura **switch/case**.
 
 ```javascript title="header.js"
 // ...
@@ -490,7 +490,8 @@ import { menuRol, menuUsuario } from './menus'
 
 Si todo esto es correcto, como no tenemos ningún usuario en el localstorage con rol 'registrado', debería mostrarse el menú de un usuario anónimo. Es decir, las opciones de registro y login.
 
-Para simular que hay una sesión abierta vamos a inscribir en el localstorage a la señora chafardera@gmail.com que tiene el rol de registrada. Podmeos hacerlo con esta linea al principio de nuestro script:
+#### Simulando el inicio de sesión
+Para simular que hay una **sesión abierta** vamos a inscribir en el localstorage a la señora chafardera@gmail.com que tiene el rol de registrada. Podemeos hacerlo con esta linea al principio de nuestro script:
 ```javascript
 // Simulamos el inicio de sesión de un usuario
     ls.setUsuario({ email: 'chafardera@gmial.com', rol: 'registrado' })
@@ -861,8 +862,8 @@ export const header = {
   `
   ...
 
-    <div id="modal">
-  
+  <div id="modal">
+    <!-- Aquí inyectamos el componente editarPerfil -->
   </div>
 
   `,
@@ -890,8 +891,9 @@ Ahora solo nos falta el **botón para abrir el modal**: Copiamos las propiedades
     </li>
 
 ```
-
-Haz lo mismo con todos los items editar de cada menú... ¡Y ya lo tenemos!!!
+:::danger TAREA
+Haz lo mismo con todos los items editar de cada menú... ¡Y ya lo tendremos!!!
+:::
 
 Cuando lo hayas probado y te hayas flipado un rato, recuerda grabar y actualizar el repositorio.
 

@@ -108,7 +108,7 @@ Por ejemplo, el código del header del prototipo html `home.html` es el siguient
 ```
 Tomamos el código de dentro del header y lo añadimos al template del componente header.
 
-:::dander Rama vistasHtml
+:::danger Rama vistasHtml
 Antes de comenzar a programar los componentes, asegúrate de que estamos en la rama `vistasHtml`.
 :::
 
@@ -263,7 +263,7 @@ Para ello vamos a crear las carpetas necesarias dentro de src: `src/assets/image
 
 ![images](/imagenes/v1/spa/images.png)
 
-Ahora vamos a modificar las urls de los templates. Donde antes teníamos `src="./images/nombreimagen.png" ahora debemos poner: `src="/assets/images/logo.svg"`
+Ahora vamos a modificar las urls de los templates. Donde antes teníamos `src="./images/nombreimagen.png"` ahora debemos poner: `src="/assets/images/logo.svg"`
 
 :::note Fíjate que
 Fíjate que para vite, cuando una ruta comienza por `/` significa que comienza por la carpeta raiz definida en vite.config.js, que en nuestro caso es `src`
@@ -317,7 +317,7 @@ Lo haremos en la propiedad string de nuestro componente.
 
 Vemos un ejemplo con la vista `registro.js`
 
-#### Lógica para `registro.js`
+### Lógica para `registro.js`
 
 Añadimos el método script() y dentro copiamos el código javascript que hemos programado en el prototipo:
 
@@ -335,14 +335,14 @@ export default {
     const formulario = document.querySelector('#formRegistro')
     // Detectamos su evento submit (enviar)
     formulario.addEventListener('submit', (event) => {
-    // Comprobamos si el formulario no valida
-      if (!formulario.checkValidity()) {
       // Detenemos el evento enviar (submit)
         event.preventDefault()
         event.stopPropagation()
+    // Comprobamos si el formulario no valida
+      if (!formulario.checkValidity()) {
+        // Y añadimos la clase 'was-validate' para que se muestren los mensajes
+        formulario.classList.add('was-validated')
       }
-      // Y añadimos la clase 'was-validate' para que se muestren los mensajes
-      formulario.classList.add('was-validated')
     })
   }
 }

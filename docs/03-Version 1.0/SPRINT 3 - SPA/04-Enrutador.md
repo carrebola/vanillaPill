@@ -81,7 +81,7 @@ Nuestro sistema de navegación se basará en la siguiente metodología:
   // Capturamos los eventos click sobre el body
   document.body.addEventListener('click', (event)=>{...})
   ```
-3. Obtendremos el elemento sobre el que se ha hecho click y comprobaremos que se trata de una etiqueta `<a>` con la clase '**router-link**'
+3. Obtendremos el elemento sobre el que se ha hecho click y comprobaremos que se trata de un elemento con la clase '**router-link**'
     ```js 
     document.body.addEventListener('click', event => {
       // Evitamos que se cargue la página
@@ -153,7 +153,7 @@ Dentro del método **router()** se obtiene el **hash** de la ruta modificada med
 Después, se utiliza este hash resultante para obtener la vista correspondiente del objeto rutas.
 
 :::note Nota
-También hemos contemplado la posibilidad de pasar un parámetro en la ruta. PEro esto ya lo veremos más adelante
+También hemos contemplado la posibilidad de pasar un parámetro en la ruta. Por ejemplo, para la vista **proyectos** la ruta sería: `http://miservidor.com/#/proyectos`. Pero si queremos editar un proyecto determinado necesitamos añadir a la ruta el id del proyecto. Por ejemplo, para editar el proyecto con id=23 la ruta sería: `http://miservidor.com/#/editarProyecto/23`.
 :::
 
 Con esta lógica podemos detectar: 
@@ -197,17 +197,15 @@ Así quedaría el método router:
     const componenteVista = await enrutador.rutas[path]
     // Si existe la vista la podremos cargar
     if (componenteVista) {
-      try {
-        // Obtenemos el objeto del componente (que fué exportado como default)
-        const vista = await componenteVista.default
-        // inyectamos vista y ejecutamos su script
-        document.querySelector('main').innerHTML = vista.template
-        // A los script les pasamos el parametro que hemos extraido de la ruta. Así podemos pasar, por ejemplo, el id de un proyecto
-        vista.script(parametro)
-      } catch (error) {
-        // Si se produce un error cargamos la vista 404
-        console.log(error)
-      }
+      // Obtenemos el objeto del componente (que fué exportado como default)
+      const vista = await componenteVista.default
+      // inyectamos vista y ejecutamos su script
+      document.querySelector('main').innerHTML = vista.template
+      // A los script les pasamos el parametro que hemos extraido de la ruta. Así podemos pasar, por ejemplo, el id de un proyecto
+      vista.script(parametro)
+    }else{
+      // Si la vista no existe cargamos la página de error
+      window.location = '#/404'
     }
   },
 ```
@@ -247,17 +245,15 @@ export const enrutador = {
     const componenteVista = await enrutador.rutas[path]
     // Si existe la vista la podremos cargar
     if (componenteVista) {
-      try {
-        // Obtenemos el objeto del componente (que fué exportado como default)
-        const vista = await componenteVista.default
-        // inyectamos vista y ejecutamos su script
-        document.querySelector('main').innerHTML = vista.template
-        // A los script les pasamos el parametro que hemos extraido de la ruta. Así podemos pasar, por ejemplo, el id de un proyecto
-        vista.script(parametro)
-      } catch (error) {
-        // Si se produce un error cargamos la vista 404
-        console.log(error)
-      }
+      // try {
+      // Obtenemos el objeto del componente (que fué exportado como default)
+      const vista = await componenteVista.default
+      // inyectamos vista y ejecutamos su script
+      document.querySelector('main').innerHTML = vista.template
+      // A los script les pasamos el parametro que hemos extraido de la ruta. Así podemos pasar, por ejemplo, el id de un proyecto
+      vista.script(parametro)
+    } else {
+      window.location = '#/404'
     }
   },
 
@@ -265,9 +261,9 @@ export const enrutador = {
   observadorRutas: () => {
     document.body.addEventListener('click', event => {
       // Evitamos que se cargue la página
-
       const link = event.target
-      if (link.tagName === 'A') {
+      if (link.classList.contains('router-link')) {
+        console.log('router-link')
         event.preventDefault()
         // Obtenemos la ruta del enlace sin el .html
         const href = link.getAttribute('href')
@@ -287,7 +283,6 @@ export const enrutador = {
     })
   }
 }
-
 
 ```
 
