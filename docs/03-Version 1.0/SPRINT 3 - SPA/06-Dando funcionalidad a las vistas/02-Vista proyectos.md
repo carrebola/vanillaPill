@@ -506,7 +506,7 @@ También detectaremos cuando se pulsa la imagen del proyecto (o alguna celda 'td
 Vamos a dividir el código en tres bloques:
 
 Bloque 1: Botones de Edición, Borrado y Visualización de Detalle de Proyectos
-Este bloque está encabezado por un comentario y se encarga de gestionar los clics en botones de edición y borrado, así como en elementos de visualización de detalle de proyectos. Utiliza la delegación de eventos para manejar los clics en elementos dentro de la etiqueta <main> del DOM.
+Este bloque está encabezado por un comentario y se encarga de gestionar los clics en botones de edición y borrado, así como en elementos de visualización de detalle de proyectos. Utiliza la delegación de eventos para manejar los clics en elementos dentro de la etiqueta `<main>` del DOM.
 
 ```javascript
 document.querySelector('main').addEventListener('click', (event) => {
