@@ -35,104 +35,92 @@ El backlog de producto es una **herramienta valiosa para el desarrollo ágil de 
 ### Backlog de producto y de sprint. 
 Estas serían las historias a planificar en la entrega de la versión 1 de nuestro proyecto agrupadas por sprints:
 
-#### SPRINT 0: Requerimentos de la versión 1.0
-- **Historia 0. Requisitos y diagrama de casos de uso**
+#### SPRINT 0: Definición del proyecto
+- **Historia: Requisitos, casos de uso y diagrama de casos de uso**
   Como desarrollador, quiero definir de manera genérica las especificaciones de la aplicación.
-- **Historia 1. Planificación**
-  Como desarrollador, quiero definir de la planificación de todo el proceso de desarrollo del proyecto.
-- **Historia 2. Casos de uso especificos y diagramas de flujo**
+- **Historia: Versiones y planificación**
+  Como desarrollador, quiero agrupar las especificaciones en versiones, definir las tareas necesarias y realizar la planificación de todo el proceso de desarrollo del proyecto.
+- **Historia: Casos de uso especificos y diagramas de flujo**
   Como desarrollador quiero definir las especificaciones y casos de uso para la versión 1.0.
 
   *(Esta historia ya hemos comenzado a trabajarla en apartados anteriores. No obstante, es importante que quede constancia de ello para poder hacer una valoración del tiempo total invertido.)*
 #### SPRINT 1: Diseño de la interficie
-
-- **Historia 3. Bocetos:**
+- **Historia: Bocetos:**
   Como diseñador quiero dibujar los bocetos de todas las posibles pantallas del proyecto y testear su funcionamiento.
-
-- **Historia 4. Wireframes, Mockup y guía de estilos:**
+- **Historia: Wireframes, Mockup y guía de estilos:**
   Como diseñador quiero dibujar los mockups y crear la guía de estilos a partir de los colores, tipografías, etc seleccionadas.
+
 #### SPRINT 2: Prototipos
-- **Historia x. Entorno de desarrollo:**
+- **Historia: Entorno de desarrollo:**
   Como diseñador/programador quiero instalar y configurar las herramientas necesarias para programar la aplicación, trabajar con repositorios y crear un entorno integración continua y despliegue continuo.
-
-- **Historia x. Prototipos html:**
+- **Historia: Prototipos html:**
   Como maquetador web quiero crear las páginas html del proyecto a partir de los wireframes aplicando la guía de estilos y utilizando Bootstrap 5.
-
-- **Historia x. Validaciones de formularios:**
+- **Historia: Validaciones de formularios:**
   Como programador quiero definir e implementar las validaciones de los formularios del proyecto
  
 #### Sprint 3: Implementación de la SPA
-
-- **Historia x. Entorno de desarrollo basado en NodeJS:**
-  Como programador quiero instalar y configurar todas las herramientas necesarias (NodeJS, Vite, etc.) para el desarrollo de una app tipo SPA basada en Javascript .
-- **Historia x. Creación de proyecto basado en SPA y organización de archivos para las vistas basadas en módulos js:**
+- **Historia: Entorno de desarrollo basado en NodeJS:**
+  Como programador quiero instalar y configurar todas las herramientas necesarias (NodeJS, Vite, etc.) para el desarrollo de una app tipo SPA basada en Javascript 
+- **Historia: Creación de proyecto basado en SPA y organización de archivos para las vistas basadas en módulos js:**
   Como programador quiero configurar el sistema de carpetas para las vistas y crear los archivos a partir de componentes html basados en los prototipos.
-
-- **Historia x. Creación de componentes:**
+- **Historia: Creación de componentes:**
   Como programador quiero crear los componentes para el encabezado, el enrutado de las páginas y los menús.
-
-- **Historia x. Diseño del aspecto de las vistas:**
-  Como usuario quiero poder navegar por todas las vistas de la aplicación (al margen del rol).
-
-- **Historia x. Diseño de las vistas a partir de los datos de un archivo JSON:**
-Como programador quiero simular las tablas de usuarios y proyectos basados en datos ficticios obtenidos de una archivo json de prueba.
-
-- **Historia x. Lógica para la administración de usuarios y proyectos (ver, editar, borrar, etc.):**
-
-- **Historia x. Implementación de la lógica para la validación de los formularios:**
-loginVista.js
-registroVista.js
-formEditarPerfil.js
-nuevoProyectoVista.js
-
-- **Historia x. Lógica para la autenticación de usuarios:**
-Como usuario registrado quiero poder recordar los datos de sesión al loguearme (Uso de localStorage)
-
-- **Historia x. Actualización de componentes header y menús en función del rol de usuario logueado:**
+- **Historia: Diseño del aspecto de las vistas:**
+  Como usuario quiero poder navegar por todas las vistas de la aplicación (independientemente del del rol).
+- **Historia: Implementación de la lógica para la validación de los formularios:**
+  Como usuario quiero recibir feedback de validación en las vistas con formularios.
+- **Historia: Lógica para la autenticación de usuarios:**
+  Como usuario registrado quiero poder recordar los datos de sesión al loguearme (Uso de localStorage)
+- **Historia: Actualización de componentes header y menús en función del rol de usuario logueado:**
 Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
+- **Historia: Diseño de las vistas a partir de los datos de un archivo JSON:**
+  Como programador quiero simular el registro, login y visualización de las tablas de usuarios y proyectos a partir de datos ficticios obtenidos de una archivo json de prueba.
+- **Historia: Lógica para la administración de usuarios y proyectos (ver, editar, borrar, etc.):**
+  Como administrador quiero poder gestionar los usuarios y proyectos (CRUD)
 
 #### Sprint 4: Backend
 
-- **Historia x. Diseño de la base de datos:**
+- **Historia: Diseño de la base de datos:**
   Como programador quiero diseñar la base de datos en base a diagrama UML (diagrama entidad-relación)
 
-- **Historia x. Implementación de las tablas y funciones en supabase:**
+- **Historia: Implementación de las tablas y funciones en supabase:**
   Como programador quiero implementar las bases de datos en Supabase, diseñar las consultas e implementar las funciones postgree multitabla
 
-- **Historia x. API javascript de Supabase:**
+- **Historia: API javascript de Supabase:**
   Como programador quiero probar las apis de javascript para el acceso a la base de datos
 
-- **Historia x. Implementación de un ORM para mapping de la base de datos:**
+- **Historia: Implementación de un ORM para mapping de la base de datos:**
   Como programador quiero diseñar el diagrama de clases e implementarlo en javascript para tener un mapping de la bd.
 
 #### Sprint 5: Integración del frontend y el backend
 
-- **Historia x. Login y registro:**
+- **Historia: Login y registro:**
   Como usuario quiero poder registrarme e iniciar sesión.
 
-- **Historia x. Gestión de sesiones:**
+- **Historia: Gestión de sesiones:**
   Como usuario registrado quiero ver la web en base al rol que tengo asignado.
 
-- **Historia x. Editar perfil**
+- **Historia: Editar perfil**
   Como usuario registrado quiero poder ver y modificar mi perfil.
 
-- **Historia x. Gestión de Proyectos (Vista proyectos, detalle proyecto, etc):**
+- **Historia: Gestión de Proyectos (Vista proyectos, detalle proyecto, etc):**
   Como usuario registrado 'desarrollador' quiero poder ver los proyectos, ver mis proyectos, crear proyectos, ver detalle de los proyectos y editar y borrar mis proyectos.
 
-- **Historia x. Gestión de usuarios:**
+- **Historia: Gestión de usuarios:**
   Como usuario registrado 'administrador' quiero poder ver, editar y borrar los usuarios del sistema.
 #### Sprint 6: Revisión y despliegue en producción de la versión 1.0
 
-- **Historia x. Test de usuarios**
+- **Historia: Test de usuarios**
   Como diseñador quiero realizar tests de usuarios a un grupo de usuarios focales.
 
-- **Historia x. Revisión de la aplicación**
+- **Historia: Revisión de la aplicación**
   Como programador quiero revisar y corregir los posibles problemas detectados en el test de usuarios.
 
-- **Historia x. Despliegue en producción (RAILWAY)**
+- **Historia: Despliegue en producción (RAILWAY)**
   Como programador quiero despleguar la aplicación en producción.
 
 ## Herramientas para la planificación, diagramas de Gantt, pizarra Kanban, etc.
+Github Projects
 
 
 
