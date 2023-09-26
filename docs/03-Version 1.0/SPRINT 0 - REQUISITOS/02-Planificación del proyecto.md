@@ -72,7 +72,7 @@ Estas serían las historias a planificar en la entrega de la versión 1 de nuest
 - **Historia: Lógica para la autenticación de usuarios:**
   Como usuario registrado quiero poder recordar los datos de sesión al loguearme (Uso de localStorage)
 - **Historia: Actualización de componentes header y menús en función del rol de usuario logueado:**
-Como usuario logueado quiero ver solo las opciones que corresponden a mi rol.
+Como usuario logueado quiero poder navegar por las vistas de la aplicación. (Podrán verse solo las opciones que corresponden a mi rol).
 - **Historia: Diseño de las vistas a partir de los datos de un archivo JSON:**
   Como programador quiero simular el registro, login y visualización de las tablas de usuarios y proyectos a partir de datos ficticios obtenidos de una archivo json de prueba.
 - **Historia: Lógica para la administración de usuarios y proyectos (ver, editar, borrar, etc.):**
