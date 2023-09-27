@@ -35,7 +35,9 @@ Algunos consejos para escribir tus commits:
 👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
 :::
 
-Aquí puedes ver el código utilizado en ambas páginas:
+Aquí puedes ver el código utilizado: 👁‍🗨 ...
+
+<div style={{display: "none"}}>
 
 ```html title="adminProyectos.html"
 
@@ -731,3 +733,4 @@ Aquí puedes ver el código utilizado en ambas páginas:
 </html>
 
 ```
+</div>
