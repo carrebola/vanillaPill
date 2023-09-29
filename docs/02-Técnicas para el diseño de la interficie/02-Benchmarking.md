@@ -32,11 +32,31 @@ En resumen, el benchmarking puede ser una herramienta valiosa para la empresa di
 Vamos a plantearnos como solucionar algunos de los problemas y revisaremos como lo hacen otras empresas. Vamos dividir la busqueda en 4 conceptos básicos:
 
 ### 1. Identidad gráfica
+Mantendremos en la parte superior izquierda el logo de la app junto al nombre, en una barra superior que incluirá el menú principal, y que se mantendrá constante en toda la aplicación.
+
+Algunos ejemplos son la web de asana o de supabase:
+
+![Alt text](image.png)
+
+![Alt text](image-1.png)
 
 ### 2. Sistema de registro y login
+Para la pantalla de inicio de sesión utilizaremos un formulario centrado en la pantalla donde solicitaremos el email y la contraseña. 
+
+Para el registro incluiremos también las opciones de recordar contraseña y crear cuenta. El método de validación incluirá un mensaje en la parte inferior del input en caso de que el formato no sea el esperado. Algunos ejemplos pueden ser la web de GitHub o Asana
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
 
 ### 3. Panel de control de administrador
+En el panel de administración resulta interesante permitir modificar los datos en la misma tabla, incluyendo un formulario para cada fila, tal y como se muestra en el panel de supabase:
 
+![Alt text](image-4.png)
+
+![Alt text](image-5.png)
 ### 4. Visualización de contenidos
 
-> 👷‍♂️ **_Pendiente de completar (pantallazos en drive)_**
+La visualización de contenidos mediante tablas es quizás la opción más interesante. No obstante, para dispositivos de dimensiones más pequeñas que una pantalla de ordenador, quizás es mejor optar por la visualización mediante tarjetas.
+
+![Alt text](image-6.png)
