@@ -102,6 +102,23 @@ En resumen, en ScrumBan:
 
 Es una forma intermedia que permite adaptarse a los cambios rápidos y mantener un flujo de trabajo constante. Perfecto si necesitas estructura pero también flexibilidad. **¡Es lo mejor de ambos mundos!**
 
+### Roles en Kanban
+En ScrumBan, como en otros enfoques de desarrollo Agile, los roles tienden a ser más flexibles que en Scrum puro, ya que ScrumBan es una combinación de Scrum y Kanban. 
+
+Aquí están los roles comunes que pueden estar involucrados en un equipo que practica ScrumBan:
+
+- **Equipo de Desarrollo:** Este equipo es responsable de llevar a cabo las tareas y actividades necesarias para completar las historias de usuario y las tareas del proyecto. En ScrumBan, el equipo de desarrollo tiene una mayor flexibilidad para tomar y entregar tareas a medida que están listas, en lugar de esperar hasta el final de un sprint.
+
+- **Scrum Master (Facilitador)**: Aunque ScrumBan no enfatiza la estructura de roles de Scrum, un Scrum Master puede desempeñar un papel en la facilitación de reuniones y la eliminación de obstáculos. Sin embargo, su papel puede ser menos formal que en Scrum tradicional.
+
+- **Product Owner (Propietario del Producto)**: El Product Owner sigue siendo responsable de gestionar el backlog de producto, priorizar las historias de usuario y mantener una visión clara del producto. En ScrumBan, la colaboración entre el Product Owner y el equipo de desarrollo es clave para ajustar las prioridades según sea necesario.
+
+- **Stakeholders (Partes Interesadas):** Las partes interesadas siguen siendo una parte importante en ScrumBan. Proporcionan comentarios y dirección, y pueden influir en la priorización del trabajo en el backlog de producto.
+
+Es importante destacar que en ScrumBan, los roles tienden a ser más fluidos y colaborativos que en Scrum tradicional. El enfoque se centra en la entrega continua y la flexibilidad, lo que significa que el equipo de desarrollo puede seleccionar y trabajar en elementos del backlog de producto a medida que están listos, en lugar de comprometerse con un conjunto fijo de historias de usuario al comienzo de un sprint.
+
+En general, los roles en ScrumBan están diseñados para apoyar la entrega continua y la adaptabilidad, lo que permite al equipo responder rápidamente a los cambios en los requisitos y las prioridades del proyecto. La estructura de roles puede variar según las necesidades y la cultura del equipo y la organización.
+
 ## Planificación del Desarrollo del Proyecto
 ### 1. Definición de Objetivos y Tareas
 - Backlog de Producto: Aquí definimos las metas del proyecto en forma de historias de usuario y sus tareas asociadas.

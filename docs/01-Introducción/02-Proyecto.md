@@ -125,9 +125,7 @@ Vamos a dividir el desarrollo del proyecto en diferentes versiones a partir de l
 - VERSIÓN 2.0: Implementación de los comentarios de los proyectos
 - VERSIÓN 3.0: Implementación del sistema de valoración mediante estrellas
 - VERSIÓN 4.0: Implementación del sistema de valoración basado en rúbricas o criterios de valoración.
-- VERSIÓN 5.0: Implementación de la publicación de proyectos basados en requisitos preestablecidos (tipo tareas)
-- VERSIÓN 6.0: Sistema de visualización de tareas/proyectos basado en diagramas de Gantt.
-- VERSIÓN 7.0: Sistema de visualización de resultados basado en gráficos.
+
 ## Arquitectura y tecnologías
 A la hora de decidir la arquitectura a implementar en el desarrollo de nuestro proyecto debemos tener en cuenta una serie de consideraciones previas, como la velocidad de carga inicial, el SEO, la experiencia de usuario, etc. pero también debemos considerar aspectos técnicos. Vamos a analizar primero algunas de las posibilidades que podemos elegir para la implementación de nuestro proyecto:
 
@@ -209,6 +207,4 @@ Para el control de versiones trabajaremos con un repositorio **Git** que sincron
 En el proceso de desarrollo emplearemos el flujo de trabajo ‘**Flujo de rama de funcionalidad**’. Es decir, crearemos ramas específicas para cada funcionalidad que integraremos en la rama principal una vez testadas las funcionalidades. Así, nuestro repositorio reflejará todo el proceso de trabajo, las diferentes versiones, etc.
 
 ## Y para el despliegue de nuestras aplicaciones
-Desplegaremos el proyecto en **github pages** (en la fase de pruebas) y utilizaremos el servicio  **RailWay** para el despliegue en producción.
-
-PONER AQUÍ IMAGENES DE LAS TECNOLOGÍAS Y COMPLETAR LAS ETIQUETAS!!!
+Desplegaremos el proyecto en **github pages** (en la fase de pruebas) y utilizaremos un servicio  como por ejemplo **RailWay**, **Netlify**, etc para el despliegue en producción.
