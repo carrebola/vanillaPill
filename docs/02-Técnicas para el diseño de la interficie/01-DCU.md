@@ -23,9 +23,6 @@ tags:
 sidebar_position: 10
 ---
 ## ¿Qué es el Diseño centrado en el Usuario (DCU)?
-- Modelado de personas
-- Fichas de usuario
-Uno de los procesos más importante en el desarrollo de una aplicación web es el **diseño de la interfaz**. Existe una metodología conocida como DCU o Diseño Centrado en el Usuario que incluye técnicas de gran ayuda para llevar a cabo este proceso con éxito.
 
 :::info DCU
 El Diseño Centrado en Usuario (**DCU**) es una metodología que se enfoca en diseñar productos, servicios y experiencias que satisfagan las necesidades y deseos de los **usuarios finales**. El objetivo principal es lograr una **experiencia de usuario óptima** y aumentar la satisfacción del cliente al tiempo que se mejora la eficiencia y eficacia de la solución.

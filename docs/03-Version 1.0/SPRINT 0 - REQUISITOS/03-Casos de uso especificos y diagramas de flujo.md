@@ -98,7 +98,7 @@ Es el momento de ser más concretos y detenernos a reflexionar en cada uno de lo
 2. El usuario introduce el nombre, descripción, imagen representativa, enlaces de servidor y repositorio, estado y otra información relevante del proyecto.
 3. El sistema valida los campos y crea un nuevo proyecto.
 4. El sistema muestra un mensaje de confirmación y redirige al usuario a la página de proyectos.
-5. 
+
 **Flujos alternativos**:
 - 2a. El desarrollador decide no publicar el proyecto y selecciona la opción de cancelar.
 - El sistema descarta la información ingresada en el formulario.
@@ -127,19 +127,18 @@ Es el momento de ser más concretos y detenernos a reflexionar en cada uno de lo
 **Precondiciones**: El usuario debe haber iniciado sesión como desarrollador y tener al menos un proyecto previamente creado.
 
 **Flujo principal**:
-1. El usuario selecciona la opción de "Eliminar proyecto".
-2. El sistema muestra la lista de proyectos previamente creados por el usuario.
-3. El usuario selecciona el proyecto que desea eliminar.
-4. El sistema muestra una confirmación de que el usuario está seguro de eliminar el proyecto seleccionado.
-5. El usuario confirma que desea eliminar el proyecto.
-6. El sistema elimina el proyecto de la base de datos y muestra una confirmación de que el proyecto ha sido eliminado correctamente.
+1. El usuario selecciona la opción de "Eliminar proyecto" del proyecto que desea eliminar.
+2. El sistema muestra una confirmación de que el usuario está seguro de eliminar el proyecto seleccionado.
+3. El usuario confirma que desea eliminar el proyecto.
+4. El sistema elimina el proyecto de la base de datos y muestra una confirmación de que el proyecto ha sido eliminado correctamente.
+5. El sistema actualiza la información de proyectos.
 
 ### 9. Ver/Editar usuario:
 **Actor principal**: Usuario administrador
 
 **Objetivo**: Editar la información de los usuarios registrados.
 
-**Precondiciones**: El usuario debe haber iniciado sesión en la aplicación.
+**Precondiciones**: El usuario debe haber iniciado sesión en la aplicación y tener rol administrador.
 
 **Flujo principal**:
 1. El usuario selecciona la opción de "Ver usuarios".
@@ -153,7 +152,7 @@ Es el momento de ser más concretos y detenernos a reflexionar en cada uno de lo
 
 **Objetivo**: Eliminar usuario del sistema.
 
-**Precondiciones**: El usuario debe haber iniciado sesión en la aplicación.
+**Precondiciones**: El usuario debe haber iniciado sesión en la aplicación y debe tener rol administrador.
 
 **Flujo principal**:
 1. El usuario selecciona la opción de "Ver usuarios".
@@ -175,17 +174,3 @@ Error de autenticación: Si un usuario intenta acceder a una página o realizar 
 Error de autorización: Si un usuario intenta realizar una acción que no está autorizada para realizar debido a su rol, el sistema debería mostrar un mensaje de error indicando que la acción no está autorizada y ofrecer la posibilidad de volver a la página anterior.
 
 Error de servidor: En caso de que se produzca un error interno en el servidor, como una excepción no controlada, el sistema debería mostrar un mensaje de error genérico indicando que se produjo un error y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
-
-
-
-
-
-
-
-### Ejemplo con precondición y postcondición
-- Código: CS-0100.
-- Nombre: Llamada de voz.
-- Actores: Usuario.
-- Descripción: El usuario del teléfono levanta el auricular y marca el número de destino. Al completar la secuencia de dígitos la conexión se realiza. Por medio de tonos particulares el sistema indica el estado de error y de progreso en la conexión.
-- Precondición: El teléfono está colgado.
-- Postcondición: Ninguna.
