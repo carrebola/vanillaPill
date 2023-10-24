@@ -30,7 +30,7 @@ Agile es un **enfoque de desarrollo de proyectos** que se basa en la flexibilida
 Este enfoque se utiliza para **planificar y gestionar proyectos** de manera que puedan adaptarse a los cambios en los requisitos del cliente y a las condiciones cambiantes del mercado. 
 
 ## Terminología
-Os explico la terminología Agile y cómo se usa en la planificación del desarrollo de proyectos en sus diferentes versiones:
+Os explico la terminología 'Agile' y cómo se usa en la planificación del desarrollo de proyectos en sus diferentes versiones:
 
 - **User Stories (Historias de Usuario)**: Las historias de usuario son descripciones breves y centradas en el usuario de las funcionalidades o características que se deben desarrollar. Están escritas en lenguaje natural y se utilizan para representar los requisitos desde la perspectiva del usuario.
 
@@ -141,3 +141,4 @@ En general, los roles en ScrumBan están diseñados para apoyar la entrega conti
 
 ### Ejemplo de diagrama de Gantt con GitHub Project
 ![Alt text](image-4.png)
+
