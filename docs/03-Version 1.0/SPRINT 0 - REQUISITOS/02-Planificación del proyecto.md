@@ -202,23 +202,79 @@ Por el momento vamos a crear etiquetas para categorizar las historias en sprints
 
 ![Alt text](image-1.png)
 
-##### Paso 6: Organizar y Gestionar el Proyecto
 
-Conforme vayamos avanzando en el trabajo, iremos moviendo las historias de usuario y los issues a las columnas apropiadas en el proyecto.
-
-Podedmos utilizar los comentarios en los issues para discutir detalles, preguntas y actualizaciones relacionadas con esa tarea específica.
-
-##### Paso 7: Utilizar Milestones para las versiones
+##### Paso 6: Utilizar Milestones para las versiones
 
 Vamos a agrupar un conjunto de issues o historias de usuario relacionadas en un objetivo específico o versión, puedes utilizar "milestones". Para crear un milestone:
 
 1. Navega a la pestaña "Issues" en tu repositorio.
 2. Haz clic en "Milestones" y luego en "New milestone.
-3. Dale un nombre al milestone, como "Versión 1.0".
-4. Podemos añadir en loa descripción los casos de uso para esta versión. De momento no vamos a asignar la fecha de vencimiento.
+3. Dale un nombre al milestone, como "**Versión 1.0**".
+4. Podemos añadir en la descripción los casos de uso para esta versión. De momento no vamos a asignar la fecha de vencimiento.
 5. Para acabar, vamos a agregar los issues o historias de usuario relacionados a ese milestone.
 
 ![Alt text](image.png)
+
+#### Paso 7: Agregando etiquetas y milstone
+Desde la vista de tabla, añade las columnas necesarias para visualizar las etiquetas y milstone que tienen asociada cada historia.
+
+![Alt text](image-3.png)
+
+#### Paso 8: Columna para sprint
+
+Vamos a crear ahora una nueva columna para el sprint actual, y movemos las historias desde el backlog de producto al sprint correspondiente.
+
+![Alt text](image-4.png)
+
+## Documentación en repositorio
+Vamos a comenzar creando una rama en nuestro repositorio para la documentación:
+
+![Alt text](image-5.png)
+
+Ahora abrimos el repositorio con VSCode para trabajar de manera más cómoda. Para ello:
+
+- Abrimos una ventana de VSCode
+- Hacemos click en `clonar repositorio` y copiamos en la ventana superior la url del repositorio de '**VanillaGames**' y hacemos click en 'Clonar repositorio'
+- Indicamos donde queremos que aparezca la carpeta de nuestro proyecto (en mi caso en el escritorio)
+
+Observa como podemos ver en la columna izquierda la raiz del proyecto con el archivo **README.md**, ya que estamos en la rama '**main**'
+
+![Alt text](image-6.png)
+
+Si te fijas, podrás ver en la parte inferior izquierda, el nombre de la rama actual ('**main**'). Haz click sobre el nombre de la rama y selecciona la rama '**Documentación**' que acabamos de crear.
+
+### Documentando el proyecto en el repositorio
+
+Vamos a comenzar a subir archivos a nuestro repositorio. En nuestro caso utilizaremos archivos con extensión md para poder usar Markup. De esta manera podremos visualizar toda la información desde el mismo GitHub.
+
+
+1. Asegurate que estás en la rama 'Documentación'
+2. Crea un archivo con nombre `Documentacion.md`
+3. Copia la documentación que hemos generado hasta ahora (la encontrarás en el apartado '**Definiendo Vanilla Games**' ) 
+
+![Alt text](image-7.png)
+
+Ahora, para subir los cambios en el repositorio, solo tienes que hacer click en el tercer icono de vscode (verás que tiene un 1 indicando que hay cambios en un archivo) y añadir un mensaje para el **commit**.
+
+:::info Antes de hacer el commit...
+
+Para asociar el commit con la historia (y el issue) de nuestro proyecto debemos añadir al mensaje del commit el numero de issue con un #. El mensaje quedaria así:
+
+'**Descripción del proyecto #1**'
+
+:::
+
+![Alt text](image-8.png)
+
+Después de hacer el commit te preguntará si quieres hacer 'push'. Haz click en el bóton para hacerlo.
+
+Si vas ahora a GitHub y seleccionas la rama podrás ver los cambios.
+
+![Alt text](image-9.png)
+
+Abre los Issues del repositorio y podrás ver en el primer Issue con #1 como aparece información referente a este último push
+
+![Alt text](image-10.png)
 
 
 
