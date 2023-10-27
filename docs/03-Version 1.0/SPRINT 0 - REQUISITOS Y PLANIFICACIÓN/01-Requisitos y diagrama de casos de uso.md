@@ -1,6 +1,6 @@
 ---
 
-title: Hist0 - Requesitos y diagrama de casos de uso 
+title: Requesitos y diagrama de casos de uso 
 tags:
   - Requisitos
 position: 10
@@ -96,6 +96,7 @@ Para dibujar el diagrama de casos de uso una herramienta interesante puede ser [
 
 **Figma es una herramienta de diseño de interfaces de usuario (UI) y experiencia de usuario (UX)** basada en la nube. Permite a los diseñadores crear, prototipar y colaborar en diseños interactivos de alta calidad de forma colaborativa.
 :::
+
 El diagrama de casos de uso para la versión 1.0 sería el siguiente:
 
 ### Diagrma de casos de uso para la versión 1.0

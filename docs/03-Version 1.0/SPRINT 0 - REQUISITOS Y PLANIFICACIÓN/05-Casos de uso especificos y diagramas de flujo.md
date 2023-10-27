@@ -1,9 +1,9 @@
 ---
 
-title: Hist2 - Casos de uso específicos y diagramas de flujo.
+title: Casos de uso específicos y diagramas de flujo.
 tags:
   - Casos de uso
-position: 20
+
 
 ---
 
@@ -119,6 +119,7 @@ Es el momento de ser más concretos y detenernos a reflexionar en cada uno de lo
 5. El usuario realiza los cambios necesarios en la información del proyecto y guarda los cambios.
 6. El sistema valida la información ingresada por el usuario y actualiza la información del proyecto en la base de datos.
 7. El sistema muestra una confirmación de que la información del proyecto ha sido actualizada correctamente.
+   
 ### 8. Eliminar proyecto:
 **Actor principal**: Desarrollador
 
@@ -165,12 +166,28 @@ Es el momento de ser más concretos y detenernos a reflexionar en cada uno de lo
 Vamos a repasar los diferentes casos de uso analizando el flujo principal y añadiendo los flujos alternativos para contemplar los posibles errores del sistema.
 Puedes considerar los siguientes mensajes:
 
-Error de conexión: El servidor no puede establecer una conexión con la base de datos, lo que impide que se puedan realizar operaciones en la plataforma. El sistema debería mostrar un mensaje de error indicando que no se pudo conectar con la base de datos y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
+- **Error de conexión**: El servidor no puede establecer una conexión con la base de datos, lo que impide que se puedan realizar operaciones en la plataforma. **El sistema debería mostrar un mensaje de error indicando que no se pudo conectar con la base de datos** y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
 
-Error de validación: Cuando el sistema recibe información del usuario, debe validarla para asegurarse de que cumple con los requisitos de formato y contenido necesarios. Si la información no es válida, el sistema debería mostrar un mensaje de error indicando el problema específico, como "El campo de correo electrónico debe ser una dirección de correo válida".
+- **Error de validación**: Cuando el sistema recibe información del usuario, debe validarla para asegurarse de que cumple con los requisitos de formato y contenido necesarios. Si la información no es válida, **el sistema debería mostrar un mensaje de error indicando el problema específico**, como "El campo de correo electrónico debe ser una dirección de correo válida".
 
-Error de autenticación: Si un usuario intenta acceder a una página o realizar una acción que requiere autenticación, pero no ha iniciado sesión o sus credenciales son incorrectas, el sistema debería mostrar un mensaje de error indicando que la acción no está autorizada y ofrecer la posibilidad de iniciar sesión o recuperar la contraseña.
+- **Error de autenticación**: Si un usuario intenta acceder a una página o realizar una acción que requiere autenticación, pero no ha iniciado sesión o sus credenciales son incorrectas, **el sistema debería mostrar un mensaje de error indicando que la acción no está autorizada** y ofrecer la posibilidad de iniciar sesión o recuperar la contraseña.
 
-Error de autorización: Si un usuario intenta realizar una acción que no está autorizada para realizar debido a su rol, el sistema debería mostrar un mensaje de error indicando que la acción no está autorizada y ofrecer la posibilidad de volver a la página anterior.
+- **Error de autorización**: Si un usuario intenta realizar una acción que no está autorizada para realizar debido a su rol, **el sistema debería mostrar un mensaje de error indicando que la acción no está autorizada** y ofrecer la posibilidad de volver a la página anterior.
 
-Error de servidor: En caso de que se produzca un error interno en el servidor, como una excepción no controlada, el sistema debería mostrar un mensaje de error genérico indicando que se produjo un error y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
+- **Error de servidor**: En caso de que se produzca un error interno en el servidor, como una excepción no controlada, **el sistema debería mostrar un mensaje de error genérico indicando que se produjo un error** y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
+
+
+:::danger Tarea: Documentación
+
+Es momento de actualizar la documentación en el repositorio
+
+:::
+
+:::info Antes de hacer el commit...
+
+Para asociar el commit con la historia (y el issue) de nuestro proyecto debemos añadir al mensaje del commit el numero de issue con un #. El mensaje poddría ser algo así:
+
+'**Documentación: Casos de uso especificos  #3**'
+
+:::
+
