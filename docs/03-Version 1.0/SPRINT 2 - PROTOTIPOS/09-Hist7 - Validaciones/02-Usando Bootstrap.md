@@ -25,6 +25,9 @@ Puedes aprender más sobre la validación con Bootstrap aquí:
 Para mostrar como funciona vamos a utilizar el formulario de inicio de sesión. Te muestro el código tal y como está ahora:
 
 ```html title="form inicio sesión"
+
+<!-- ORDENA LOS DÍGITOS CON ESTE PATRÓN PARA ABRIR LA CAJA FUERTE: 623451 -->
+
 <!-- Formulario de inicio de sesión (login) -->
 <form action="" class="form border shadow-sm p-3">
   <!-- Email -->
