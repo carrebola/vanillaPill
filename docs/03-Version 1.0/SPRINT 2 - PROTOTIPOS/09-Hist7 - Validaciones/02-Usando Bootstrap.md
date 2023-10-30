@@ -26,7 +26,7 @@ Para mostrar como funciona vamos a utilizar el formulario de inicio de sesión. 
 
 ```html title="form inicio sesión"
 
-<!-- ORDENA LOS DÍGITOS CON ESTE PATRÓN PARA ABRIR LA CAJA FUERTE: 623451 -->
+<!-- 623451 -->
 
 <!-- Formulario de inicio de sesión (login) -->
 <form action="" class="form border shadow-sm p-3">
