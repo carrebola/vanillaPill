@@ -1,8 +1,9 @@
 ---
 sidebar_position: 110
+title: 'Definición del mapping de acceso a la bd. Clases'
 ---
 
-# Historia 9. Definición del mapping de acceso a la bd. Clases
+# Historia: Definición del mapping de acceso a la bd. Clases
 
 El término "**mapping**" se refiere a la asignación de las propiedades de un objeto a las columnas de una tabla de una base de datos relacional. En este caso, la idea es que las propiedades de una clase JavaScript se correspondan con las columnas de una tabla en la base de datos Supabase.
 
@@ -10,14 +11,22 @@ Para definir un mapping en una aplicación de JavaScript con Supabase, primero d
 
 ## Conexión con la base de datos
 
-Para conectarnos con la base de datos crearemos un objeto supabase. Para ello:
-- Creamos el archivo supabase.js en la carpeta bd `src/bd/supabase.js`
-- El archivo definimos la conexión usando los modelos de API Docs que ya testeamos en la historia 6, y la exportamos. El archivo quedaría así:
+Es el momento de comenzar a construir nuestro la lógica para la comunicación con la base de datos en nuestro proyecto.
+
+Como siempre, antes de comenzar a trabajar crearemos una rama nueva. Llamémosla... 'ORM'
+
+Ahora instalamos en nuestro proyecto la librería de supabase para poder comenzar a trabajar con ella:
+
+` npm install --save @supabase/supabase-js` 
+
+Para conectarnos con la base de datos crearemos un objeto con la lógica de conexión que nos ofrece supabase. Para ello:
+- Creamos el archivo `supabase.js` en la carpeta bd `src/bd/supabase.js`
+- El archivo definimos la conexión usando los modelos de API Docs que ya testeamos en el apartado 'Probando Supabase', y la exportamos. El archivo quedaría así:
   
 ```js title="supabase.js"
 import { createClient } from '@supabase/supabase-js'
 //Creando la conexión con supabase
-const supabaseUrl = 'https://ptnlczuiuaotrscavujw.supabase.co'
+const supabaseUrl = 'xxxxxx'
 const supabaseKey = 'xxxxxx'
 
 //exportamos la conexión
@@ -45,132 +54,106 @@ La clase Perfil tienen las siguientes propiedades: id, nombre, apellidos, user_i
   Elimina el registro de la tabla perfiles que tiene el id especificado utilizando el método delete de la librería supabase. Devuelve **true** si la eliminación es exitosa.
 
 
-En primer lugar imprtamos la conexión de supabase `import { supabase } from "./supabase.js";
+En primer lugar creamos el archivo perfil.js dentro de la carpeta `bd`. 
+
+Ahora importamos la conexión de supabase `import { supabase } from "./supabase.js";
 ` 
 Y definimos la clase que vamos a exportar. El código quedaría así:
 
 ```js title="perfil.js"
-// Importamos la conexión a la base de datos
+
 import { supabase } from './supabase.js'
 
 export class Perfil {
-  // Mapping de propiedades de la tabla perfiles
-  constructor (id = null, created_at = null, nombre = null, apellidos = null, user_id = null, estado = null, rol = null, avatar = null, email = null, bloqueado = null) {
+  constructor({
+    id = null,
+    created_at = null,
+    user_id = null,
+    nombre = null,
+    apellidos = null,
+    avatar = 'default_avatar.png',
+    estado = 'activo',
+    rol = 'registrado'
+  }) {
     this.id = id
     this.created_at = created_at
+    this.user_id = user_id
     this.nombre = nombre
     this.apellidos = apellidos
-    this.user_id = user_id
+    this.avatar = avatar
     this.estado = estado
     this.rol = rol
-    this.avatar = avatar
-    this.email = email
-    this.bloqueado = bloqueado
   }
 
-  // leer todos en orden descendiente a como se han creado
-  static async getAll () {
+  static async getAll() {
     const { data: perfiles, error } = await supabase
       .from('perfiles')
       .select('*')
       .order('created_at', { ascending: false })
+
     if (error) {
       throw new Error(error.message)
     }
-    // devuelve array de objetos
-    return perfiles.map(({ id, created_at, nombre, apellidos, user_id, estado, rol, avatar, email, bloqueado }) => {
-      return new Perfil(id, created_at, nombre, apellidos, user_id, estado, rol, avatar, email, bloqueado)
-    })
+
+    return perfiles.map((perfil) => new Perfil(perfil))
   }
 
-  // leer registro por id (método static que se puede leer desde la clase sin necesidad de crear una instancia)
-  static async getById (id) {
+  static async getById(id) {
     const { data: perfil, error } = await supabase
       .from('perfiles')
       .select('*')
       .eq('id', id)
       .single()
+
     if (error) {
       throw new Error(error.message)
     }
-    // Devuelve un nuevo objeto con los datos del registro
-    return new Perfil(perfil.id, perfil.created_at, perfil.nombre, perfil.apellidos, perfil.user_id, perfil.estado, perfil.rol, perfil.avatar, perfil.email, perfil.bloqueado)
+
+    return new Perfil(perfil)
   }
 
-  // leer registro por id (método static que se puede leer desde la clase sin necesidad de crear una instancia)
-  static async getByUserId (id) {
+  static async getByUserId(id) {
     const { data: perfil, error } = await supabase
       .from('perfiles')
       .select('*')
       .eq('user_id', id)
       .single()
+
     if (error) {
       throw new Error(error.message)
     }
-    // Devuelve un nuevo objeto con los datos del registro
-    return new Perfil(perfil.id, perfil.created_at, perfil.nombre, perfil.apellidos, perfil.user_id, perfil.estado, perfil.rol, perfil.avatar, perfil.email, perfil.bloqueado)
+
+    return new Perfil(perfil)
   }
 
-  // crear registro (método static que se puede leer desde la clase sin necesidad de crear una instancia)
-  static async create (perfilData) {
-    const { error } = await supabase
+  static async create(perfilData) {
+    const { data, error } = await supabase
       .from('perfiles')
       .insert(perfilData)
       .select()
-      // console.log('nuevo perfil ',error);
-    if (error) {
-      throw new Error(error.message)
-    }
-    return true
-  }
-
-  // actualizar
-  async update () {
-    const { error } = await supabase
-      .from('perfiles')
-      .update({
-        nombre: this.nombre,
-        apellidos: this.apellidos,
-        avatar: this.avatar
-      })
-      .eq('id', this.id)
-      .single()
 
     if (error) {
-      throw new Error(error.message)
+      throw new Error(`Error creando perfil: ${error.message}`)
     }
-    return true
+
+    return data ? new Perfil(data[0]) : null
   }
 
-  // actualizar
-  async block () {
+  static async update(id, newData) {
     const { error } = await supabase
       .from('perfiles')
-      .update({
-        bloqueado: this.bloqueado
-      })
-      .eq('id', this.id)
-      .single()
-
-    if (error) {
-      throw new Error(error.message)
-    }
-    return true
-  }
-
-  // borrar
-  static async delete (id) {
-    const { error } = await supabase
-      .from('perfiles')
-      .delete()
+      .update(newData)
       .eq('id', id)
 
     if (error) {
-      throw new Error(error.message)
+      throw new Error(`Error actualizando perfil: ${error.message}`)
     }
+
     return true
   }
 }
+
+
 
 ```
 ## Clase User

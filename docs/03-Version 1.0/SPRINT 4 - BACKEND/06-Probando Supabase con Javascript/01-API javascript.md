@@ -18,7 +18,7 @@ En resumen, **la API REST de Supabase** es la interfaz subyacente que permite la
 
 :::
 
-Para nuestro proyecto nosotros vamos a utilizar la API de Javascript ya que nos permite la comunicación de manera muy sencilla ya además, ¡nos lo dan todo hecho! 😉
+Para nuestro proyecto nosotros vamos a utilizar la **API de Javascript** ya que nos permite la comunicación de manera muy sencilla ya además, ¡nos lo dan todo hecho! 😉
 
 ## Acceso a la documentación de la API de Javascript
 Para acceder a la documentación de javascript tenemos que hacer click en el item del menú de la barra de la izquierda llamado **API Docs**. (Antes debes estar en tu proyecto)
@@ -50,10 +50,13 @@ La respuesta a esta pregunta es: utilizando funciones postgreSQL conocidas como 
 
 Efectivamente, en supabase podemos crear funciones que más tarde podremos llamar desde javascript.
 
+### Ejemplos de código javascript que nos ofrece Supabase:
 Vamos a mostrar aquí, a modo de ejemplo, el código para:
 - Iniciar sesión 
 - acceder a todas las filas de la tabla pefiles
 - acceder a una función predefinida llamada perfiles_detalle (esta en concreto permitiría ver el detalle de todas las filas de la tabla perfiles cruzada con la tabla usuarios)
+
+*Estos fragmentos de código los puedes encontrar en API Docs de supabase*
 
 ```js title="Iniciar sesión"
 // USER LOGIN

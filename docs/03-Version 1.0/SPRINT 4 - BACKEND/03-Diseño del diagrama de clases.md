@@ -13,7 +13,7 @@ Por lo tanto, en esta versión, necesitamos tres clases. La clase **users**, la 
 
 Los métodos básico que suelen utilizarse en un ORM comprenden las funcionalidades propias de un **CRUD (Create, Read, Update y Delete)**. Nosotros usaremos los siguientes:
 
-- **getAll**: Devolvera un objeto con todos los registros de la tabla.
+- **getAll**: Devolverá un objeto con todos los registros de la tabla.
 - **getById**: Devolverá un objeto con los datos del registro que coincida con el campo *id*.
 - **getByUserId**: Devolverá un objeto con los datos del registro que coincida con el campo *user_id*.
 - **create**: Creará una nueva fila con los campos que le pasemos.

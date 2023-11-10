@@ -2,9 +2,10 @@
 title: Resumen del código JS necesario para la comunicación con la BD
 ---
 
-Este es el código que, a priori, necesitamos para conectar y comunicar nuestra app con la BD:
+Este es el código que, a priori, necesitamos para conectar y comunicar nuestra app con la BD.
+Lo he copiado de la API Docs de Supabase para tenerlo como referencia para utilizarlo más adelante, cuando empecemos a programar la lógica para comunicar nuestro frontEnd con la base de datos:
 
-## APIS para gestion de usuarios
+## APIS extraidas de API Docs de Supabase para gestion de usuarios
 
 ```js title="USER SIGNUP"
 let { data, error } = await supabase.auth.signUp({
