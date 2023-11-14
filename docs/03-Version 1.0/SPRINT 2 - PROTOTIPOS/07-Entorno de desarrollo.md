@@ -8,6 +8,11 @@ tags:
 position: 
 
 ---
+## Comenzamos el SPRINT 2 - PROTOTIPOS
+
+Comenzamos el sprint 2 que incluye tres historias: La configuración del entorno de desarrollo, la maquetación de los bocetos y la implementación de la validación de los formularios.
+
+![Alt text](image-1.png)
 
 *“Dame seis horas para cortar un árbol y pasaré las primeras cuatro afilando el hacha.” – Abraham Lincoln*
 
