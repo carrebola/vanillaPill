@@ -75,9 +75,9 @@ Deberías poder ver la información actualizada desde GitHub:
 
 :::info Antes de hacer el commit...
 
-Para asociar el commit con la historia (y el issue) de nuestro proyecto debemos añadir al mensaje del commit el numero de issue con un #. El mensaje poddría ser algo así:
+Para asociar el commit con la historia (y el issue) de nuestro proyecto debemos añadir al mensaje del commit el número de issue con un #. El mensaje podría ser algo así:
 
-'**Documentación: Requisitos y diagramas de uso completados #2**'
+'**Crear Documentación: Requisitos y diagramas de uso completados #2**'
 
 :::
 
