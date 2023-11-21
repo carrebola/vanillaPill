@@ -49,7 +49,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado en ambas páginas: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div style={{display: ""}}>
 
 ```html title="nuevoProyecto.html"
 

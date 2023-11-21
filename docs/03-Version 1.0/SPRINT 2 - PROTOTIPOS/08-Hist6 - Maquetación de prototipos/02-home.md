@@ -56,7 +56,7 @@ Algunos consejos para escribir tus commits:
 
 Aquí puedes ver el código utilizado: 👁‍🗨 ...
 
-<div style={{display: "none"}}>
+<div style={{display: ""}}>
 
 ```html title="home.html"
 
