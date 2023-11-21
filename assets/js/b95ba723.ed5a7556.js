@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[4237],{8187:l=>{l.exports=JSON.parse('{"label":"validaciones","permalink":"/vanillaPill/blog/tags/validaciones","allTagsPath":"/vanillaPill/blog/tags","count":1}')}}]);
