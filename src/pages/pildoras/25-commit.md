@@ -5,6 +5,8 @@ authors: carrebola
 tags: [git, github, commit]
 ---
 
+# Buenas prácticas creando mensajes 'commit'
+
 Es importante escribir mensajes de commit claros y descriptivos al trabajar con Git y GitHub. Los mensajes de commit ayudan a ti y a otros colaboradores a entender los cambios realizados en el proyecto a lo largo del tiempo. 
 
 Aquí tienes algunos consejos para escribir mensajes de commit efectivos:

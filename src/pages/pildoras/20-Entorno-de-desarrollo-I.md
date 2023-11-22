@@ -1,4 +1,6 @@
 
+# Entorno de desarrollo I
+
 Vamos a instalar VSCode y a configurar algunos temas y extensiones como prettier o live server. 
 
 También vamos a aprender a manejar git y github desde nuestro ID fácilmente. 
