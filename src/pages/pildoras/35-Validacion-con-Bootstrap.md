@@ -1,14 +1,6 @@
----
 
-title: Usando Bootstrap para la validación
-tags:
-  - Bootstrap 5
-  - html
-  - css
-  - validaciones
-sidebar_position: 2
+# Validación con Bootstrap
 
----
 La mejor opción para validar campos en un formulario html es utilizar las propiedades de html5 en los diferentes campos de los inputs.
 
 No obstante, no podemos asegurar como se va a mostrar la información de validación en el navegador, ya que, dependiendo de cual utilicemos, se mostrará de una u otra forma.

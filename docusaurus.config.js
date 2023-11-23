@@ -79,7 +79,17 @@ const config = {
             label: '| VANILLA GAMES |',
           },
           
-          {to: '/blog', label: 'Blog', position: 'right'},
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'right'
+          },
+          {
+            to: 'listado', 
+            label: 'Píldoras', 
+            position: 'left'
+          },
+
           
         ],
       },
