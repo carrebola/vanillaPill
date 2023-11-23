@@ -1,5 +1,4 @@
 ---
-sidebar_position: 110
 title: 'Definición del mapping de acceso a la bd. Clases'
 ---
 
