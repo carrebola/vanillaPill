@@ -86,7 +86,7 @@ Recuerda que mientras vas trabajando en el proyecto  debes ir guardando los camb
 
 Algunos consejos para escribir tus commits:
 
-👉[Buenas prácticas creando mensajes 'commit'](/blog/commit)👈
+👉[Buenas prácticas creando mensajes 'commit'](/pildoras/25-commit)👈
 :::
 
 ```html title="formulario registro"
