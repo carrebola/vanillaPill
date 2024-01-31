@@ -2,6 +2,10 @@
 title: 'Definición del mapping de acceso a la bd. Clases'
 ---
 
+¡Comenzamos Sprint nuevo!
+
+![Alt text](image-7.png)
+
 # Historia: Definición del mapping de acceso a la bd. Clases
 
 El término "**mapping**" se refiere a la asignación de las propiedades de un objeto a las columnas de una tabla de una base de datos relacional. En este caso, la idea es que las propiedades de una clase JavaScript se correspondan con las columnas de una tabla en la base de datos Supabase.
@@ -113,7 +117,6 @@ export class Perfil {
       .from('perfiles')
       .select('*')
       .eq('id', id) // Filtra por el ID especificado
-      .single() // Espera un solo resultado
 
     // Manejo de errores
     if (error) {
@@ -121,17 +124,16 @@ export class Perfil {
     }
 
     // Devuelve una instancia de Perfil con la información obtenida
-    return new Perfil(perfil)
+    return new Perfil(perfil[0])
   }
 
   // Método estático para obtener un perfil por el ID del usuario asociado
-  static async getByUserId(id) {
+  static async getByUserId(userId) {
     // Realiza una consulta para obtener un perfil por el ID de usuario asociado
     const { data: perfil, error } = await supabase
       .from('perfiles')
       .select('*')
-      .eq('user_id', id) // Filtra por el ID de usuario especificado
-      .single()
+      .eq('user_id', userId) // Filtra por el ID de usuario especificado
 
     // Manejo de errores
     if (error) {
@@ -139,7 +141,7 @@ export class Perfil {
     }
 
     // Devuelve una instancia de Perfil con la información obtenida
-    return new Perfil(perfil)
+    return new Perfil(perfil[0])
   }
 
   // Método estático para crear un nuevo perfil

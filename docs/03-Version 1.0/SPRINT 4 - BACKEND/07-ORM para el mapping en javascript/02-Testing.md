@@ -129,7 +129,7 @@ Pero antes vamos a Supabase para consultar nuestra tabla `proyectos`.
 
 ![Tabla proyectos de supabase](image-1.png)
 
-Vamos a testear el método `Proyecto.getById(*1*)`, consultando el nombre del proyecto. Si todo es correcto debería devolvernos el texto: *Proyecto de Gestión de Inventario*
+Vamos a testear el método `Proyecto.getById(1)`, consultando el nombre del proyecto. Si todo es correcto debería devolvernos el texto: *Proyecto de Gestión de Inventario*
 
 
 Esto es lo que queremos hacer:

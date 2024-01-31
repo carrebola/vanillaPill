@@ -2,6 +2,10 @@
 title: Entorno de desarrollo para contruir una SPA
 ---
 
+¡Comenzamos el SPRINT 3: SPA!
+
+![Alt text](image-1.png)
+
 Ha llegado la hora de darla caña a javascript.
 
 Hasta ahora, en lo que a front-end se refiere:
